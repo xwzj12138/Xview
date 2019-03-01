@@ -1,4 +1,6 @@
 /* packages/grid-group/index.wxss */
 .grid-group{
+  font-size: 28rpx;
   padding:10rpx 15rpx;
+  color: #333;
 }

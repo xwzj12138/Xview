@@ -8,6 +8,7 @@
   background: #fff;
   padding: 0 30rpx;
   overflow:hidden;
+  color: #333;
 }
 /* 设置底部分隔线 */
 .cell-item::after{content:'';position:absolute;bottom:0;left:30rpx;right:30rpx;pointer-events:none;box-sizing:border-box;border-bottom:1px solid #e9eaec;}
