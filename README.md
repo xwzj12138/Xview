@@ -56,4 +56,38 @@ XView  项目目录
   display: none;
 }
 ~~~
+
+## 使用案列
+
+#### 单元格cell使用
+
+*   添加需要的组件。在页面的json中配置：
+~~~
+{
+  "usingComponents": {
+    "x-cell":"/packages/cell/index",
+    "x-cell-group": "/packages/cell-group/index",
+    "x-icon": "/packages/icon/index",
+    "x-switch": "/packages/switch/index"
+  }
+}
+~~~
+*   在 wxml 中使用组件：
+~~~
+<x-cell-group>
+  <x-cell menuArrow='{{true}}' title='测试1' value='ceshi1' linkType='switchTab' url='/pages/pdd/home/index'></x-cell>
+  <x-cell menuArrow='{{true}}' title='测试2' value='ceshi2'><x-icon slot="icon"></x-icon></x-cell>
+  <x-cell menuArrow='{{true}}' title='测试3' label='测试cell描述信息' value='ceshi3'><x-icon slot="icon" color='#39b54a' name='phone'></x-icon></x-cell>
+  <x-cell menuArrow='{{true}}' title='测试3' label='测试cell描述信息'>
+    <x-icon slot="icon" name='emoji' color='#e03997'></x-icon>
+    <x-switch value='{{switch1}}' slot="footer" bindchange='setSwitch'>
+      <x-icon slot="open" name='check' color='#fff' size='36'></x-icon>
+      <x-icon slot="close" name='close' color='#fff' size='36'></x-icon>
+    </x-switch>
+  </x-cell>
+</x-cell-group>
+~~~
+
+
+
 更多细节参阅 [LICENSE.txt](LICENSE.txt)
