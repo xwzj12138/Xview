@@ -1,0 +1,43 @@
+/* 将cell设为flex布局且内容居中显示 */
+.cell-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100rpx;
+  background: #fff;
+  padding: 0 30rpx;
+  overflow:hidden;
+}
+/* 设置底部分隔线 */
+.cell-item::after{content:'';position:absolute;bottom:0;left:30rpx;right:30rpx;pointer-events:none;box-sizing:border-box;border-bottom:1px solid #e9eaec;}
+.cell-item-last::after{border:none;}
+/* 设置cell点击时的样式 */
+.active:active{background-color:#e8e8e8;}
+/* 设置内边距 */
+.cell-item.arrow {
+  padding-right:70rpx;
+}
+/* 设置箭头 */
+.arrow::before {
+  font-family: "iconfont";
+  display: block;
+  content: "\e6a3";
+  position: absolute;
+  font-size: 34rpx;
+  color: #aaa;
+  line-height: 30rpx;
+  height: 30rpx;
+  width: 30rpx;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  right: 30rpx;
+  margin: auto;
+}
+.cell-icon{margin-right:5px}
+.cell-icon:empty{display:none}
+.cell-bd{flex:1}
+.cell-text{line-height:24px;font-size:14px}
+.cell-desc{line-height:1.2;font-size:12px;color:#80848f}
+.cell-ft{position:relative;text-align:right;color:#495060}

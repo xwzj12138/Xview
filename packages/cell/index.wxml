@@ -1,0 +1,16 @@
+<view class="cell-item {{menuArrow?'arrow':''}} {{url?'active':''}} {{isLastCell?'cell-item-last':''}}" bindtap="navigateTo">
+  <view class="cell-icon">
+      <slot name="icon"></slot>
+  </view>
+  <view class="cell-bd">
+      <view wx:if="{{ title }}" class="cell-text">{{ title }}</view>
+      <view wx:if="{{ label }}" class="cell-desc">{{ label }}</view>
+      <slot></slot>
+  </view>
+  <view class="cell-ft">
+      <block wx:if="{{value}}">{{ value }}</block>
+      <block wx:else>
+          <slot name="footer"></slot>
+      </block>
+  </view>
+</view>

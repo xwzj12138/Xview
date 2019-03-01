@@ -1,0 +1,42 @@
+<!--pages/pdd/home/index.wxml-->
+<x-nav tab-list="{{navList}}" bindtabSelect="tabSelect"></x-nav>
+
+<x-notice-bar icon='notification' closable>测试通知测试通知测试通知测试通知测试通知测试通知测试通知测试通知测试通知测试通知</x-notice-bar>
+
+<x-loading icon='loading2' isShow='{{false}}'></x-loading>
+
+<x-button type="primary" loading="true">测试按钮</x-button>
+
+<x-avatar>陈</x-avatar>
+<x-avatar size='small'>陈</x-avatar>
+<x-avatar size='large'>陈</x-avatar>
+<x-avatar shape='square'>陈</x-avatar>
+<x-avatar src='/static/logo.png'></x-avatar>
+
+<x-input-number value="{{ value1 }}" min="0" max="100" step="0.5" bindchange="handleChange1"/>
+
+<x-input title='收货人' placeholder='请输入'/>
+<x-input type='textarea' title='详细地址' placeholder='请输入'  maxlength="50"/>
+
+<x-cell>
+  <x-rate count="{{5}}" size='40' value="{{starIndex1}}" bind:change="onChange1"></x-rate>
+</x-cell>
+
+<x-grid-group>
+  <x-grid-item catchtap='gridClick' title='测试按钮'></x-grid-item>
+  <x-grid-item title='测试按钮'></x-grid-item>
+  <x-grid-item title='测试按钮'></x-grid-item>
+  <x-grid-item title='测试按钮'></x-grid-item>
+</x-grid-group>
+
+<x-grid-group>
+  <x-grid-item title='测试按钮' url='/static/logo.png' isColumn></x-grid-item>
+  <x-grid-item title='测试按钮' url='/static/logo.png' isColumn></x-grid-item>
+  <x-grid-item title='测试按钮' isColumn></x-grid-item>
+</x-grid-group>
+
+<x-grid-group>
+  <x-grid-item title='测试按钮' url='/static/logo.png'></x-grid-item>
+  <x-grid-item title='测试按钮' url='/static/logo.png' ></x-grid-item>
+  <x-grid-item title='测试按钮' ></x-grid-item>
+</x-grid-group>

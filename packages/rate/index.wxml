@@ -1,0 +1,13 @@
+<view class="x-class x-rate" 
+    bindtouchmove="handleTouchMove">
+    <input type="text" :name="name" wx:value="{{value}}" class="x-rate-hide-input" />
+    <view
+        wx:for="{{count}}"
+        wx:key="{{item}}" 
+        class="x-rate-star" 
+        data-index="{{index}}" 
+        bindtap="handleClick">
+        <x-icon name="favorfill" color="{{value>index?'#f5a623':'#aaa'}}" size="{{size}}"></x-icon>
+    </view>
+    <view class="x-rate-text" wx:if="{{ value !== 0 }}"><slot></slot></view>
+</view>

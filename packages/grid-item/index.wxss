@@ -1,0 +1,16 @@
+.gridItem{
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  border-right:1px solid #e9eaec;
+  border-bottom:1px solid #e9eaec;
+  padding:15rpx 10rpx;
+  vertical-align:middle;
+}
+.gridItem image{width: 28px;height: 28px;vertical-align:middle;}
+/* 去除最后一行底部边框 */
+.lastColumn{border-bottom: none;}
+/* 去除每一行的最后一个item的右边框 */
+.last{border-right: none;}
+/* 设置左右布局样式 */
+.column{display: flex;align-items:center;justify-content:center;}

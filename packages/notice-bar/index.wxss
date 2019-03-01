@@ -1,0 +1,5 @@
+.x-noticebar{display:flex;height:72rpx;line-height:72rpx;font-size:14px;color:#f76a24;background-color:#fefcec;overflow:hidden;padding:0 14rpx;}
+.x-noticebar-icon{display:flex;align-items:center}
+.i-noticebar-operation{display:flex;margin-right:16rpx;align-items:center}
+.x-noticebar-content-wrap{position:relative;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin:0 5rpx;}
+.x-noticebar-content-wrap .x-noticebar-content{position:absolute;transition-duration:20s}

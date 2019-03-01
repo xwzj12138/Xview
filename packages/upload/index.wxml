@@ -1,0 +1,10 @@
+<!--packages/upload/index.wxml-->
+<view>
+  <view class='x-class upload-group' wx:for='{{urlList}}' wx:key='{{index}}'>
+    <view><image src='{{item}}'></image></view>
+    <view class='delIcon' data-index='{{index}}' catchtap='delFile'><x-icon name='roundclosefill' size='40' color='#e54d42'></x-icon></view>
+  </view>
+  <view class='x-class upload-group' wx:if='{{urlList.length==0 || urlList.length<limit}}' catchtap='addFile'>
+    <view class='addIcon'><x-icon name='add' size='66' color='#c0ccda'></x-icon></view>
+  </view>
+</view>

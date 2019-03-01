@@ -1,0 +1,12 @@
+<!--packages/loading/index.wxml-->
+<view class="x-load" style='background-color:{{bgColor}}' wx:if='{{!isAlert && isShow}}'>
+  <x-icon wx:if='{{icon}}' rotate='{{true}}' name='{{icon}}' color='{{color}}' size='{{size*1.3}}'></x-icon>
+  <view style='font-size:{{size}}rpx;color:{{color}}'>{{hint}}</view>
+</view>
+
+<view class='loadAlert' wx:if='{{isAlert && isShow}}'>
+  <view> 
+    <image src='/static/logo.png'></image>
+    <view style='font-size:{{size}}rpx;color:{{color}}'>{{hint}}</view>
+  </view>
+</view>

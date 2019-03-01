@@ -1,0 +1,4 @@
+<!--pages/welcome/index.wxml-->
+<view>
+  <image src='/static/banner_3.d1221d0.jpg'></image>
+</view>

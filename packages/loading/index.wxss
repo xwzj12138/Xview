@@ -1,0 +1,53 @@
+/* packages/loading/index.wxss */
+.x-load{
+  display:flex;
+  justify-content: center;
+  padding: 20rpx 0;
+  align-items: center;
+}
+.loadAlert{
+  position:fixed;
+top:0;
+right:0;
+bottom:0;
+left:0;
+}
+.loadAlert>view{
+  position:fixed;
+top:0;
+right:0;
+bottom:0;
+left:0;
+margin:auto;
+width:280rpx;
+height:280rpx;
+background:#fff;
+border-radius:10rpx;
+box-shadow:0 0 0rpx 2000rpx rgba(0, 0, 0, 0.5);
+display:flex;
+align-items:center;
+flex-direction:column;
+justify-content:center;
+font-size:28rpx;
+z-index:9999;
+line-height:2.4em;
+}
+.loadAlert>view>image{
+  width: 70rpx;height: 70rpx;
+}
+.loadAlert>view::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  width: 240rpx;
+  height: 240rpx;
+  font-size: 10px;
+  border-top: 6rpx solid rgba(0, 0, 0, 0.05);
+  border-right: 6rpx solid rgba(0, 0, 0, 0.05);
+  border-bottom: 6rpx solid rgba(0, 0, 0, 0.05);
+  border-left: 6rpx solid #f37b1d;
+  animation: icon-spin 1s infinite linear;
+  -webkit-animation: icon-spin 1s infinite linear;
+  z-index: -1;
+}

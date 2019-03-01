@@ -1,0 +1,11 @@
+.x-switch{display:inline-block;width:45px;height:22px;line-height:22px;border-radius:22px;vertical-align:middle;border:1px solid #aaa;background-color:#aaa;position:relative;-webkit-tap-highlight-color:transparent;transition:all .2s ease-in-out}
+.x-switch-hide-input{display:none;opacity:0}
+.x-switch-inner{color:#fff;display:inline-block;width:50%;text-align:center;}
+.x-switch:after{content:'';width:22px;height:22px;border-radius:100%;background-color:#fff;position:absolute;left:1px;top:0px;transition:left .2s ease-in-out,width .2s ease-in-out;}
+.x-switch-large{width:60px}
+.x-switch-large.x-switch-checked:after{left:37px}
+.x-switch-checked{border-color:#2d8cf0;background-color:#2d8cf0}
+.x-switch-checked:after{left:22px}
+.x-switch-disabled{background:#f3f3f3;border-color:#f3f3f3}
+.x-switch-disabled:after{background:#ccc;cursor:not-allowed}
+.x-switch-disabled .x-switch-inner{color:#ccc}

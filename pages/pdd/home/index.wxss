@@ -1,0 +1,4 @@
+/* pages/pdd/home/index.wxss */
+page{
+  background:#fff;
+}

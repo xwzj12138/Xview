@@ -1,0 +1,4 @@
+/* packages/grid-group/index.wxss */
+.grid-group{
+  padding:10rpx 15rpx;
+}

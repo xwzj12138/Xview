@@ -1,0 +1,12 @@
+<view class="gridItem {{lastColumn?'lastColumn':''}} {{isLast?'last':''}}" style='width:{{1/itemNum*100}}%;'>
+  <view class="{{isColumn?'column':''}}">
+    <view>
+      <image wx:if='{{url}}' src='{{url}}'></image>
+      <slot wx:else></slot>
+    </view>
+    <view>
+      <view wx:if='{{title}}'>{{title}}</view>
+      <slot wx:else name='bottom-right'></slot>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+<!--packages/cell-group/index.wxml-->
+<view class='cellGroupBody'>
+  <view class="cell-group-list {{menuCard?'card-menu':''}}">
+    <slot></slot>
+  </view>
+</view>

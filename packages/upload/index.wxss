@@ -1,0 +1,5 @@
+/* packages/upload/index.wxss */
+.upload-group{display:inline-block;border:1px dashed #c0ccda;min-width:200rpx;min-height:200rpx;vertical-align:middle;position:relative;margin:5px;}
+.delIcon{position:absolute;top:-8px;right:-7px;}
+.addIcon{position:absolute;top:0;left:0;right:0;bottom:0;display:flex;justify-content: center;align-items: center;}
+.upload-group image{width: 200rpx;height: 200rpx;}

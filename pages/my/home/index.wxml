@@ -1,0 +1,15 @@
+<!--pages/my/home/index.wxml-->
+<x-cell-group>
+  <x-cell menuArrow='{{true}}' title='测试1' value='ceshi1' linkType='switchTab' url='/pages/pdd/home/index'></x-cell>
+  <x-cell menuArrow='{{true}}' title='测试2' value='ceshi2'><x-icon slot="icon"></x-icon></x-cell>
+  <x-cell menuArrow='{{true}}' title='测试3' label='测试cell描述信息' value='ceshi3'><x-icon slot="icon" color='#39b54a' name='phone'></x-icon></x-cell>
+  <x-cell menuArrow='{{true}}' title='测试3' label='测试cell描述信息'>
+    <x-icon slot="icon" name='emoji' color='#e03997'></x-icon>
+    <x-switch value='{{switch1}}' slot="footer" bindchange='setSwitch'>
+      <x-icon slot="open" name='check' color='#fff' size='36'></x-icon>
+      <x-icon slot="close" name='close' color='#fff' size='36'></x-icon>
+    </x-switch>
+  </x-cell>
+</x-cell-group>
+
+<x-upload limit='{{5}}' binddelFile='delFile' urlList='{{urlList}}' bindaddFile='addFile' uploadApi='shop.xwzj88.cn/api/index.php/app/v1/upload'></x-upload>

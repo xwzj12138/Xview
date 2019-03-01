@@ -1,0 +1,4 @@
+/* packages/cell-group/index.wxss */
+.cellGroupBody{background: #f3f3f3;font-size:30rpx;color:#333;}
+.cell-group-list.menu {display: block;overflow: hidden;}
+.card-menu {margin-left: 30rpx;margin-right: 30rpx;margin-top: 30rpx;border-radius: 20rpx;overflow: hidden;}
