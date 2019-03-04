@@ -1,5 +1,5 @@
 Component({
-    externalClasses: ['i-class'],
+    externalClasses: ['x-class'],
     properties : {
         height : {
             type : String,

@@ -4,6 +4,7 @@
     "x-cell-group": "/packages/cell-group/index",
     "x-icon": "/packages/icon/index",
     "x-upload": "/packages/upload/index",
+    "x-progress": "/packages/progress/index",
     "x-switch": "/packages/switch/index"
   }
 }

@@ -12,4 +12,8 @@
   </x-cell>
 </x-cell-group>
 
-<x-upload limit='{{5}}' binddelFile='delFile' urlList='{{urlList}}' bindaddFile='addFile' uploadApi='shop.xwzj88.cn/api/index.php/app/v1/upload'></x-upload>
+<view>
+  <x-upload limit='{{5}}' binddelFile='delFile' urlList='{{urlList}}' bindaddFile='addFile' uploadApi='shop.xwzj88.cn/api/index.php/app/v1/upload'></x-upload>
+</view>
+
+<x-progress percent='50' statusStyle='active'></x-progress>

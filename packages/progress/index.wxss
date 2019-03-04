@@ -1,0 +1,16 @@
+/* packages/progress/index.wxss */
+.x-progress{display:inline-block;width:100%;box-sizing:border-box;font-size:12px;}
+.x-progress>view{display:flex;align-items:center;}
+.x-progress-outer{flex:1;background:#f3f3f3;height:10px;border-radius:10px;position: relative;}
+.x-progress-text{padding:0 5px;text-align:center;}
+.x-progress-bg{background:#19be6b;position:absolute;top:0;left:0;bottom:0;border-radius:10px;}
+/* 波浪形加载 */
+.x-progress-active::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;animation:x-progress-active 2s ease-in-out infinite;opacity:0;background:#fff;border-radius:10px;}
+@keyframes x-progress-active{0%{opacity:.3;width:0}100%{opacity:0;width:100%}}
+/* 条纹形 */
+.x-progress-stripes{
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 72rpx 72rpx;
+  animation: progress-stripes 2s linear infinite;
+}
+@keyframes progress-stripes {from {background-position: 72rpx 0;}to {background-position: 0 0;}}

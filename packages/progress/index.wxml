@@ -1,0 +1,11 @@
+<!--packages/progress/index.wxml-->
+<view class='x-class x-progress'>
+  <view>
+    <view class='x-progress-outer'>
+      <view class='x-progress-bg x-progress-{{statusStyle}}' style='width:{{percent}}%'></view>
+    </view>
+    <view class='x-progress-text' wx:if='{{!hideInfo}}'>
+      <view>{{percent}}%</view>
+    </view>
+  </view>
+</view>
