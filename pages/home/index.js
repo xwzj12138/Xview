@@ -1,4 +1,4 @@
-// pages/pdd/detail/index.js
+// pages/home/index.js
 Page({
 
   /**

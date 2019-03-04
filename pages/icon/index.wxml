@@ -1,0 +1,8 @@
+<!--pages/icon/index.wxml-->
+<!-- <x-grid-group>
+  <x-grid-item wx:for="{{iconList}}" wx:key='{{index}}' title='{{item}}'><x-icon name='{{item}}'></x-icon></x-grid-item>
+</x-grid-group> -->
+<view class='view' wx:for="{{list}}" wx:key='{{index}}'>
+  <view><x-icon name='{{item}}' size='56'></x-icon></view>
+  <view>{{item}}</view>
+</view>

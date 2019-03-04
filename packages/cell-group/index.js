@@ -21,7 +21,7 @@ Component({
     // 是否用卡片方式展示
     menuCard: {
       type: Boolean,
-      value: true
+      value: false
     }
   },
 

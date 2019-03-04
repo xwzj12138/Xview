@@ -1,0 +1,6 @@
+{
+  "onReachBottomDistance": 350,
+  "usingComponents": {
+    "x-icon": "/packages/icon/index"
+  }
+}

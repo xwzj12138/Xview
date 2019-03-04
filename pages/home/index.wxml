@@ -1,0 +1,8 @@
+<!--pages/home/index.wxml-->
+<view class='title'>基础组件</view>
+<x-cell-group>
+  <x-cell menuArrow title='按钮' url='/pages/button/index'></x-cell>
+  <x-cell menuArrow title='图标' ></x-cell>
+  <x-cell menuArrow title='头像' ></x-cell>
+  <x-cell menuArrow title='开关' ></x-cell>
+</x-cell-group>

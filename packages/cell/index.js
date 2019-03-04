@@ -16,10 +16,10 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    // 是否显示菜单箭头，默认显示
+    // 是否显示菜单箭头，默认不显示
     menuArrow: {
       type: Boolean,
-      value: false
+      value: ''
     },
     // 左侧标题
     title: {

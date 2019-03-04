@@ -1,0 +1,26 @@
+<!--pages/button/index.wxml-->
+<view class='title'>一般用法</view>
+<view>
+  <x-button bind:click="handleClick">默认按钮</x-button>
+  <x-button bind:click="handleClick" type="error" long="true">联通两边按钮</x-button>
+  <x-button bind:click="handleClick" type="primary">Primary</x-button>
+  <x-button bind:click="handleClick" type="ghost">Ghost</x-button>
+  <x-button bind:click="handleClick" type="info">Info</x-button>
+  <x-button bind:click="handleClick" type="success">Success</x-button>
+  <x-button bind:click="handleClick" type="warning">Warning</x-button>
+  <x-button bind:click="handleClick" type="error">Error</x-button>
+</view>
+
+<view class='title'>不同尺寸</view>
+<view>
+  <x-button bind:click="handleClick" size="large">大尺寸</x-button>
+  <x-button bind:click="handleClick" size="small">小尺寸</x-button>
+  <x-button bind:click="handleClick" size="default">默认尺寸</x-button>
+</view>
+
+<view class='title'>圆角的不同尺寸</view>
+<view>
+  <x-button bind:click="handleClick" shape="circle">大尺寸</x-button>
+  <x-button bind:click="handleClick" shape="circle" size="small">圆角小尺寸</x-button>
+  <x-button bind:click="handleClick" shape="circle" size="large">圆角大尺寸</x-button>
+</view>

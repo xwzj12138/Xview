@@ -1,16 +1,16 @@
 {
   "pages": [
+    "pages/icon/index",
+    "pages/button/index",
+    "pages/home/index",
     "pages/my/home/index",
     "pages/pdd/home/index",
-    "pages/welcome/index",
-    "pages/pdd/detail/index",
-    "pages/my/withdraw_deposite/index",
-    "pages/my/feedback/index"
+    "pages/welcome/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "XView组件库",
     "navigationBarTextStyle": "black"
   },
   "usingComponents": {},

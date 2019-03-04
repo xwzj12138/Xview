@@ -1,4 +1,4 @@
-// pages/my/withdraw_deposite/index.js
+// pages/button/index.js
 Page({
 
   /**
@@ -6,6 +6,9 @@ Page({
    */
   data: {
 
+  },
+  handleClick:function(e){
+    console.log('按钮被点击了')
   },
 
   /**
