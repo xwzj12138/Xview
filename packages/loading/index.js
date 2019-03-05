@@ -4,17 +4,18 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    // 是否显示
     isShow:{
       type:Boolean,
       value:false
     },
     isAlert:{
       type:Boolean,
-      value:true
+      value:false
     },
     icon:{
       type:String,
-      value:''
+      value:'loading2'
     },
     hint:{
       type:String,
@@ -32,6 +33,10 @@ Component({
       type: String,
       value: '#aaa'
     },
+    imgUrl:{
+      type:String,
+      value:'/static/logo.png'
+    }
   },
 
   /**

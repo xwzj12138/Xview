@@ -3,8 +3,6 @@
     "pages/home/index",
     "pages/icon/index",
     "pages/button/index",
-    "pages/my/home/index",
-    "pages/pdd/home/index",
     "pages/welcome/index",
     "pages/avatar/index",
     "pages/switch/index",
@@ -14,7 +12,12 @@
     "pages/steps/index",
     "pages/input/index",
     "pages/input-number/index",
-    "pages/rate/index"
+    "pages/rate/index",
+    "pages/nav/index",
+    "pages/notice-bar/index",
+    "pages/loading/index",
+    "pages/count-down/index",
+    "pages/progress/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -22,26 +25,5 @@
     "navigationBarTitleText": "XView组件库",
     "navigationBarTextStyle": "black"
   },
-  "usingComponents": {},
-  "tabBar": {
-    "custom": false,
-    "color": "#aaa",
-    "selectedColor": "#39b54a",
-    "borderStyle": "black",
-    "backgroundColor": "#ffffff",
-    "list": [
-      {
-        "pagePath": "pages/pdd/home/index",
-        "iconPath": "/static/tabbar/basics.png",
-        "selectedIconPath": "/static/tabbar/basics_cur.png",
-        "text": "首页"
-      },
-      {
-        "pagePath": "pages/my/home/index",
-        "iconPath": "/static/tabbar/about.png",
-        "selectedIconPath": "/static/tabbar/about_cur.png",
-        "text": "个人"
-      }
-    ]
-  }
+  "usingComponents": {}
 }

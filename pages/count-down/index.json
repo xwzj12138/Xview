@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "x-count-down": "/packages/count-down/index"
+  }
+}

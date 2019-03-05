@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "x-notice-bar": "/packages/notice-bar/index"
+  }
+}

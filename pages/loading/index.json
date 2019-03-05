@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "x-cell": "/packages/cell/index",
+    "x-switch": "/packages/switch/index",
+    "x-loading": "/packages/loading/index"
+  }
+}

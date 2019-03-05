@@ -1,0 +1,10 @@
+<!--pages/progress/index.wxml-->
+<view class='title'>percent 属性设置进度百分比</view>
+<x-progress percent='50'></x-progress>
+
+<view class='title'>hideInfo 属性设置是否隐藏提示信息</view>
+<x-progress percent='30' hideInfo='{{true}}'></x-progress>
+
+<view class='title'>statusStyle 属性设置样式，默认没有样式</view>
+<x-progress percent='50' statusStyle='active'></x-progress>
+<x-progress percent='50' statusStyle='stripes'></x-progress>

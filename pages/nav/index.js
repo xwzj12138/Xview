@@ -1,40 +1,18 @@
-// pages/my/home/index.js
+// pages/nav/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    switch1:true,
-    urlList: []
-  },
-
-  /**
-   * 开关点击事件
-   */
-  setSwitch: function (e) {
-    let switch1 = !this.data.switch1
-    this.setData({
-      switch1: switch1
-    })
+    navList1: ['tab1', 'tab2', 'tab3', 'tab4'],
+    navList2: ['tab1', 'tab2', 'tab3', 'tab4', 'tab5', 'tab6', 'tab7', 'tab8', 'tab9']
   },
   /**
-   * 图片删除事件
+   * 导航栏点击事件
    */
-  delFile:function(e){
-    this.data.urlList.splice(e.detail.index,1)
-    this.setData({
-      urlList:this.data.urlList
-    })
-  },
-  /**
-   * 添加图片
-   */
-  addFile:function(){
-    this.data.urlList.push('/static/logo.png')
-    this.setData({
-      urlList: this.data.urlList
-    })
+  tabSelect(e) {
+    console.log(e.detail)
   },
   /**
    * 生命周期函数--监听页面加载

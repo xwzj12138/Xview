@@ -1,0 +1,3 @@
+<!--pages/nav/index.wxml-->
+<x-nav tab-list="{{navList1}}" bindtabSelect="tabSelect"></x-nav>
+<x-nav tab-list="{{navList2}}" bindtabSelect="tabSelect"></x-nav>

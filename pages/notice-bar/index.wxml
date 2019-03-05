@@ -1,0 +1,15 @@
+<!--pages/notice-bar/index.wxml-->
+<view class='title'>基本用法</view>
+<x-notice-bar>测试通知测试通知测试通知测试通知测试通知测试通知测试通知</x-notice-bar>
+
+<view class='title'>左侧显示图标</view>
+<x-notice-bar icon='notification'>测试通知测试通知测试通知测试通知测试通知测试通知测试通知测</x-notice-bar>
+
+<view class='title'>显示右侧删除按钮</view>
+<x-notice-bar icon='notification' closable>测试通知测试通知测试通知测试通知测试通知测试通知测试通知</x-notice-bar>
+
+<view class='title'>设置背景及字体颜色</view>
+<x-notice-bar icon='notification' backgroundcolor='#2d8cf0' color='#fff' closable>测试通知测试通知测试通知测试通知测试通知测试通知测试通知</x-notice-bar>
+
+<view class='title'>设置移动速度，默认2000</view>
+<x-notice-bar speed='1000' icon='notification' closable>测试通知测试通知测试通知测试通知测试通知测试通知测试通知</x-notice-bar>

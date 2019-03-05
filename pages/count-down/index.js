@@ -1,7 +1,4 @@
-// pages/welcome/index.js
-// import {login} from '../../model/login.js'
-
-// let loginModel = new login();
+// pages/count-down/index.js
 Page({
 
   /**
@@ -15,25 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    //获取缓存
-    // let cache = wx.getStorageSync('token')
-    // let time = (new Date()).getTime()
-    // //判断是否已经登录及登录是否过期
-    // if (!cache || cache.add_time + 432000 < time) {
-    //   // 没有缓冲数据，登录获取
-    //   return loginModel.authLogin(res=>{
-    //     this.goHome()
-    //   })
-    // }
-    return this.goHome()
-  },
-  /**
-   * 跳转首页
-   */
-  goHome(){
-    wx.switchTab({
-      url: '/pages/pdd/home/index',
-    })
+
   },
 
   /**

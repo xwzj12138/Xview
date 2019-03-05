@@ -27,7 +27,7 @@ Component({
     // 滚动速度
     speed: {
       type: Number,
-      value: 0
+      value: 2000
     }
   },
 
@@ -50,8 +50,8 @@ Component({
 
   methods: {
     initAnimation() {
-      wx.createSelectorQuery().in(this).select('.i-noticebar-content-wrap').boundingClientRect((wrapRect) => {
-        wx.createSelectorQuery().in(this).select('.i-noticebar-content').boundingClientRect((rect) => {
+      wx.createSelectorQuery().in(this).select('.x-noticebar-content-wrap').boundingClientRect((wrapRect) => {
+        wx.createSelectorQuery().in(this).select('.x-noticebar-content').boundingClientRect((rect) => {
           const duration = rect.width / 40 * this.data.speed;
           const animation = wx.createAnimation({
             duration: duration,

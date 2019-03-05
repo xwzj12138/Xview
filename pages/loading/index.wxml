@@ -1,0 +1,19 @@
+<!--pages/loading/index.wxml-->
+<view class='title'>默认样式</view>
+<x-loading  isShow="{{true}}"></x-loading>
+
+<view class='title'>icon 属性设置加载icon</view>
+<x-loading icon='loading' isShow="{{true}}"></x-loading>
+
+<view class='title'>isShow 属性设置隐藏或显示</view>
+<x-loading icon='loading1' isShow="{{true}}"></x-loading>
+
+<x-cell title='isAlert 属性设置是否为弹窗提示'>
+  <x-switch slot='footer' value='{{isAlert}}' bindchange='clickSwitch'></x-switch>
+</x-cell>
+<x-loading isShow="{{true}}" isAlert='{{isAlert}}'></x-loading>
+
+<x-cell title='imgUrl 属性设置提示logo'>
+  <x-switch slot='footer' value='{{isAlert1}}' bindchange='clickSwitch1'></x-switch>
+</x-cell>
+<x-loading isShow="{{true}}" isAlert='{{isAlert1}}' imgUrl='/static/tabbar/about.png'></x-loading>
