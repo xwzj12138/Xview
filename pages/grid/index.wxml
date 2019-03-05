@@ -6,6 +6,14 @@
   <x-grid-item title='待收货' data-id='4' catchtap='gridClick'><x-icon slot='bottom-right' name='deliver'></x-icon></x-grid-item>
   <x-grid-item title='待评分' data-id='5' catchtap='gridClick'><x-icon slot='bottom-right' name='favor'></x-icon></x-grid-item>
 </x-grid-group>
+<view class='title'></view>
+<x-grid-group>
+  <x-grid-item title='待付款' data-id='1' catchtap='gridClick'><x-icon slot='bottom-right' name='pay'></x-icon></x-grid-item>
+  <x-grid-item title='待分享' data-id='2' catchtap='gridClick'><x-icon slot='bottom-right' name='share'></x-icon></x-grid-item>
+  <x-grid-item title='待发货' data-id='3' catchtap='gridClick'><x-icon slot='bottom-right' name='time'></x-icon></x-grid-item>
+  <x-grid-item title='待收货' data-id='4' catchtap='gridClick'><x-icon slot='bottom-right' name='deliver'></x-icon></x-grid-item>
+  <x-grid-item title='全部' data-id='6' catchtap='gridClick'><x-icon slot='bottom-right' name='time'></x-icon></x-grid-item>
+</x-grid-group>
 <view class='title'>纯文本</view>
 <x-grid-group itemNum='5'>
   <x-grid-item title='言情' data-id='6' catchtap='gridClick'></x-grid-item>
