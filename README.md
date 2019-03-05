@@ -87,7 +87,23 @@ XView  项目目录
   </x-cell>
 </x-cell-group>
 ~~~
+*   属性说明
 
+| 参数        | 说明   |  可选值  |
+| --------    | -----:  | :----:  |
+| menuArrow   | 是否已卡片形式展现 |   true，false    |
+| title       | 左侧标题   |   任意值   |
+| value       | 右侧说明    |  任意值  |
+| linkType    | 链接类型    |  navigateTo，redirectTo，switchTab，reLaunch  |
+| label       | 标题下方的描述信息    |  任意值  |
+| url         | 跳转链接    |  必须在app.json文件中配置  |
+
+*   可传入组件
+
+| 组件名        | 说明   |  可选值  |
+| --------    | -----:  | :----:  |
+| icon        | 设置头部图标 |   可参考icon组件    |
+| footer       | 设置尾部内容 |   其他组件   |
 
 
 更多细节参阅 [LICENSE.txt](LICENSE.txt)
