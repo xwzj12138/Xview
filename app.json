@@ -1,11 +1,20 @@
 {
   "pages": [
+    "pages/home/index",
     "pages/icon/index",
     "pages/button/index",
-    "pages/home/index",
     "pages/my/home/index",
     "pages/pdd/home/index",
-    "pages/welcome/index"
+    "pages/welcome/index",
+    "pages/avatar/index",
+    "pages/switch/index",
+    "pages/upload/index",
+    "pages/grid/index",
+    "pages/cell/index",
+    "pages/steps/index",
+    "pages/input/index",
+    "pages/input-number/index",
+    "pages/rate/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

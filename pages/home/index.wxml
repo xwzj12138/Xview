@@ -1,8 +1,21 @@
 <!--pages/home/index.wxml-->
+<view class='title'>布局组件</view>
+<x-cell-group>
+  <x-cell menuArrow title='grid 九宫格' url='/pages/grid/index'></x-cell>
+  <x-cell menuArrow title='cell 单元格' url='/pages/cell/index'></x-cell>
+</x-cell-group>
 <view class='title'>基础组件</view>
 <x-cell-group>
-  <x-cell menuArrow title='按钮' url='/pages/button/index'></x-cell>
-  <x-cell menuArrow title='图标' ></x-cell>
-  <x-cell menuArrow title='头像' ></x-cell>
-  <x-cell menuArrow title='开关' ></x-cell>
+  <x-cell menuArrow title='button 按钮' url='/pages/button/index'></x-cell>
+  <x-cell menuArrow title='icon 图标' url='/pages/icon/index'></x-cell>
+  <x-cell menuArrow title='avatar 头像' url='/pages/avatar/index'></x-cell>
+  <x-cell menuArrow title='steps 步骤条' url='/pages/steps/index'></x-cell>
+</x-cell-group>
+<view class='title'>表单组件</view>
+<x-cell-group>
+  <x-cell menuArrow title='input 输入框' url='/pages/input/index'></x-cell>
+  <x-cell menuArrow title='input-number 数字输入组件' url='/pages/input-number/index'></x-cell>
+  <x-cell menuArrow title='rate 评分组件' url='/pages/rate/index'></x-cell>
+  <x-cell menuArrow title='switch 开关' url='/pages/switch/index'></x-cell>
+  <x-cell menuArrow title='upload 上传图片' url='/pages/upload/index'></x-cell>
 </x-cell-group>

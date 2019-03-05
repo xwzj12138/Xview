@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "x-input-number": "/packages/input-number/index"
+  }
+}

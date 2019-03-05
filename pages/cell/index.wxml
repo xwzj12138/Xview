@@ -1,0 +1,36 @@
+<!--pages/cell/index.wxml-->
+<view class='title'>普通用法</view>
+<x-cell-group>
+  <x-cell title='单行列表'></x-cell>
+</x-cell-group>
+<view class='title'>带描述信息</view>
+<x-cell-group>
+  <x-cell title='单行列表' label='描述信息'></x-cell>
+</x-cell-group>
+<view class='title'>卡片形式</view>
+<x-cell-group menuCard>
+  <x-cell title='单行列表'></x-cell>
+</x-cell-group>
+<view class='title'>显示箭头</view>
+<x-cell-group menuCard>
+  <x-cell menuArrow title='单行列表'></x-cell>
+</x-cell-group>
+<view class='title'>左右图标类</view>
+<x-cell-group menuCard>
+  <x-cell menuArrow title='单行列表'>
+    <x-icon slot='icon' name='like' color='#ed31f4'></x-icon>
+  </x-cell>
+  <x-cell menuArrow title='单行列表'>
+    <x-icon slot='icon' name='likefill' color='#ed31f4'></x-icon>
+    <x-switch slot='footer' value='{{switch1}}' bindchange='clickSwitch'></x-switch>
+  </x-cell>
+</x-cell-group>
+<view class='title'>自定义控件</view>
+<x-cell-group menuCard>
+  <x-cell title='表单'>
+    <x-switch slot='footer' value='{{switch1}}' bindchange='clickSwitch'></x-switch>
+  </x-cell>
+  <x-cell title='表单'>
+    <x-input slot='footer' value='{{input1}}' placeholder='请输入'></x-input>
+  </x-cell>
+</x-cell-group>

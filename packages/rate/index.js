@@ -19,7 +19,7 @@ Component({
         },
         name : {
             type : String,
-            value : ''
+          value: 'favorfill'
         }
     },
     data : {

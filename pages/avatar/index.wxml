@@ -1,0 +1,19 @@
+<!--pages/avatar/index.wxml-->
+<view class='title'>圆形文字</view>
+<x-grid-group>
+  <x-grid-item><x-avatar>陈</x-avatar></x-grid-item>
+  <x-grid-item><x-avatar>星</x-avatar></x-grid-item>
+  <x-grid-item><x-avatar>星</x-avatar></x-grid-item>
+</x-grid-group>
+<view class='title'>方形文字</view>
+<x-grid-group>
+  <x-grid-item><x-avatar shape='square'>陈</x-avatar></x-grid-item>
+  <x-grid-item><x-avatar shape='square'>星</x-avatar></x-grid-item>
+  <x-grid-item><x-avatar shape='square'>星</x-avatar></x-grid-item>
+</x-grid-group>
+<view class='title'>头像</view>
+<x-grid-group>
+  <x-grid-item><x-avatar src='/static/logo.png'></x-avatar></x-grid-item>
+  <x-grid-item><x-avatar src='/static/logo.png'></x-avatar></x-grid-item>
+  <x-grid-item><x-avatar src='/static/logo.png'></x-avatar></x-grid-item>
+</x-grid-group>

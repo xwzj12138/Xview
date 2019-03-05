@@ -1,31 +1,11 @@
 <view class="x-class x-cell x-input {{ error ? 'x-input-error' : '' }} {{ mode === 'wrapped' ? 'x-input-wrapped' : '' }}">
     <view wx:if="{{ title }}" class="x-cell-hd x-input-title">{{ title }}</view>
-    <textarea
-        wx:if="{{ type === 'textarea' }}"
-        auto-height
-        disabled="{{ disabled }}"
-        focus="{{ autofocus }}"
-        value="{{ value }}"
-        placeholder="{{ placeholder }}"
-        maxlength="{{ maxlength }}"
-        class="x-input-input x-cell-bd {{ right ? 'x-input-input-right' : '' }}"
-        placeholder-class="x-input-placeholder"
-        bindinput="handleInputChange"
-        bindfocus="handleInputFocus"
-        bindblur="handleInputBlur"
-    ></textarea>
-    <input
-        wx:else
-        type="{{ type }}"
-        disabled="{{ disabled }}"
-        focus="{{ autofocus }}"
-        value="{{ value }}"
-        placeholder="{{ placeholder }}"
-        maxlength="{{ maxlength }}"
-        class="x-input-input x-cell-bd {{ right ? 'x-input-input-right' : '' }}"
-        placeholder-class="x-input-placeholder"
-        bindinput="handleInputChange"
-        bindfocus="handleInputFocus"
-        bindblur="handleInputBlur"
-    />
+    <textarea wx:if="{{ type === 'textarea' }}" auto-height disabled="{{ disabled }}"
+        focus="{{ autofocus }}" value="{{ value }}" placeholder="{{ placeholder }}" maxlength="{{ maxlength }}"
+        class="x-input-input x-cell-bd {{ right ? 'x-input-input-right' : '' }}" placeholder-class="x-input-placeholder"
+        bindinput="handleInputChange" bindfocus="handleInputFocus" bindblur="handleInputBlur" name='{{name}}'>
+      </textarea>
+    <input wx:else type="{{ type }}" disabled="{{ disabled }}" focus="{{ autofocus }}" value="{{ value }}" placeholder="{{ placeholder }}"
+        maxlength="{{ maxlength }}" class="x-input-input x-cell-bd {{ right ? 'x-input-input-right' : '' }}" name='{{name}}'
+        placeholder-class="x-input-placeholder" bindinput="handleInputChange" bindfocus="handleInputFocus" bindblur="handleInputBlur"/>
 </view>

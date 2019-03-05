@@ -1,0 +1,30 @@
+<!--pages/rate/index.wxml-->
+<view class='title'>基本用法</view>
+<view>
+  <x-rate value="{{starIndex1}}" bind:change="onChange1"></x-rate>
+</view>
+
+<view class='title'>设置星星数量</view>
+<view>
+  <x-rate count="3" value="{{starIndex2}}" bind:change="onChange2"></x-rate>
+</view>
+
+<view class='title'>设置默认评分</view>
+<view>
+  <x-rate count="6" value="{{starIndex3}}" bind:change="onChange3"></x-rate>
+</view>
+
+<view class='title'>禁止</view>
+<view>
+  <x-rate disabled count="6" value="{{starIndex4}}" bind:change="onChange4"></x-rate>
+</view>
+
+<view class='title'>设置大小</view>
+<view>
+  <x-rate count="6" size='40' value="{{starIndex5}}" bind:change="onChange5"></x-rate>
+</view>
+
+<view class='title'>设置评分图标</view>
+<view>
+  <x-rate name='likefill' count="6" size='40' value="{{starIndex6}}" bind:change="onChange6"></x-rate>
+</view>

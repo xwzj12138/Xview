@@ -1,10 +1,11 @@
-// pages/home/index.js
+// pages/steps/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+
   },
 
   /**

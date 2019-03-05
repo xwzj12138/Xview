@@ -6,7 +6,7 @@
     </view>
     <view>
       <view wx:if='{{title}}'>{{title}}</view>
-      <slot wx:else name='bottom-right'></slot>
+      <slot name='bottom-right' wx:else></slot>
     </view>
   </view>
 </view>

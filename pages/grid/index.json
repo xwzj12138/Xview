@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "x-icon": "/packages/icon/index",
+    "x-grid-group": "/packages/grid-group/index",
+    "x-grid-item": "/packages/grid-item/index"
+  }
+}

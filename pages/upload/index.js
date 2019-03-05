@@ -1,10 +1,13 @@
-// pages/home/index.js
+// pages/upload/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    limit:5,
+    urlList1:['/static/logo.png'],
+    urlList2: ['/static/logo.png', '/static/logo.png', '/static/logo.png', '/static/logo.png', '/static/logo.png']
   },
 
   /**

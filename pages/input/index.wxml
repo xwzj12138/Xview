@@ -1,0 +1,12 @@
+<!--pages/input/index.wxml-->
+<view class='title'>基本用法</view>
+<x-input value='{{value1}}' name='value1' placeholder='请输入' bind:change='inputChange'></x-input>
+
+<view class='title'>自动获得焦点</view>
+<x-input value='{{value2}}' autofocus name='value2' placeholder='请输入' bind:change='inputChange'></x-input>
+
+<view class='title'>设置标题</view>
+<x-input right value='{{value3}}' name='value3' title='收货人' placeholder='请输入' bind:change='inputChange'></x-input>
+
+<view class='title'>禁止输入</view>
+<x-input right value='{{value4}}' disabled title='收货人' bind:change='inputChange'></x-input>

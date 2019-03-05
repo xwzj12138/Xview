@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "x-rate": "/packages/rate/index"
+  }
+}
