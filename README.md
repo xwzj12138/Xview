@@ -11,7 +11,7 @@ XView小程序组件库本着简单易用的原则封装组件，使用时只需
 
 ##  体验
 使用微信扫一扫体验小程序组件示例
-![小程序体验二维码](https://github.com/xwzj12138/Xview/blob/master/static/gh_5f22cf358095_344.jpg?raw=true)
+![小程序体验二维码](https://raw.githubusercontent.com/xwzj12138/Xview/master/static/weapp_qr_code.jpg)
 
 ## 目录结构
 
