@@ -10,7 +10,8 @@
   <x-cell menuArrow title='button 按钮' url='/pages/button/index'></x-cell>
   <x-cell menuArrow title='icon 图标' url='/pages/icon/index'></x-cell>
   <x-cell menuArrow title='avatar 头像' url='/pages/avatar/index'></x-cell>
-  <!-- <x-cell menuArrow title='steps 步骤条' url='/pages/steps/index'></x-cell> -->
+  <x-cell menuArrow title='steps 步骤条' url='/pages/steps/index'></x-cell>
+  <!-- <x-cell menuArrow title='search 搜索' url='/pages/steps/index'></x-cell> -->
   <x-cell menuArrow title='notice-bar 通知栏' url='/pages/notice-bar/index'></x-cell>
   <x-cell menuArrow title='loading 加载提示' url='/pages/loading/index'></x-cell>
   <x-cell menuArrow title='progress 进度条' url='/pages/progress/index'></x-cell>

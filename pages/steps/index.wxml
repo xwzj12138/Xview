@@ -1,2 +1,39 @@
 <!--pages/steps/index.wxml-->
-<text>pages/steps/index.wxml</text>
+<view class='title'>基本用法</view>
+<x-steps>
+    <x-step title='已完成' content='描述信息' color='#0081ff'></x-step>
+    <x-step title='进行中' content='描述信息' color='#f37b1d'></x-step>
+    <x-step title='错误' content='描述信息' color='#e54d42'></x-step>
+    <x-step title='重新审核中' content='描述信息' color='#19be6b'></x-step>
+    <x-step title='错误' content='描述信息描述信息描述信息' color='#e54d42'></x-step>
+</x-steps>
+
+<view class='title'>设置icon</view>
+<x-steps>
+    <x-step icon='check' title='已完成' content='描述信息' color='#0081ff'></x-step>
+    <x-step icon='service' title='进行中' content='描述信息' color='#f37b1d'></x-step>
+    <x-step icon='close' title='错误' content='描述信息' color='#e54d42'></x-step>
+    <x-step icon='edit' title='重新审核中' content='描述信息' color='#19be6b'></x-step>
+    <x-step icon='close' title='错误' content='描述信息描述信息描述信息' color='#e54d42'></x-step>
+</x-steps>
+
+<view class='title'>垂直布局</view>
+<x-steps direction='vertical'>
+    <x-step title='已完成' content='描述信息' color='#0081ff'></x-step>
+    <x-step title='进行中' content='描述信息' color='#f37b1d'></x-step>
+    <x-step title='错误' content='描述信息' color='#e54d42'></x-step>
+    <x-step title='重新审核中' content='描述信息' color='#19be6b'></x-step>
+    <x-step title='错误' content='描述信息描述信息描述信息' color='#e54d42'></x-step>
+</x-steps>
+
+<view class='title'>自定义标题或内容</view>
+<x-steps direction='vertical'>
+    <x-step color='#0081ff'>
+      <view slot="title">已完成</view>
+      <view slot="content">描述信息<x-icon name='like' color='#e54d42'></x-icon></view>
+    </x-step>
+    <x-step color='#f37b1d'>
+      <view slot="title">已完成<x-icon name='like' color='#e54d42'></x-icon></view>
+      <view slot="content">描述信息<x-rate value='3'></x-rate></view>
+    </x-step>
+</x-steps>

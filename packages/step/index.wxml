@@ -1,0 +1,23 @@
+<view class="x-class x-step-item {{ direction === 'vertical' ? 'x-step-vertical' : 'x-step-horizontal' }}" style="{{direction==='horizontal'?'width:'+100/len +'%;':'width:100%;'}} color:{{color}};">
+    <view class="x-step-item-ico">
+        <view class="x-step-ico" wx:if="{{!icon}}" style='border-color:{{color}};'>{{ index+1 }}</view>
+        <view class="x-step-ico" wx:else>
+            <x-icon x-class="x-step-ico-in" name="{{icon}}" color='{{color}}'></x-icon>
+        </view>
+        <view class="x-step-line" wx:if="{{ index !== len - 1 }}"></view>
+    </view>
+    <view class="x-step-item-main">
+        <view class="x-step-item-title" wx:if="{{title !== ''}}">
+            {{title}}
+        </view>
+        <view class="x-step-item-title" wx:else>
+            <slot name="title"></slot>
+        </view>
+        <view class="x-step-item-content" wx:if="{{content !== ''}}">
+            {{content}}
+        </view>
+        <view class="x-step-item-content" wx:else>
+            <slot name="content"></slot>
+        </view>
+    </view>
+</view>

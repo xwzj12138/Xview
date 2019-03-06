@@ -5,9 +5,9 @@
 </view>
 <view class='title'>多图片上传</view>
 <view>
-  <x-upload urlList='{{urlList1}}' limit='{{limit}}' uploadApi='上传链接' name='文件上传的key'></x-upload>
+  <x-upload urlList='{{urlList1}}' binddelFile='delFile1' limit='{{limit}}' uploadApi='上传链接' name='文件上传的key'></x-upload>
 </view>
 <view class='title'>多图片上传超过限制自动隐藏添加选择框</view>
 <view>
-  <x-upload urlList='{{urlList2}}' limit='{{limit}}' uploadApi='上传链接' name='文件上传的key'></x-upload>
+  <x-upload urlList='{{urlList2}}' binddelFile='delFile2' limit='{{limit}}' uploadApi='上传链接' name='文件上传的key'></x-upload>
 </view>

@@ -1,2 +1,3 @@
-<!--packages/steps/index.wxml-->
-<text>步骤条</text>
+<view class="x-class x-steps">
+    <slot></slot>
+</view>

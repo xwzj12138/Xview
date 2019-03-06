@@ -10,6 +10,17 @@
   <x-button bind:click="handleClick" type="warning">Warning</x-button>
   <x-button bind:click="handleClick" type="error">Error</x-button>
 </view>
+<view class='title'>行内按钮</view>
+<view>
+  <x-button bind:click="handleClick" inline>默认按钮</x-button>
+  <x-button bind:click="handleClick" type="error" long="true" inline>联通两边按钮</x-button>
+  <x-button bind:click="handleClick" type="primary" inline>Primary</x-button>
+  <x-button bind:click="handleClick" type="ghost" inline>Ghost</x-button>
+  <x-button bind:click="handleClick" type="info" inline>Info</x-button>
+  <x-button bind:click="handleClick" type="success" inline>Success</x-button>
+  <x-button bind:click="handleClick" type="warning" inline>Warning</x-button>
+  <x-button bind:click="handleClick" type="error" inline>Error</x-button>
+</view>
 
 <view class='title'>不同尺寸</view>
 <view>

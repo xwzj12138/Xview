@@ -1,27 +1,13 @@
-// pages/upload/index.js
+// pages/search/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    limit:5,
-    urlList1:['/static/logo.png'],
-    urlList2: ['/static/logo.png', '/static/logo.png', '/static/logo.png', '/static/logo.png', '/static/logo.png']
+
   },
-  /**
-   * 图片删除时间
-   */
-  delFile1: function (e) {
-    let array = this.data
-    array.urlList1.splice(e.detail.index, 1)
-    this.setData(array)
-  },
-  delFile2:function(e){
-    let array = this.data
-    array.urlList2.splice(e.detail.index, 1)
-    this.setData(array)
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

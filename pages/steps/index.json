@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "x-icon": "/packages/icon/index",
+    "x-rate": "/packages/rate/index",
+    "x-step": "/packages/step/index",
+    "x-steps": "/packages/steps/index"
+  }
 }

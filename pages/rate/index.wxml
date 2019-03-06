@@ -28,3 +28,12 @@
 <view>
   <x-rate name='likefill' count="6" size='40' value="{{starIndex6}}" bind:change="onChange6"></x-rate>
 </view>
+<view>
+  <x-rate name='emoji' count="6" size='40' value="{{starIndex6}}" bind:change="onChange6"></x-rate>
+</view>
+<view>
+  <x-rate name='appreciatefill' count="6" size='40' value="{{starIndex6}}" bind:change="onChange6"></x-rate>
+</view>
+<view>
+  <x-rate name='evaluate_fill' count="6" size='40' value="{{starIndex6}}" bind:change="onChange6"></x-rate>
+</view>

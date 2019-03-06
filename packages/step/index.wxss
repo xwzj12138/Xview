@@ -1,0 +1,16 @@
+.x-step-ico{width:24px;height:100%;border-radius:100%;background:#fff;position:relative;z-index:2;margin:0 auto;border:#dddee1 solid 1px}
+.x-step-ico-in{vertical-align:baseline}
+.x-step-line{position:absolute;left:50%;top:12px;width:100%;height:1px;background:#dddee1}
+.x-step-horizontal .x-step-ico::after{position:absolute;top:11px;left:23px;z-index:1;content:'';height:1px;background:#fff;width:10px}
+.x-step-horizontal .x-step-item-main{text-align:center}
+.x-step-horizontal .x-step-ico::before{position:absolute;top:11px;left:-11px;z-index:1;content:'';height:1px;background:#fff;width:10px}
+.x-step-ico{box-sizing:border-box;font-size:12px}
+.x-step-item{font-size:12px;position:relative;display:inline-block;box-sizing:border-box;padding-left:10px;vertical-align:top}
+.x-step-item-ico{width:100%;height:24px;line-height:24px;text-align:center}
+.x-step-item-main{margin-top:10px;clear:both}
+.x-step-item-title{font-size:14px;font-weight:700;}
+.x-step-item-content{font-size:12px;margin-top:2px;}
+.x-step-vertical{padding-bottom:30px}
+.x-step-vertical .x-step-item-ico{width:24px;float:left}
+.x-step-vertical .x-step-item-main{margin-left:40px;margin-top:0;clear:inherit}
+.x-step-vertical .x-step-line{position:absolute;height:100%;top:0;left:10px;margin:0 0 0 12px;width:1px}
