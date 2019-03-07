@@ -1,2 +1,26 @@
 <!--pages/count-down/index.wxml-->
-<text>pages/count-down/index.wxml</text>
+<view class='title'>
+基本用法：
+<x-count-down target='{{targetTime}}'></x-count-down>
+</view>
+
+<view class='title'>
+显示天的倒计时：
+<x-count-down target='{{targetTime1}}' show-day></x-count-down>
+</view>
+
+<view class='title'>
+  自定义格式倒计时：
+  <x-count-down target='{{targetTime}}' format="{{myFormat}}"></x-count-down>
+  <x-count-down target='{{targetTime1}}' show-day format="{{myFormat1}}"></x-count-down>
+</view>
+
+<view class='title'>
+执行回调的倒计时,状态:{{status}}，
+<x-count-down target='{{targetTime2}}' bindcallback="myLinsterner" clear-time='{{clearTimer}}'></x-count-down>
+</view>
+
+<view class='title'>
+修改倒计时样式：
+<x-count-down target='{{targetTime1}}' countdown-class="countdown-class"></x-count-down>
+</view>

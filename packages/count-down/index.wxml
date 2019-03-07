@@ -1,2 +1,3 @@
-<!--packages/count-down/index.wxml-->
-<text>packages/count-down/index.wxml</text>
+<text class="countdown-class">
+  {{time}}
+</text>

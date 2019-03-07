@@ -1,1 +1,2 @@
 /* pages/count-down/index.wxss */
+.countdown-class{color:aquamarine;background:#f3f3f3;}
