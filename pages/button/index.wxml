@@ -24,9 +24,9 @@
 
 <view class='title'>不同尺寸</view>
 <view>
-  <x-button bind:click="handleClick" size="large">大尺寸</x-button>
-  <x-button bind:click="handleClick" size="small">小尺寸</x-button>
-  <x-button bind:click="handleClick" size="default">默认尺寸</x-button>
+  <x-button bind:click="handleClick">默认96rpx高度</x-button>
+  <x-button bind:click="handleClick" size="64">设置64rpx高度</x-button>
+  <x-button bind:click="handleClick" size="120">设置120rpx高度</x-button>
 </view>
 
 <view class='title'>圆角的不同尺寸</view>

@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "x-search":"/packages/search/index",
+    "x-button": "/packages/button/index"
+  }
 }

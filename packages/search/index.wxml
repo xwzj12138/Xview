@@ -1,2 +1,15 @@
 <!--packages/search/index.wxml-->
-<text>搜索</text>
+<view class="x-search x-class" style='background:{{backgroundColor}};'>
+  <view>
+    <slot name='searchHead'></slot>
+  </view>
+  <view class='search-form' style='color:{{searchColor}};'>
+    <view class="search-icon" wx:if='{{searchIconName}}'><x-icon name='{{searchIconName}}' color='{{searchColor}}'></x-icon></view>
+    <input value='{{value}}' type="text" focus='{{focus}}' maxlength='{{maxlength}}' placeholder="{{placeholder}}" confirm-type="{{confirmType}}"
+    bindinput='onInput' bindfocus='onFocus' bindblur='onBlur' bindconfirm='onConfirm'>
+    </input>
+  </view>
+  <view class='action'>
+    <slot name='searchAction'/>
+  </view>
+</view>

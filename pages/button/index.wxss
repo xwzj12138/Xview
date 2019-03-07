@@ -1,1 +1,2 @@
 /* pages/button/index.wxss */
+button{margin: 10px;}

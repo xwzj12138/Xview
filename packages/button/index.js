@@ -11,10 +11,9 @@ Component({
       type: Boolean,
       value: false
     },
-    // default, large, small
     size: {
-      type: String,
-      value: '',
+      type: Number,
+      value:96,
     },
     // circle, square
     shape: {
