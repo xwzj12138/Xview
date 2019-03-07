@@ -1,6 +1,6 @@
 {
-  "onReachBottomDistance": 350,
   "usingComponents": {
+    "x-search": "/packages/search/index",
     "x-icon": "/packages/icon/index"
   }
 }

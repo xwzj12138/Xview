@@ -5,55 +5,818 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list:[
-      'appreciate', 'check', 'close', 'edit', 'emoji', 'favorfill', 'favor', 'loading', 'locationfill', 'location', 'phone',
-      'roundcheckfill', 'roundcheck', 'roundclosefill', 'roundclose', 'roundrightfill', 'roundright', 'search', 'taxi', 'timefill',
-      'time', 'unfold', 'warnfill', 'warn', 'camerafill', 'camera', 'commentfill', 'comment', 'likefill', 'like', 'notificationfill',
-      'notification', 'order', 'samefill', 'same', 'deliver', 'evaluate', 'pay', 'send', 'shop', 'shopfill', 'ticket', 'cascades',
-      'discover', 'list', 'more', 'scan', 'settings', 'questionfill', 'question', 'back', 'form', 'pic', 'filter', 'footprint', 'top',
-      'pulldown', 'pullup', 'right', 'refresh', 'moreandroid', 'deletefill', 'refound', 'cart', 'qrcode', 'remind', 'delete', 'profile',
-      'home', 'cartfill', 'discoverfill', 'homefill', 'message', 'addressbook', 'link', 'lock', 'unlock', 'vip', 'weibo', 'friendaddfill',
-      'activity', 'friendadd', 'friendfamous', 'friend', 'goods', 'selection', 'explore', 'present', 'squarecheckfill', 'square',
-      'squarecheck', 'round', 'roundaddfill', 'roundadd', 'notificationforbidfill', 'add', 'explorefill', 'fold', 'game', 'redpacket',
-      'selectionfill', 'similar', 'appreciatefill', 'infofill', 'info', 'forwardfill', 'forward', 'rechargefill', 'recharge', 'vipcard',
-      'voice', 'voicefill', 'friendfavor', 'wifi', 'share', 'wefill', 'we', 'lightauto', 'lightforbid', 'lightfill', 'camerarotate',
-      'light', 'barcode', 'flashlightclose', 'flashlightopen', 'searchlist', 'service', 'sort', 'down', 'mobile', 'mobilefill', 'copy',
-      'countdownfill', 'countdown', 'noticefill', 'notice', 'upstagefill', 'upstage', 'babyfill', 'baby', 'brandfill', 'brand',
-      'choicenessfill', 'choiceness', 'clothesfill', 'clothes', 'creativefill', 'creative', 'female', 'keyboard', 'male', 'newfill', 'new',
-      'pullleft', 'pullright', 'rankfill', 'rank', 'bad', 'cameraadd', 'focus', 'friendfill', 'cameraaddfill', 'apps', 'paintfill', 'paint',
-      'picfill', 'refresharrow', 'colorlens', 'markfill', 'mark', 'presentfill', 'repeal', 'album', 'peoplefill', 'people', 'servicefill',
-      'repair', 'file', 'repairfill', 'taoxiaopu', 'weixin', 'attentionfill', 'attention', 'commandfill', 'command', 'communityfill',
-      'community', 'read', 'calendar', 'cut', 'magic', 'backwardfill', 'playfill', 'stop', 'tagfill', 'tag', 'group', 'all', 'backdelete',
-      'hotfill', 'hot', 'post', 'radiobox', 'rounddown', 'upload', 'writefill', 'write', 'radioboxfill', 'punch', 'shake', 'move', 'safe',
-      'activityfill', 'crownfill', 'crown', 'goodsfill', 'messagefill', 'profilefill', 'sound', 'sponsorfill', 'sponsor', 'upblock', 
-      'weblock', 'weunblock', 'my', 'myfill', 'emojifill', 'emojiflashfill', 'flashbuyfill', 'text', 'goodsfavor', 'musicfill', 'musicforbidfill',
-      'card', 'triangledownfill', 'triangleupfill', 'roundleftfill-copy', 'font', 'title', 'recordfill', 'record', 
-      'cardboardfill', 'cardboard', 'formfill', 'coin', 'cardboardforbid', 'circlefill', 'circle', 'btn', 'attentionfavorfill',
-      'loading2', 'attentionfavor', 'titles', 'icloading', 'full', 'mail', 'peoplelist', 'goodsnewfill', 'goodsnew', 'medalfill',
-      'medal', 'newsfill', 'newshotfill', 'newshot', 'news', 'videofill', 'video', 'exit', 'skinfill', 'skin', 'moneybagfill', 'usefullfill',
-      'usefull', 'moneybag', 'redpacket_fill', 'subscription', 'loading1', 'github', 'global', 'settingsfill', 'back_android', 'expressman',
-      'evaluate_fill', 'play_forward_fill', 'group_fill', 'deliver_fill', 'notice_forbid_fill', 'fork', 'pick', 'wenzi', 'ellipse', 
-      'qr_code', 'attentionforbid', 'dianhua', 'attentionforbidfill', 'icon'
-    ],
-    iconList: [
+    icon: [
+      { name: 'appreciate', isShow: true, }, { name: 'check', isShow: true, color: '#19be6b' }, { name:'close',isShow:true,color:'#ed3f14'}, 
+      {name: 'edit',isShow: true}, {name: 'emoji',isShow: true}, {name: 'favorfill',isShow: true}, {name: 'favor',isShow: true},
+      {name: 'loading',isShow: true}, {name: 'locationfill',isShow: true}, {name: 'location',isShow: true}, {name: 'phone',isShow: true},
+      { name:'roundcheckfill',isShow:true,color:'#19be6b'},{ name:'roundcheck',isShow:true,color:'#19be6b'},
+      {name:'roundclosefill',isShow:true,color:'#ed3f14'},{ name:'roundclose',isShow:true,color:'#ed3f14'},
+      {name:'roundrightfill',isShow:true}, {name:'roundright',isShow:true}, 
+      {name: 'search',isShow: true},
+      {
+      name: 'taxi',
+      isShow: true
+    }, {
+      name: 'timefill',
+      isShow: true
+    }, {
+      name: 'time',
+      isShow: true
+    }, {
+      name: 'unfold',
+      isShow: true
+    }, {
+      name: 'warnfill',
+      isShow: true
+    }, {
+      name: 'warn',
+      isShow: true
+    }, {
+      name: 'camerafill',
+      isShow: true
+    }, {
+      name: 'camera',
+      isShow: true
+    }, {
+      name: 'commentfill',
+      isShow: true
+    }, {
+      name: 'comment',
+      isShow: true
+    }, {name: 'likefill',isShow: true, color: '#ed3f14'}, {name: 'like',isShow: true, color: '#ed3f14'},
+    {
+      name: 'notificationfill',
+      isShow: true
+    }, {
+      name: 'notification',
+      isShow: true
+    }, {
+      name: 'order',
+      isShow: true
+    }, {
+      name: 'samefill',
+      isShow: true
+    }, {
+      name: 'same',
+      isShow: true
+    }, {
+      name: 'deliver',
+      isShow: true
+    },{name: 'evaluate',isShow: true, color: '#ed3f14'}, 
+    {
+      name: 'pay',
+      isShow: true
+    }, {
+      name: 'send',
+      isShow: true
+    }, {
+      name: 'shop',
+      isShow: true
+    }, {
+      name: 'ticket',
+      isShow: true
+    }, {
+      name: 'back',
+      isShow: true
+    }, {
+      name: 'cascades',
+      isShow: true
+    }, {
+      name: 'discover',
+      isShow: true
+    }, {
+      name: 'list',
+      isShow: true
+    }, {
+      name: 'more',
+      isShow: true
+    }, {
+      name: 'scan',
+      isShow: true
+    }, {
+      name: 'settings',
+      isShow: true
+    }, {
+      name: 'questionfill',
+      isShow: true
+    }, {
+      name: 'question',
+      isShow: true
+    }, {
+      name: 'shopfill',
+      isShow: true
+    }, {
+      name: 'form',
+      isShow: true
+    }, {
+      name: 'pic',
+      isShow: true
+    }, {
+      name: 'filter',
+      isShow: true
+    }, {
+      name: 'footprint',
+      isShow: true
+    }, {
+      name: 'top',
+      isShow: true
+    }, {
+      name: 'pulldown',
+      isShow: true
+    }, {
+      name: 'pullup',
+      isShow: true
+    }, {
+      name: 'right',
+      isShow: true
+    }, {
+      name: 'refresh',
+      isShow: true
+    }, {
+      name: 'moreandroid',
+      isShow: true
+    }, {name: 'deletefill',isShow: true, color: '#ed3f14'},
+     {
+      name: 'refund',
+      isShow: true
+    }, {
+      name: 'cart',
+      isShow: true
+    }, {
+      name: 'qrcode',
+      isShow: true
+    }, {
+      name: 'remind',
+      isShow: true
+    }, {
+      name: 'delete',
+        isShow: true, color: '#ed3f14'
+    }, {
+      name: 'profile',
+      isShow: true
+    }, {
+      name: 'home',
+      isShow: true
+    }, {
+      name: 'cartfill',
+      isShow: true
+    }, {
+      name: 'discoverfill',
+      isShow: true
+    }, {
+      name: 'homefill',
+      isShow: true
+    }, {
+      name: 'message',
+      isShow: true
+    }, {
+      name: 'addressbook',
+      isShow: true
+    }, {
+      name: 'link',
+      isShow: true
+    }, {
+      name: 'lock',
+      isShow: true
+    }, {
+      name: 'unlock',
+      isShow: true
+    }, {
+      name: 'vip',
+      isShow: true
+    }, {
+      name: 'weibo',
+      isShow: true
+    }, {
+      name: 'activity',
+      isShow: true
+    }, {
+      name: 'friendaddfill',
+      isShow: true
+    }, {
+      name: 'friendadd',
+      isShow: true
+    }, {
+      name: 'friendfamous',
+      isShow: true
+    }, {
+      name: 'friend',
+      isShow: true
+    }, {
+      name: 'goods',
+      isShow: true
+    }, {
+      name: 'selection',
+      isShow: true
+    }, {
+      name: 'explore',
+      isShow: true
+    }, {
+      name: 'present',
+      isShow: true
+    }, {
+      name: 'squarecheckfill',
+      isShow: true
+    }, {
+      name: 'square',
+      isShow: true
+    }, {
+      name: 'squarecheck',
+      isShow: true
+    }, {
+      name: 'round',
+      isShow: true
+    }, {
+      name: 'roundaddfill',
+      isShow: true
+    }, {
+      name: 'roundadd',
+      isShow: true
+    }, {
+      name: 'add',
+      isShow: true
+    }, {
+      name: 'notificationforbidfill',
+      isShow: true
+    }, {
+      name: 'explorefill',
+      isShow: true
+    }, {
+      name: 'fold',
+      isShow: true
+    }, {
+      name: 'game',
+      isShow: true
+    }, {
+      name: 'redpacket',
+      isShow: true
+    }, {
+      name: 'selectionfill',
+      isShow: true
+    }, {
+      name: 'similar',
+      isShow: true
+    }, {
+      name: 'appreciatefill',
+      isShow: true
+    }, {
+      name: 'infofill',
+      isShow: true
+    }, {
+      name: 'info',
+      isShow: true
+    }, {
+      name: 'forwardfill',
+      isShow: true
+    }, {
+      name: 'forward',
+      isShow: true
+    }, {
+      name: 'rechargefill',
+      isShow: true
+    }, {
+      name: 'recharge',
+      isShow: true
+    }, {
+      name: 'vipcard',
+      isShow: true
+    }, {
+      name: 'voice',
+      isShow: true
+    }, {
+      name: 'voicefill',
+      isShow: true
+    }, {
+      name: 'friendfavor',
+      isShow: true
+    }, {
+      name: 'wifi',
+      isShow: true
+    }, {
+      name: 'share',
+      isShow: true
+    }, {
+      name: 'wefill',
+      isShow: true
+    }, {
+      name: 'we',
+      isShow: true
+    }, {
+      name: 'lightauto',
+      isShow: true
+    }, {
+      name: 'lightforbid',
+      isShow: true
+    }, {
+      name: 'lightfill',
+      isShow: true
+    }, {
+      name: 'camerarotate',
+      isShow: true
+    }, {
+      name: 'light',
+      isShow: true
+    }, {
+      name: 'barcode',
+      isShow: true
+    }, {
+      name: 'flashlightclose',
+      isShow: true
+    }, {
+      name: 'flashlightopen',
+      isShow: true
+    }, {
+      name: 'searchlist',
+      isShow: true
+    }, {
+      name: 'service',
+      isShow: true
+    }, {
+      name: 'sort',
+      isShow: true
+    }, {
+      name: 'down',
+      isShow: true
+    }, {
+      name: 'mobile',
+      isShow: true
+    }, {
+      name: 'mobilefill',
+      isShow: true
+    }, {
+      name: 'copy',
+      isShow: true
+    }, {
+      name: 'countdownfill',
+      isShow: true
+    }, {
+      name: 'countdown',
+      isShow: true
+    }, {
+      name: 'noticefill',
+      isShow: true
+    }, {
+      name: 'notice',
+      isShow: true
+    }, {
+      name: 'upstagefill',
+      isShow: true
+    }, {
+      name: 'upstage',
+      isShow: true
+    }, {
+      name: 'babyfill',
+      isShow: true
+    }, {
+      name: 'baby',
+      isShow: true
+    }, {
+      name: 'brandfill',
+      isShow: true
+    }, {
+      name: 'brand',
+      isShow: true
+    }, {
+      name: 'choicenessfill',
+      isShow: true
+    }, {
+      name: 'choiceness',
+      isShow: true
+    }, {
+      name: 'clothesfill',
+      isShow: true
+    }, {
+      name: 'clothes',
+      isShow: true
+    }, {
+      name: 'creativefill',
+      isShow: true
+    }, {
+      name: 'creative',
+      isShow: true
+    }, {
+      name: 'female',
+      isShow: true
+    }, {
+      name: 'keyboard',
+      isShow: true
+    }, {
+      name: 'male',
+      isShow: true
+    }, {
+      name: 'newfill',
+      isShow: true
+    }, {
+      name: 'new',
+      isShow: true
+    }, {
+      name: 'pullleft',
+      isShow: true
+    }, {
+      name: 'pullright',
+      isShow: true
+    }, {
+      name: 'rankfill',
+      isShow: true
+    }, {
+      name: 'rank',
+      isShow: true
+    }, {
+      name: 'bad',
+      isShow: true
+    }, {
+      name: 'cameraadd',
+      isShow: true
+    }, {
+      name: 'focus',
+      isShow: true
+    }, {
+      name: 'friendfill',
+      isShow: true
+    }, {
+      name: 'cameraaddfill',
+      isShow: true
+    }, {
+      name: 'apps',
+      isShow: true
+    }, {
+      name: 'paintfill',
+      isShow: true
+    }, {
+      name: 'paint',
+      isShow: true
+    }, {
+      name: 'picfill',
+      isShow: true
+    }, {
+      name: 'refresharrow',
+      isShow: true
+    }, {
+      name: 'colorlens',
+      isShow: true
+    }, {
+      name: 'markfill',
+      isShow: true
+    }, {
+      name: 'mark',
+      isShow: true
+    }, {
+      name: 'presentfill',
+      isShow: true
+    }, {
+      name: 'repeal',
+      isShow: true
+    }, {
+      name: 'album',
+      isShow: true
+    }, {
+      name: 'peoplefill',
+      isShow: true
+    }, {
+      name: 'people',
+      isShow: true
+    }, {
+      name: 'servicefill',
+      isShow: true
+    }, {
+      name: 'repair',
+      isShow: true
+    }, {
+      name: 'file',
+      isShow: true
+    }, {
+      name: 'repairfill',
+      isShow: true
+    }, {
+      name: 'taoxiaopu',
+      isShow: true
+    }, {
+      name: 'weixin',
+      isShow: true
+    }, {
+      name: 'attentionfill',
+      isShow: true
+    }, {
+      name: 'attention',
+      isShow: true
+    }, {
+      name: 'commandfill',
+      isShow: true
+    }, {
+      name: 'command',
+      isShow: true
+    }, {
+      name: 'communityfill',
+      isShow: true
+    }, {
+      name: 'community',
+      isShow: true
+    }, {
+      name: 'read',
+      isShow: true
+    }, {
+      name: 'calendar',
+      isShow: true
+    }, {
+      name: 'cut',
+      isShow: true
+    }, {
+      name: 'magic',
+      isShow: true
+    }, {
+      name: 'backwardfill',
+      isShow: true
+    }, {
+      name: 'playfill',
+      isShow: true
+    }, {
+      name: 'stop',
+      isShow: true
+    }, {
+      name: 'tagfill',
+      isShow: true
+    }, {
+      name: 'tag',
+      isShow: true
+    }, {
+      name: 'group',
+      isShow: true
+    }, {
+      name: 'all',
+      isShow: true
+    }, {
+      name: 'backdelete',
+        isShow: true, color: '#ed3f14'
+    }, {
+      name: 'hotfill',
+      isShow: true
+    }, {
+      name: 'hot',
+      isShow: true
+    }, {
+      name: 'post',
+      isShow: true
+    }, {
+      name: 'radiobox',
+      isShow: true
+    }, {
+      name: 'rounddown',
+      isShow: true
+    }, {
+      name: 'upload',
+      isShow: true
+    }, {
+      name: 'writefill',
+      isShow: true
+    }, {
+      name: 'write',
+      isShow: true
+    }, {
+      name: 'radioboxfill',
+      isShow: true
+    }, {
+      name: 'punch',
+      isShow: true
+    }, {
+      name: 'shake',
+      isShow: true
+    }, {
+      name: 'move',
+      isShow: true
+    }, {
+      name: 'safe',
+      isShow: true
+    }, {
+      name: 'activityfill',
+      isShow: true
+    }, {
+      name: 'crownfill',
+      isShow: true
+    }, {
+      name: 'crown',
+      isShow: true
+    }, {
+      name: 'goodsfill',
+      isShow: true
+    }, {
+      name: 'messagefill',
+      isShow: true
+    }, {
+      name: 'profilefill',
+      isShow: true
+    }, {
+      name: 'sound',
+      isShow: true
+    }, {
+      name: 'sponsorfill',
+      isShow: true
+    }, {
+      name: 'sponsor',
+      isShow: true
+    }, {
+      name: 'upblock',
+      isShow: true
+    }, {
+      name: 'weblock',
+      isShow: true
+    }, {
+      name: 'weunblock',
+      isShow: true
+    }, {
+      name: 'my',
+      isShow: true
+    }, {
+      name: 'myfill',
+      isShow: true
+    }, {
+      name: 'emojifill',
+      isShow: true
+    }, {
+      name: 'emojiflashfill',
+      isShow: true
+    }, {
+      name: 'flashbuyfill',
+      isShow: true
+    }, {
+      name: 'text',
+      isShow: true
+    }, {
+      name: 'goodsfavor',
+      isShow: true
+    }, {
+      name: 'musicfill',
+      isShow: true
+    }, {
+      name: 'musicforbidfill',
+      isShow: true
+    }, {
+      name: 'card',
+      isShow: true
+    }, {
+      name: 'triangledownfill',
+      isShow: true
+    }, {
+      name: 'triangleupfill',
+      isShow: true
+    }, {
+      name: 'roundleftfill-copy',
+      isShow: true
+    }, {
+      name: 'font',
+      isShow: true
+    }, {
+      name: 'title',
+      isShow: true
+    }, {
+      name: 'recordfill',
+      isShow: true
+    }, {
+      name: 'record',
+      isShow: true
+    }, {
+      name: 'cardboardfill',
+      isShow: true
+    }, {
+      name: 'cardboard',
+      isShow: true
+    }, {
+      name: 'formfill',
+      isShow: true
+    }, {
+      name: 'coin',
+      isShow: true
+    }, {
+      name: 'cardboardforbid',
+      isShow: true
+    }, {
+      name: 'circlefill',
+      isShow: true
+    }, {
+      name: 'circle',
+      isShow: true
+    }, {
+      name: 'attentionforbid',
+      isShow: true
+    }, {
+      name: 'attentionforbidfill',
+      isShow: true
+    }, {
+      name: 'attentionfavorfill',
+      isShow: true
+    }, {
+      name: 'attentionfavor',
+      isShow: true
+    }, {
+      name: 'titles',
+      isShow: true
+    }, {
+      name: 'icloading',
+      isShow: true
+    }, {
+      name: 'full',
+      isShow: true
+    }, {
+      name: 'mail',
+      isShow: true
+    }, {
+      name: 'peoplelist',
+      isShow: true
+    }, {
+      name: 'goodsnewfill',
+      isShow: true
+    }, {
+      name: 'goodsnew',
+      isShow: true
+    }, {
+      name: 'medalfill',
+      isShow: true
+    }, {
+      name: 'medal',
+      isShow: true
+    }, {
+      name: 'newsfill',
+      isShow: true
+    }, {
+      name: 'newshotfill',
+      isShow: true
+    }, {
+      name: 'newshot',
+      isShow: true
+    }, {
+      name: 'news',
+      isShow: true
+    }, {
+      name: 'videofill',
+      isShow: true
+    }, {
+      name: 'video',
+      isShow: true
+    }, {
+      name: 'exit',
+      isShow: true
+    }, {
+      name: 'skinfill',
+      isShow: true
+    }, {
+      name: 'skin',
+      isShow: true
+    }, {
+      name: 'moneybagfill',
+      isShow: true
+    }, {
+      name: 'usefullfill',
+      isShow: true
+    }, {
+      name: 'usefull',
+      isShow: true
+    }, {
+      name: 'moneybag',
+      isShow: true
+    }, {
+      name: 'redpacket_fill',
+      isShow: true
+    }, {
+      name: 'subscription',
+      isShow: true
+    }, {
+      name: 'loading1',
+      isShow: true
+    }, {
+      name: 'github',
+      isShow: true
+    }, 
+      {name: 'global',isShow: true},{name:'settingsfill',isShow:true},{name:'back_android',isShow:true},{name:'expressman',isShow: true}, 
+      {name: 'evaluate_fill',isShow: true}, {name: 'group_fill',isShow: true}, {name: 'play_forward_fill',isShow: true}, 
+      {name: 'deliver_fill',isShow: true}, {name: 'notice_forbid_fill',isShow: true}, {name: 'fork',isShow: true},
+      { name: 'pick',isShow: true},{name: 'wenzi', isShow: true }, { name: 'ellipse', isShow: true }, { name: 'qr_code', isShow: true }, 
+      { name: 'dianhua',isShow: true},{name: 'icon', isShow: true }, { name: 'loading2', isShow: true }, { name: 'btn', isShow: true }
     ]
   },
-  //页面初始化
-  onLoad: function (options) {
-    this.getIconList()
+  /**
+   * 键盘输入时触发
+   */
+  onInput: function (e) {
+    this.searchIcon(e.detail.value)
   },
-  //监听页面上拉刷新
-  onReachBottom: function () {
-    this.getIconList()
+  /**
+   * 点击完成按钮时触发
+   */
+  onConfirm: function (e) {
+    this.searchIcon(e.detail.value)
   },
-  //获取数据
-  getIconList:function(){
-    let length = this.data.list.length
-    let iconLength = this.data.iconList.length
-    if (length == iconLength) {
-      return;
+  searchIcon(value) {
+    value = value.toLowerCase()
+    let list = this.data.icon;
+    for (let i = 0; i < list.length; i++) {
+      let b = list[i].name.toLowerCase();
+      if (b.search(value) != -1) {
+        list[i].isShow = true
+      } else {
+        list[i].isShow = false
+      }
     }
-    let array = this.data.list.slice(0, iconLength + 40)
-    this.setData({ iconList: array })
+    this.setData({
+      icon: list
+    })
   }
 })
