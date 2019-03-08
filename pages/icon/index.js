@@ -8,7 +8,7 @@ Page({
     icon: [
       { name: 'appreciate', isShow: true, }, { name: 'check', isShow: true, color: '#19be6b' }, { name:'close',isShow:true,color:'#ed3f14'}, 
       {name: 'edit',isShow: true}, {name: 'emoji',isShow: true}, {name: 'favorfill',isShow: true}, {name: 'favor',isShow: true},
-      {name: 'loading',isShow: true}, {name: 'locationfill',isShow: true}, {name: 'location',isShow: true}, {name: 'phone',isShow: true},
+      {name: 'loading',isShow: true,rotate:true}, {name: 'locationfill',isShow: true}, {name: 'location',isShow: true}, {name: 'phone',isShow: true},
       { name:'roundcheckfill',isShow:true,color:'#19be6b'},{ name:'roundcheck',isShow:true,color:'#19be6b'},
       {name:'roundclosefill',isShow:true,color:'#ed3f14'},{ name:'roundclose',isShow:true,color:'#ed3f14'},
       {name:'roundrightfill',isShow:true}, {name:'roundright',isShow:true}, 
@@ -129,13 +129,8 @@ Page({
     }, {
       name: 'right',
       isShow: true
-    }, {
-      name: 'refresh',
-      isShow: true
-    }, {
-      name: 'moreandroid',
-      isShow: true
-    }, {name: 'deletefill',isShow: true, color: '#ed3f14'},
+    }, {name: 'refresh',isShow: true, rotate: true}, {name: 'moreandroid',isShow: true},
+     {name: 'deletefill',isShow: true, color: '#ed3f14'},
      {
       name: 'refund',
       isShow: true
@@ -448,16 +443,9 @@ Page({
     }, {
       name: 'picfill',
       isShow: true
-    }, {
-      name: 'refresharrow',
-      isShow: true
-    }, {
-      name: 'colorlens',
-      isShow: true
-    }, {
-      name: 'markfill',
-      isShow: true
-    }, {
+    },
+     {name: 'refresharrow',isShow: true}, {name: 'colorlens',isShow: true}, { name: 'markfill',isShow: true},
+     {
       name: 'mark',
       isShow: true
     }, {
@@ -523,58 +511,13 @@ Page({
     }, {
       name: 'magic',
       isShow: true
-    }, {
-      name: 'backwardfill',
-      isShow: true
-    }, {
-      name: 'playfill',
-      isShow: true
-    }, {
-      name: 'stop',
-      isShow: true
-    }, {
-      name: 'tagfill',
-      isShow: true
-    }, {
-      name: 'tag',
-      isShow: true
-    }, {
-      name: 'group',
-      isShow: true
-    }, {
-      name: 'all',
-      isShow: true
-    }, {
-      name: 'backdelete',
-        isShow: true, color: '#ed3f14'
-    }, {
-      name: 'hotfill',
-      isShow: true
-    }, {
-      name: 'hot',
-      isShow: true
-    }, {
-      name: 'post',
-      isShow: true
-    }, {
-      name: 'radiobox',
-      isShow: true
-    }, {
-      name: 'rounddown',
-      isShow: true
-    }, {
-      name: 'upload',
-      isShow: true
-    }, {
-      name: 'writefill',
-      isShow: true
-    }, {
-      name: 'write',
-      isShow: true
-    }, {
-      name: 'radioboxfill',
-      isShow: true
-    }, {
+    },
+      {name: 'backwardfill',isShow: true},{name: 'playfill',isShow: true}, {name: 'stop',isShow: true}, 
+      {name: 'tagfill',isShow: true},{name: 'tag',isShow: true},{name: 'group',isShow: true},{name: 'all',isShow: true},
+      {name: 'backdelete',isShow: true, color: '#ed3f14'}, {name: 'hotfill',isShow: true}, {name: 'hot',isShow: true},
+      { name: 'radioboxfill',isShow: true}, {name: 'radiobox',isShow: true}, {name: 'rounddown',isShow: true}, 
+      {name:'upload',isShow:true},{name:'writefill',isShow:true},{name:'write',isShow:true},{name:'post',isShow:true},
+     {
       name: 'punch',
       isShow: true
     }, {
@@ -709,16 +652,8 @@ Page({
     }, {
       name: 'titles',
       isShow: true
-    }, {
-      name: 'icloading',
-      isShow: true
-    }, {
-      name: 'full',
-      isShow: true
-    }, {
-      name: 'mail',
-      isShow: true
-    }, {
+    }, {name: 'icloading',isShow: true, rotate: true}, {name: 'full',isShow: true}, {name: 'mail',isShow: true},
+     {
       name: 'peoplelist',
       isShow: true
     }, {
@@ -769,27 +704,15 @@ Page({
     }, {
       name: 'usefull',
       isShow: true
-    }, {
-      name: 'moneybag',
-      isShow: true
-    }, {
-      name: 'redpacket_fill',
-      isShow: true
-    }, {
-      name: 'subscription',
-      isShow: true
-    }, {
-      name: 'loading1',
-      isShow: true
-    }, {
-      name: 'github',
-      isShow: true
-    }, 
-      {name: 'global',isShow: true},{name:'settingsfill',isShow:true},{name:'back_android',isShow:true},{name:'expressman',isShow: true}, 
-      {name: 'evaluate_fill',isShow: true}, {name: 'group_fill',isShow: true}, {name: 'play_forward_fill',isShow: true}, 
+    },
+     {name: 'moneybag',isShow: true}, {name: 'redpacket_fill',isShow: true}, {name: 'subscription',isShow: true}, 
+      {name: 'loading1',isShow: true, rotate: true}, {name: 'github',isShow: true},{name: 'global',isShow: true},
+      {name:'settingsfill',isShow:true},{name:'back_android',isShow:true},{name:'expressman',isShow: true}, 
+      {name: 'evaluate_fill',isShow: true}, {name: 'group_fill',isShow: true}, {name: 'play_forward_fill',isShow: true},
       {name: 'deliver_fill',isShow: true}, {name: 'notice_forbid_fill',isShow: true}, {name: 'fork',isShow: true},
-      { name: 'pick',isShow: true},{name: 'wenzi', isShow: true }, { name: 'ellipse', isShow: true }, { name: 'qr_code', isShow: true }, 
-      { name: 'dianhua',isShow: true},{name: 'icon', isShow: true }, { name: 'loading2', isShow: true }, { name: 'btn', isShow: true }
+      { name: 'pick',isShow: true},{name: 'wenzi', isShow: true }, { name: 'ellipse', isShow: true }, 
+      { name: 'qr_code', isShow: true },{ name: 'dianhua', isShow: true }, { name: 'icon', isShow: true }, 
+      { name: 'loading2', isShow: true, rotate: true}, { name: 'btn', isShow: true }
     ]
   },
   /**
