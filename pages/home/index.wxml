@@ -3,7 +3,7 @@
 <x-cell-group>
   <x-cell menuArrow title='grid 九宫格' url='/pages/grid/index'></x-cell>
   <x-cell menuArrow title='cell 单元格' url='/pages/cell/index'></x-cell>
-  <x-cell menuArrow title='nav 单元格' url='/pages/nav/index'></x-cell>
+  <x-cell menuArrow title='nav 标签栏' url='/pages/nav/index'></x-cell>
   <!-- <x-cell menuArrow title='index 索引' url='/pages/index/index'></x-cell> -->
 </x-cell-group>
 <view class='title'>基础组件</view>
