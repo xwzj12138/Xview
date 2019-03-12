@@ -1,9 +1,4 @@
-.x-avatar{display:inline-block;text-align:center;background:#ccc;color:#fff;white-space:nowrap;position:relative;overflow:hidden;vertical-align:middle;width:32px;height:32px;line-height:32px;border-radius:16px;font-size:18px}
-.x-avatar .ivu-avatar-string{line-height:32px}
-.x-avatar-large{width:40px;height:40px;line-height:40px;border-radius:20px;font-size:24px}
-.x-avatar-large .ivu-avatar-string{line-height:40px}
-.x-avatar-small{width:24px;height:24px;line-height:24px;border-radius:12px;font-size:14px}
-.x-avatar-small .ivu-avatar-string{line-height:24px}
+.x-avatar{display:inline-block;text-align:center;background:#ccc;color:#fff;white-space:nowrap;position:relative;overflow:hidden;vertical-align:middle;}
 .x-avatar-image{background:0 0}
 .x-avatar-square{border-radius:4px}
 .x-avatar>image{width:100%;height:100%}

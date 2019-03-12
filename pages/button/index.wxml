@@ -1,5 +1,5 @@
 <!--pages/button/index.wxml-->
-<view class='title'>一般用法</view>
+<view class='title'>一般用法</view> 
 <view>
   <x-button bind:click="handleClick">默认按钮</x-button>
   <x-button bind:click="handleClick" type="error" long="true">联通两边按钮</x-button>
@@ -29,9 +29,12 @@
   <x-button bind:click="handleClick" size="120">设置120rpx高度</x-button>
 </view>
 
-<view class='title'>圆角的不同尺寸</view>
+<view class='title'>圆角</view>
 <view>
   <x-button bind:click="handleClick" shape="circle">大尺寸</x-button>
-  <x-button bind:click="handleClick" shape="circle" size="small">圆角小尺寸</x-button>
-  <x-button bind:click="handleClick" shape="circle" size="large">圆角大尺寸</x-button>
+</view>
+
+<view class='title'>禁止点击</view>
+<view>
+  <x-button bind:click="handleClick" shape="circle" disabled loading>大尺寸</x-button>
 </view>

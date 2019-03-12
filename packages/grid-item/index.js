@@ -1,5 +1,6 @@
 // packages/grid-item/index.js
 Component({
+  options: {multipleSlots: true},
   relations: {
     '../grid-group/index': {
       type: 'parent'

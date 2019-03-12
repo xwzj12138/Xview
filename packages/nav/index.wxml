@@ -1,6 +1,6 @@
 <scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}" style='::-webkit-scrollbar {display: none;}'>
   <view class='flex text-center' style="font-size:{{fontSize}}rpx">
     <view class="x-item flex-sub {{index==TabCur?'text-green cur':''}}" wx:for="{{tabList}}" wx:key='{{index}}' catchtap='tabSelect' 
-    data-index="{{index}}">{{item}}</view>
+    data-index="{{index}}">{{item[key]}}</view>
   </view>
 </scroll-view>

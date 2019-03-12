@@ -1,7 +1,7 @@
 Component({
     behaviors: ['wx://form-field'],
 
-    externalClasses: ['i-class'],
+    externalClasses: ['x-class'],
 
     properties: {
       title: {
@@ -24,6 +24,7 @@ Component({
           type: Boolean,
           value: false
       },
+      // wrapped, normal
       mode: {
           type: String,
           value: 'normal'
@@ -32,6 +33,7 @@ Component({
           type: Boolean,
           value: false
       },
+      // 是否显示为输入框错误情况下的样式
       error: {
           type: Boolean,
           value: false

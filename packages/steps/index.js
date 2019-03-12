@@ -1,22 +1,5 @@
 Component({
     externalClasses: ['x-class'],
-    properties : {
-        current : {
-            type : Number,
-            value : -1,
-            observer : '_updateDataChange'
-        },
-        status : {
-            type : String,
-            //wait、process、finish、error
-            value : ''
-        },
-        direction : {
-            type : String,
-            //value has horizontal or vertical 
-            value : 'horizontal'
-        } 
-    },
     relations : {
         '../step/index' : {
             type : 'child',
@@ -31,6 +14,12 @@ Component({
             }
         }
     },
+  properties:{
+    direction:{
+      type:String,
+      value:'horizontal'
+    }
+  },
     methods: {
         _updateDataChange() {
             let steps = this.getRelationNodes('../step/index');
@@ -40,7 +29,6 @@ Component({
                     step.updateDataChange({
                         len : len,
                         index : index,
-                        current : this.data.current,
                         direction : this.data.direction
                     });
                 });

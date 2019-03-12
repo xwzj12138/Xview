@@ -10,6 +10,10 @@ Component({
     fontSize: {
       type: Number,
       value:36
+    },
+    key:{
+      type:String,
+      value:'name'
     }
   },
 

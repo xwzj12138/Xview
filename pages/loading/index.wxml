@@ -16,4 +16,4 @@
 <x-cell title='imgUrl 属性设置提示logo'>
   <x-switch slot='footer' value='{{isAlert1}}' bindchange='clickSwitch1'></x-switch>
 </x-cell>
-<x-loading isShow="{{true}}" isAlert='{{isAlert1}}' imgUrl='/static/tabbar/about.png'></x-loading>
+<x-loading isShow="{{true}}" isAlert='{{isAlert1}}' imgUrl='/static/weapp_qr_code.jpg'></x-loading>

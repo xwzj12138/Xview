@@ -7,10 +7,9 @@ Component({
             type: String,
             value: 'circle'
         },
-        // small || large || default
         size: {
-            type: String,
-            value: 'default'
+            type: Number,
+            value: 32
         },
         src: {
             type: String,

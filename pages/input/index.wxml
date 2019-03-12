@@ -9,4 +9,4 @@
 <x-input right value='{{value3}}' name='value3' title='收货人' placeholder='请输入' bind:change='inputChange'></x-input>
 
 <view class='title'>禁止输入</view>
-<x-input right value='{{value4}}' disabled title='收货人' bind:change='inputChange'></x-input>
+<x-input right value='{{value4}}' disabled title='收货人' value='禁止输入' bind:change='inputChange'></x-input>

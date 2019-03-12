@@ -7,4 +7,4 @@
 
 <view class='title'>statusStyle 属性设置样式，默认没有样式</view>
 <x-progress percent='50' statusStyle='active'></x-progress>
-<x-progress percent='50' statusStyle='stripes'></x-progress>
+<x-progress percent='50' statusStyle='stripes' hideInfo='{{true}}'></x-progress>

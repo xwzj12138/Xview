@@ -5,6 +5,7 @@ Component({
           type : String,
           value : ''
       },
+      // 字体及icon颜色
       color: {
         type: String,
         value: '#aaa'
@@ -32,8 +33,6 @@ Component({
         len : 1,
         //current in step index
         index : 0,
-        //parent component select current index
-        current : 0,
         //css direction
         direction : 'horizontal'
     },
@@ -42,7 +41,6 @@ Component({
             this.setData({
                 len : options.len,
                 index : options.index,
-                current : options.current,
                 direction : options.direction
             })
         }
