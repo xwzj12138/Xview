@@ -1,1 +1,5 @@
 /* pages/home/index.wxss */
+.head{font-size:18px;text-align:center;font-weight:700;padding:15px 0;}
+.head image{width:150rpx;height:150rpx;vertical-align:middle;}
+.head>view:last-child{font-size:13px;font-weight:400;}
+.urltext{margin:10px;}

@@ -1,4 +1,14 @@
 <!--pages/home/index.wxml-->
+<view class='head'>
+  <view>
+    <image src='/static/logo.png'></image>
+    <text>XView Weapp</text>
+  </view>
+  <view>
+    <view>长按复制详细文档链接:</view>
+    <view class='urltext'><text selectable>https://xview.weapp.xwzj88.cn</text></view>
+  </view>
+</view>
 <view class='title'>布局组件</view>
 <x-cell-group>
   <x-cell menuArrow title='grid 九宫格' url='/pages/grid/index'></x-cell>
