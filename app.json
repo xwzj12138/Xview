@@ -18,7 +18,8 @@
     "pages/loading/index",
     "pages/count-down/index",
     "pages/progress/index",
-    "pages/search/index"
+    "pages/search/index",
+    "pages/drawer/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

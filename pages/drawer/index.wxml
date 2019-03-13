@@ -1,0 +1,17 @@
+<!--pages/drawer/index.wxml-->
+<x-button type='primary' data-type='left' data-maskclosable='{{true}}' bind:click='showDrawer'>左弹出-点击蒙层消失</x-button>
+
+<x-button type='info' data-type='left' data-maskclosable='{{false}}' bind:click='showDrawer'>左弹出-自定义消失</x-button>
+
+<x-button type='success' data-type='right' data-maskclosable='{{true}}' bind:click='showDrawer'>右弹出-点击蒙层消失</x-button>
+
+<x-button type='default' data-type='right' data-maskclosable='{{false}}' bind:click='showDrawer'>右弹出-自定义消失</x-button>
+
+<x-drawer type='{{drawerType}}' maskClosable='{{maskclosable}}'>
+  <view class='left-content'>
+    <view>抽屉</view>
+    <view wx:if='{{!maskclosable}}'>
+      <x-button bind:click='closeDrawer'>关闭抽屉</x-button>
+    </view>
+  </view>
+</x-drawer>

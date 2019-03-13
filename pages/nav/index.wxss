@@ -1,1 +1,3 @@
 /* pages/nav/index.wxss */
+.title{font-size:14px;color:#666;margin:15px;}
+.title>view:last-child{margin:10px 0;}

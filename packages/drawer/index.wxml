@@ -1,0 +1,7 @@
+<!--packages/drawer/index.wxml-->
+<view class="drawer {{type?'drawer-show':''}}">
+  <view class="{{mask?'drawer-mask':''}}" catchtap='closeDrawer'></view>
+  <view class='content content-{{type}}'>
+    <slot></slot>
+  </view>
+</view>

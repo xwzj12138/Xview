@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "x-drawer":"/packages/drawer/index",
+    "x-button": "/packages/button/index"
+  }
+}

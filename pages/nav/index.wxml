@@ -1,3 +1,9 @@
 <!--pages/nav/index.wxml-->
 <x-nav tab-list="{{navList1}}" bindtabSelect="tabSelect" key='nameTitle'></x-nav>
 <x-nav tab-list="{{navList2}}" bindtabSelect="tabSelect"></x-nav>
+<view class='title'>
+  <view>由于安卓机的原因需要在app.wxss中做特殊处理，详细文档：</view>
+  <view>
+    <text selectable>https://xview.weapp.xwzj88.cn/index/index/module?id=3</text>
+  </view>
+</view>
