@@ -24,7 +24,7 @@ Component({
     // 上传文件时的附加参数
     formData:{
       type:JSON,
-      value:''
+      value:{}
     }
   },
 
