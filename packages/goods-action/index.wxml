@@ -1,0 +1,4 @@
+<!--packages/goods-action/index.wxml-->
+<view class='x-class goods-action'>
+  <slot></slot>
+</view>

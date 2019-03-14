@@ -1,0 +1,3 @@
+/* packages/goods-action-item/index.wxss */
+.actionItem{text-align:center;display:inline-block;}
+.actionItem image{width:60rpx;height:60rpx;}

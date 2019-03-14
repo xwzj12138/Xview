@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "x-goods-action": "/packages/goods-action/index",
+    "x-goods-action-item": "/packages/goods-action-item/index",
+    "x-icon": "/packages/icon/index"
+  }
+}

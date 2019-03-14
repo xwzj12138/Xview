@@ -1,0 +1,10 @@
+<view class='actionItem'>
+  <view>
+    <view>
+      <image wx:if='{{src}}' src='{{src}}'></image>
+      <slot name='icon' wx:else></slot>
+    </view>
+    <view>{{title}}</view>
+  </view>
+  <slot name='content'></slot>
+</view>

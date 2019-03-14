@@ -20,6 +20,11 @@ Component({
     name:{
       type:String,
       value:'file'
+    },
+    // 上传文件时的附加参数
+    formData:{
+      type:JSON,
+      value:''
     }
   },
 
@@ -36,20 +41,25 @@ Component({
     delFile(e){
       this.triggerEvent('delFile', { index: e.currentTarget.dataset.index})
     },
-    addFile(){
+    addFile(event){
+      let index = event.currentTarget.dataset.index>=0 ?event.currentTarget.dataset.index:-1
       wx.chooseImage({
         count:this.data.limit,
         success:(res)=> {
+          if (!this.data.uploadApi){
+            return this.triggerEvent('addFile', { uploadResult: res, selectIndex: index})
+          }
           res.tempFilePaths.forEach((item) => {
             wx.uploadFile({
               url: this.data.uploadApi,
               filePath: item,
               name: this.data.name,
-              success: (res) => {
-                this.triggerEvent('addFile', res)
+              formData: this.data.formData,
+              success: (result) => {
+                this.triggerEvent('addFile', { uploadResult: result, selectIndex: index })
               },
-              fail: (res) => {
-                this.triggerEvent('addFile', res)
+              fail: (result) => {
+                this.triggerEvent('addFile', { uploadResult: result, selectIndex: index })
               }
             })
           })

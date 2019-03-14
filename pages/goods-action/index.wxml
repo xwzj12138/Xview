@@ -1,0 +1,10 @@
+<!--pages/goods-action/index.wxml-->
+<x-goods-action>
+  <x-goods-action-item src='/static/logo.png' title='客服'></x-goods-action-item>
+  <x-goods-action-item title='购物车'>
+    <x-icon slot='icon' name='cart'></x-icon>
+  </x-goods-action-item>
+  <x-goods-action-item title='店铺'>
+    <x-icon slot='icon' name='shop'></x-icon>
+  </x-goods-action-item>
+</x-goods-action>
