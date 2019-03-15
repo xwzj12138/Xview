@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "x-tabbar": "/packages/tabbar/index",
+    "x-tabbar-item": "/packages/tabbar-item/index",
+    "x-tabbar-flex-item": "/packages/tabbar-flex-item/index",
+    "x-icon": "/packages/icon/index"
+  }
+}

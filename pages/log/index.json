@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "x-step": "/packages/step/index",
+    "x-steps": "/packages/steps/index"
+  }
+}

@@ -42,9 +42,15 @@ Component({
       this.triggerEvent('delFile', { index: e.currentTarget.dataset.index})
     },
     addFile(event){
-      let index = event.currentTarget.dataset.index>=0 ?event.currentTarget.dataset.index:-1
+      let index = -1
+      let count = this.data.limit - this.data.urlList.length
+      // 判断是否覆盖图片操作。覆盖图片操作时，需要上传的图片数量加1，覆盖图片的索引等于选中的图片索引
+      if (event.currentTarget.dataset.index >= 0) {
+        count = count + 1
+        index = event.currentTarget.dataset.index
+      }
       wx.chooseImage({
-        count:this.data.limit,
+        count: count,
         success:(res)=> {
           if (!this.data.uploadApi){
             return this.triggerEvent('addFile', { uploadResult: res, selectIndex: index})

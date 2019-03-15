@@ -1,0 +1,4 @@
+:host{flex:1;-webkit-flex:1;height:100rpx;}
+.actionItem{text-align:center;font-size:12px;height:100%;}
+.actionItem>view{height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;}
+.actionItem image{width:60rpx;height:60rpx;} 

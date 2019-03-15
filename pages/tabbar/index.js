@@ -1,4 +1,4 @@
-// pages/goods-action/index.js
+// pages/tabbar/index.js
 Page({
 
   /**

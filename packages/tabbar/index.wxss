@@ -1,0 +1,7 @@
+/* packages/goods-action/index.wxss */
+.goods-action{
+  position:fixed;bottom:0;left:0;right:0;
+  border-top:1px solid #f3f3f3;
+  display: flex;
+  align-items: center;
+  }

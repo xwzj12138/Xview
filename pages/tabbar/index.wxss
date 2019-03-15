@@ -1,0 +1,4 @@
+/* pages/tabbar/index.wxss */
+.tabbar{position:initial;}
+.bg1{background:#f00;}
+.bg2{background:#ff0;}

@@ -20,13 +20,30 @@
     "pages/progress/index",
     "pages/search/index",
     "pages/drawer/index",
-    "pages/goods-action/index"
+    "pages/log/index",
+    "pages/tabbar/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "XView组件库",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "/static/tabbar/basics.png",
+        "selectedIconPath": "/static/tabbar/basics_cur.png"
+      },
+      {
+        "pagePath": "pages/log/index",
+        "text": "更新日志",
+        "iconPath": "/static/tabbar/about.png",
+        "selectedIconPath": "/static/tabbar/about_cur.png"
+      }
+    ]
   },
   "usingComponents": {}
 }

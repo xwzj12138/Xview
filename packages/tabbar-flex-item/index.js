@@ -1,19 +1,24 @@
-// packages/goods-action-item/index.js
+// packages/tabbar-file-item/index.js
 Component({
-  options:{
-    multipleSlots:true
-  },
+  externalClasses: ['x-class'],
   /**
    * 组件的属性列表
    */
   properties: {
-    src:{
-      type:String,
-      value:''
+    src: {
+      type: String,
+      value: ''
     },
     title: {
       type: String,
       value: ''
+    },
+    icon:{
+      type:String
+    },
+    iconSize:{
+      type:Number,
+      value:46
     }
   },
 

@@ -15,7 +15,7 @@
   <x-cell menuArrow title='cell 单元格' url='/pages/cell/index'></x-cell>
   <x-cell menuArrow title='nav 标签栏' url='/pages/nav/index'></x-cell>
   <x-cell menuArrow title='drawer 抽屉' url='/pages/drawer/index'></x-cell>
-  <!-- <x-cell menuArrow title='goods-action 商品导航' url='/pages/goods-action/index'></x-cell> -->
+  <x-cell menuArrow title='tabbar 商品导航' url='/pages/tabbar/index'></x-cell>
 </x-cell-group>
 <view class='title'>基础组件</view>
 <x-cell-group>
