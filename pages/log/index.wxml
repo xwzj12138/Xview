@@ -1,4 +1,5 @@
 <x-steps direction='vertical'>
+  <x-step color='#19be6b' icon='roundcheckfill' title='添加tabbar商品导航组件' content='该组件有待优化'></x-step>
   <x-step color='#19be6b' icon='roundcheckfill' title='修改upload上传图片组件'>
     <view slot="content">
       <view>1，添加覆盖图片功能</view>

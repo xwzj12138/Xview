@@ -1,4 +1,8 @@
-/* pages/tabbar/index.wxss */
-.tabbar{position:initial;}
-.bg1{background:#f00;}
-.bg2{background:#ff0;}
+/* 第一个tabbar额外样式 */
+.tabbar{font-size:24rpx;color:#9B9B9B;}
+.bg1{height:80% !important;background:#FFD04A;border-radius:100rpx 0 0 100rpx;margin:12rpx 0 12rpx 24rpx;font-size:28rpx;color:#000;}
+.bg2{height:80% !important;background:#FA6400;border-radius:0 100rpx 100rpx 0;margin:12rpx 24rpx 12rpx 0;color:#fff;font-size:28rpx;}
+/* 第二个tabbar额外样式 */
+.tabbar1{bottom:150rpx !important;}
+.bg3{background:#FFD04A;}
+.bg4{background:#FA6400;color:#fff;}
