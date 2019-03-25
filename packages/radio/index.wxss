@@ -1,0 +1,7 @@
+/* packages/radio/index.wxss */
+.radio{padding:6rpx 15px;font-size:30rpx;color:#666;}
+.radio-item{margin:30rpx 0;}
+.inline-block{display: inline-block;margin-right:30rpx;}
+.content{margin-left:10rpx;}
+.radio-item>view{display: flex;align-items: center;}
+.disabled{color:#c8c9cc;}

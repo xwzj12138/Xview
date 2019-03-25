@@ -21,7 +21,9 @@
     "pages/search/index",
     "pages/drawer/index",
     "pages/log/index",
-    "pages/tabbar/index"
+    "pages/tabbar/index",
+    "pages/radio/index",
+    "pages/checkbox/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,0 +1,14 @@
+<!--pages/checkbox/index.wxml-->
+<view class='title'>基本用法</view>
+<x-checkbox options='{{options}}'></x-checkbox>
+
+<view class='title'>一行多个选项</view>
+<x-checkbox inlineBlock options='{{options1}}' bindselectOption='selectOption'></x-checkbox>
+
+<view class='title'>设置选中的icon类型，颜色，大小</view>
+<x-checkbox checkedIconName='roundcheckfill' options='{{options2}}' checkedIconColor='#1989fa'></x-checkbox>
+<x-checkbox checkedIconName='radioboxfill' options='{{options2}}' iconSize='60'></x-checkbox>
+<x-checkbox checkedIconName='radiobox' options='{{options2}}'></x-checkbox>
+
+<view class='title'>设置禁止选中</view>
+<x-checkbox checkedIconName='roundcheckfill' options='{{options3}}'></x-checkbox>

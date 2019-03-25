@@ -1,0 +1,11 @@
+<!--packages/radio/index.wxml-->
+<view class='radio x-class'>
+  <view class="radio-item {{inlineBlock?'inline-block':''}}" wx:for='{{options}}' bindtap='selectOption' data-index='{{index}}' wx:key='{{index}}'>
+    <view>
+      <view wx:if="{{item.disabled}}"><x-icon name='{{iconName}}' color='#c8c9cc' size='{{iconSize}}'></x-icon></view>
+      <view wx:elif="{{item.checked}}"><x-icon name='{{checkedIconName}}' color='{{checkedIconColor}}' size='{{iconSize}}'></x-icon></view>
+      <view wx:else><x-icon name='{{iconName}}' color='{{iconColor}}' size='{{iconSize}}'></x-icon></view>
+      <view class="content {{item.disabled?'disabled':''}}">{{item[titleKey]}}</view>
+    </view>
+  </view>
+</view>

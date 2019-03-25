@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "x-radio": "/packages/radio/index"
+  }
+}

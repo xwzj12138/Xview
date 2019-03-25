@@ -1,0 +1,14 @@
+<!--pages/radio/index.wxml-->
+<view class='title'>基本用法</view>
+<x-radio options='{{options}}' bindselectOption='selectOption'></x-radio>
+
+<view class='title'>一行多个选项</view>
+<x-radio inlineBlock options='{{options1}}' bindselectOption='selectOption'></x-radio>
+
+<view class='title'>设置选中的icon类型，颜色，大小</view>
+<x-radio checkedIconName='roundcheckfill' options='{{options2}}' checkedIconColor='#1989fa'></x-radio>
+<x-radio checkedIconName='radioboxfill' options='{{options2}}' iconSize='60'></x-radio>
+<x-radio checkedIconName='radiobox' options='{{options2}}'></x-radio>
+
+<view class='title'>设置禁止选中</view>
+<x-radio checkedIconName='roundcheckfill' options='{{options3}}'></x-radio>

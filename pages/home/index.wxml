@@ -34,6 +34,8 @@
   <x-cell menuArrow title='input 输入框' url='/pages/input/index'></x-cell>
   <x-cell menuArrow title='input-number 数字输入组件' url='/pages/input-number/index'></x-cell>
   <x-cell menuArrow title='rate 评分组件' url='/pages/rate/index'></x-cell>
+  <x-cell menuArrow title='radio 单选框' url='/pages/radio/index'></x-cell>
+  <x-cell menuArrow title='checkbox 复选框' url='/pages/checkbox/index'></x-cell>
   <x-cell menuArrow title='switch 开关' url='/pages/switch/index'></x-cell>
   <x-cell menuArrow title='upload 上传图片' url='/pages/upload/index'></x-cell>
 </x-cell-group>
