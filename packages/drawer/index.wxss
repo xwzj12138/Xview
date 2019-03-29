@@ -1,6 +1,6 @@
 .mask{position:fixed;top: 0;left: 0;right: 0;bottom: 0;}
 .maskShow{background:rgba(0, 0, 0, 0.6);}
-.drawer{position:fixed;transition:all 0.65s;}
+.drawer{position:fixed;transition:all 0.65s ease-in-out;z-index:10;}
 .drawer-top{top:0;left: 0;right: 0;transform: translateY(-100%);}
 .drawer-left{top:0;left: 0;bottom: 0;transform: translateX(-100%);}
 .drawer-right{top:0;right: 0;bottom: 0;transform: translateX(100%);}

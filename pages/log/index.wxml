@@ -1,4 +1,10 @@
 <x-steps direction='vertical'>
+  <x-step color='#19be6b' icon='roundcheckfill' title='2019-3-29'>
+    <view slot="content">
+      <view>1，修改抽屉组件过度动画效果</view>
+      <view>2，修改抽屉组件整体实现方式</view>
+    </view>
+  </x-step>
   <x-step color='#19be6b' icon='roundcheckfill' title='2019-3-25'>
     <view slot="content">
       <view>1，radio 单选组件</view>
