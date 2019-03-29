@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "x-popups":"/packages/popups/index",
+    "x-button": "/packages/button/index"
+  }
+}

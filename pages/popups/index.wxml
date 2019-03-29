@@ -1,0 +1,5 @@
+<!--pages/popups/index.wxml-->
+<view>
+  <x-button inline bind:click="handleClick" data-index='1'>默认按钮</x-button>
+</view>
+<x-popups isShow='{{isShow}}'></x-popups>

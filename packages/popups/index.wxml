@@ -1,0 +1,7 @@
+<!--packages/popups/index.wxml-->
+<view>
+  <view class="popups {{isShow?'show':''}}" bindtap='conceal'></view>
+  <view class="x-class content-view content-{{type}} {{isShow?'show':''}}">vdsvbf
+    <slot></slot>
+  </view>
+</view>
