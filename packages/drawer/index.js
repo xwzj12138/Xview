@@ -5,13 +5,13 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    // 抽屉的方向，可选值：left right
+    // 抽屉的方向，可选值：left right top bottom
     type:{
       type:String,
-      value:''
+      value:'top'
     },
     // 是否显示遮罩层
-    mask:{
+    maskShow:{
       type:Boolean,
       value:true
     },
@@ -19,6 +19,9 @@ Component({
     maskClosable:{
       type:Boolean,
       value:true
+    },
+    show:{
+      type:Boolean
     }
   },
 
@@ -36,8 +39,9 @@ Component({
     closeDrawer(){
       if(this.data.maskClosable){
         this.setData({
-          type:''
+          show:false
         })
+        this.triggerEvent('closeDrawer')
       }
     }
   }

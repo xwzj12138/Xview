@@ -5,27 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-    drawerType:'',
-    maskclosable:true
+    'show_left':false,
+    'show_right':false,
+    'show_top': false,
+    'show_bottom': false
   },
   /**
    * 显示抽屉
    */
   showDrawer:function(e){
-    console.log(e.currentTarget.dataset)
-    this.setData({
-      drawerType: e.currentTarget.dataset.type,
-      maskclosable: e.currentTarget.dataset.maskclosable
-    })
-  },
-  /**
-   * 关闭抽屉
-   */
-  closeDrawer:function(){
-    console.log('cdsagvf')
-    this.setData({
-      drawerType:''
-    })
+    console.log(e)
+    let list = {
+      'show_left': false,
+      'show_right': false,
+      'show_top': false,
+      'show_bottom': false
+    }
+    list[e.currentTarget.dataset.type] = e.currentTarget.dataset.show
+    this.setData(list)
   },
   /**
    * 生命周期函数--监听页面加载

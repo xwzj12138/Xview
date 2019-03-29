@@ -1,17 +1,37 @@
 <!--pages/drawer/index.wxml-->
-<x-button type='primary' data-type='left' data-maskclosable='{{true}}' bind:click='showDrawer'>左弹出-点击遮罩层隐藏</x-button>
+<x-button type='primary' bind:click='showDrawer' data-show='{{true}}' data-type='show_left'>左弹出</x-button>
+<x-button type='primary' bind:click='showDrawer' data-show='{{true}}' data-type='show_right'>右弹出</x-button>
+<x-button type='primary' bind:click='showDrawer' data-show='{{true}}' data-type='show_top'>上弹出</x-button>
+<x-button type='primary' bind:click='showDrawer' data-show='{{true}}' data-type='show_bottom'>下弹出</x-button>
 
-<x-button type='info' data-type='left' data-maskclosable='{{false}}' bind:click='showDrawer'>左弹出-自定义隐藏</x-button>
-
-<x-button type='success' data-type='right' data-maskclosable='{{true}}' bind:click='showDrawer'>右弹出-点击遮罩层隐藏</x-button>
-
-<x-button type='default' data-type='right' data-maskclosable='{{false}}' bind:click='showDrawer'>右弹出-自定义隐藏</x-button>
-
-<x-drawer type='{{drawerType}}' maskClosable='{{maskclosable}}'>
+<x-drawer type='left' show='{{show_left}}'>
   <view class='left-content'>
-    <view>抽屉</view>
-    <view wx:if='{{!maskclosable}}'>
-      <x-button bind:click='closeDrawer'>关闭抽屉</x-button>
+    <view>
+      <x-button catchtap='showDrawer' data-show='{{false}}' data-type='show_left'>关闭抽屉</x-button>
+    </view>
+  </view>
+</x-drawer>
+
+<x-drawer type='right' show='{{show_right}}'>
+  <view class='left-content'>
+    <view>
+      <x-button catchtap='showDrawer' data-show='{{false}}' data-type='show_right'>关闭抽屉</x-button>
+    </view>
+  </view>
+</x-drawer>
+
+<x-drawer type='bottom' show='{{show_bottom}}'>
+  <view class='top_content'>
+    <view>
+      <x-button catchtap='showDrawer' data-show='{{false}}' data-type='show_bottom'>关闭抽屉</x-button>
+    </view>
+  </view>
+</x-drawer>
+
+<x-drawer type='top' show='{{show_top}}'>
+  <view class='top_content'>
+    <view>
+      <x-button catchtap='showDrawer' data-show='{{false}}' data-type='show_top'>关闭抽屉</x-button>
     </view>
   </view>
 </x-drawer>
