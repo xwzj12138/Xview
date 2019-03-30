@@ -3,3 +3,7 @@
 .head image{width:150rpx;height:150rpx;vertical-align:middle;}
 .head>view:last-child{font-size:13px;font-weight:400;}
 .urltext{margin:10px;}
+.login_view{text-align: center;padding-top:6px;}
+.login_view image{width:150rpx;}
+.login_view>view:nth-child(2){font-size:14px;margin:5px 0;color:#666;}
+.x_drawer{border-radius:24rpx !important;width:550rpx;}

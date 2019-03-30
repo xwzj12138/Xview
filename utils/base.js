@@ -16,7 +16,7 @@ export class base{
       method: params.type,
       header: {'content-type': 'application/json'},
       success: function (res) {
-        if(res.data.error!=200) {
+        if(res.data.code!=200) {
           return wx.showToast({
             title: res.data.message,
             icon: 'none'

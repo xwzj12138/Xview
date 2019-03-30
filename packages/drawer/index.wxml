@@ -1,6 +1,6 @@
-<view class="x-class">
+<view>
   <view class="{{show?'mask':''}} {{maskShow?'maskShow':''}}" catchtap='closeDrawer'></view>
-  <view class="drawer drawer-{{type}} {{show?'show':''}}">
+  <view class="drawer drawer-{{type}} {{show?type=='center'?'show-center':'show':''}} x-class">
     <slot></slot>
   </view>
 </view>

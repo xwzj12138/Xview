@@ -5,4 +5,6 @@
 .drawer-left{top:0;left: 0;bottom: 0;transform: translateX(-100%);}
 .drawer-right{top:0;right: 0;bottom: 0;transform: translateX(100%);}
 .drawer-bottom{right:0;left: 0;bottom: 0;transform: translateY(100%);}
+.drawer-center{top:50%;left:50%;transform:translate(-50% ,-50%);display: none;background:#fff;border-radius:3px;overflow:hidden;}
 .show{transform: none;}
+.show-center{display:block;}

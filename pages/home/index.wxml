@@ -39,3 +39,14 @@
   <x-cell menuArrow title='switch 开关' url='/pages/switch/index'></x-cell>
   <x-cell menuArrow title='upload 上传图片' url='/pages/upload/index'></x-cell>
 </x-cell-group>
+<x-drawer maskClosable='{{false}}' x-class='x_drawer' type='center' show='{{show_center}}'>
+  <view class='login_view'>
+    <view>
+      <image mode='widthFix' src='/static/logo.png'></image>
+    </view>
+    <view>微信登录查看</view>
+    <view>
+      <x-button long size='115' type='primary' open-type='getUserInfo' bind:getuserinfo='getuserinfo'>授权登录</x-button>
+    </view>
+  </view>
+</x-drawer>

@@ -3,6 +3,7 @@
 <x-button type='primary' bind:click='showDrawer' data-show='{{true}}' data-type='show_right'>右弹出</x-button>
 <x-button type='primary' bind:click='showDrawer' data-show='{{true}}' data-type='show_top'>上弹出并且不显示遮罩层</x-button>
 <x-button type='primary' bind:click='showDrawer' data-show='{{true}}' data-type='show_bottom'>下弹出</x-button>
+<x-button type='primary' bind:click='showDrawer' data-show='{{true}}' data-type='show_center'>中间弹出</x-button>
 
 <x-drawer type='left' maskClosable='{{false}}' show='{{show_left}}'>
   <view class='left-content'>
@@ -33,5 +34,15 @@
     <view>
       <x-button catchtap='showDrawer' data-show='{{false}}' data-type='show_bottom'>关闭抽屉</x-button>
     </view>
+  </view>
+</x-drawer>
+
+<x-drawer type='center' show='{{show_center}}'>
+  <view>
+    <view>VB电饭煲v</view>
+    <view>VB电饭煲v</view>
+    <view>VB电饭煲v</view>
+    <view>VB电饭煲v</view>
+    <view>VB电饭煲v</view>
   </view>
 </x-drawer>

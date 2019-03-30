@@ -1,6 +1,8 @@
 {
   "usingComponents": {
     "x-cell": "/packages/cell/index",
-    "x-cell-group": "/packages/cell-group/index"
+    "x-cell-group": "/packages/cell-group/index",
+    "x-drawer": "/packages/drawer/index",
+    "x-button": "/packages/button/index"
   }
 }

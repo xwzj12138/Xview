@@ -14,7 +14,6 @@ Page({
    * 显示抽屉
    */
   showDrawer:function(e){
-    console.log(e)
     let list = {
       'show_left': false,
       'show_right': false,

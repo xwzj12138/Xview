@@ -7,6 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    show_center:false
   },
 
   /**
@@ -14,9 +15,22 @@ Page({
    */
   onLoad: function (options) {
     //判断是否登录
-    // loginModel.authLogin()
+    loginModel.isLogin(res=>{
+      this.setData({ show_center: true})
+    })
   },
-
+  /**
+   * 获取用户信息
+   */
+  getuserinfo:function(e){
+    let params = { 
+      nickname: e.detail.userInfo.nickName, gender: e.detail.userInfo.gender,
+      avatar: e.detail.userInfo.avatarUrl
+    }
+    loginModel.authLogin(params,(res) => {
+      this.setData({ show_center: false })
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

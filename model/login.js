@@ -8,22 +8,23 @@ export class login extends base{
     if(token){
       return token
     }
-    return null;
+    return callback();
   }
-  authLogin(callback){
+  authLogin(params,callback){
     wx.login({
       success:res=>{
+        params['code'] = res.code
         this.request({
           url: 'weapp/v1/login',
           type: 'POST',
-          data: { "code": res.code },
+          data: params,
           sCallBack: (result) => {
-            let cache = { token: result.data.token, add_time: (new Date()).getTime() }
+            let cache = { token: result.data.token}
             wx.setStorage({
               key: 'token',
               data: cache,
             })
-            callback && callback(res)
+            callback && callback(result)
           }
         })
       }
