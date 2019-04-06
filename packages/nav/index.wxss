@@ -1,5 +1,6 @@
 /* packages/nav/index.wxss */
 .nav {
+  white-space: nowrap;
   display: flex;
   justify-content:center;
 }
