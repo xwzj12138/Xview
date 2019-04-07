@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "x-card":"/packages/card/index"
+  }
+}

@@ -24,7 +24,8 @@
     "pages/tabbar/index",
     "pages/radio/index",
     "pages/checkbox/index",
-    "pages/popups/index"
+    "pages/popups/index",
+    "pages/card/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

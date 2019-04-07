@@ -1,0 +1,17 @@
+<view class="card x-class card-{{type}}">
+  <view class='goods_image'>
+    <image src='{{imgUrl}}' mode='widthFix'></image>
+  </view>
+  <view class='goods_info'>
+    <view class='goods_title'>{{title}}</view>
+    <view class='description'>{{description}}</view>
+    <view class='price-info'>
+      <view wx:if='{{price}}'>
+        <text class='price-text'>￥{{price}}</text>
+        <text class='otherPrice'>￥{{otherPrice}}</text>
+      </view>
+      <view wx:if='{{number}}'><text>X</text><text>{{number}}</text></view>
+    </view>
+    <slot></slot>
+  </view>
+</view>

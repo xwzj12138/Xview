@@ -20,10 +20,7 @@ export class login extends base{
           data: params,
           sCallBack: (result) => {
             let cache = { token: result.data.token}
-            wx.setStorage({
-              key: 'token',
-              data: cache,
-            })
+            wx.setStorageSync('token', cache)
             callback && callback(result)
           }
         })

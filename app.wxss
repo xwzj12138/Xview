@@ -1,2 +1,7 @@
 .title{padding:10px;color:#aaa;}
 ::-webkit-scrollbar {display: none;}
+page {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'PingFang SC', Helvetica, 'STHeiti STXihei', 'Microsoft YaHei', Tohoma, Arial, sans-serif;
+}

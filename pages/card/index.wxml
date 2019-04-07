@@ -1,0 +1,12 @@
+<view class='title'>基本用法</view>
+<x-card imgUrl='/static/logo.png' title='【去异味神器】除脚臭汗脚脚汗去除脚臭鞋臭脚气喷剂臭脚粉男女'
+  price='3' otherPrice='5'></x-card>
+<view class='title'>设置inline-block类型显示</view>
+<x-card type='inline-block' imgUrl='/static/logo.png' title='【云南本草去狐臭腋臭孕妇可用】除腋臭体臭净味水狐臭喷雾剂30ml' 
+price='3' otherPrice='5'></x-card>
+<x-card type='inline-block' imgUrl='/static/logo.png' title='【品质推荐】告别口臭困扰口苦口气口干调理肠胃去胃火肝火三清茶' 
+price='3' otherPrice='5'></x-card>
+
+<view class='title'>设置flex类型显示</view>
+<x-card type='flex' imgUrl='/static/logo.png' title='【买1送1】漏水拖鞋女夏居家沐浴软底防滑男家用情侣网红凉拖鞋'
+  price='3' otherPrice='5'></x-card>
