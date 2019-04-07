@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "x-card":"/packages/card/index"
+    "x-card":"/packages/card/index",
+    "x-button": "/packages/button/index"
   }
 }
