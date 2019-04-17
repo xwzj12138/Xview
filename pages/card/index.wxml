@@ -3,4 +3,14 @@
   <x-button bind:click="handleClick" type="info" inline data-type='flex' bind:click="handleClick">flex类型</x-button>
   <x-button bind:click="handleClick" type="primary" inline data-type='inline-block' bind:click="handleClick">inline-block类型</x-button>
 </view>
-<x-card type='{{type}}' wx:for='{{list}}' wx:key='{{index}}'  imgUrl='{{item.url}}' title='{{item.title}}' price='{{item.price}}' otherPrice='{{item.otherPrice}}'></x-card>
+<x-card type='{{type}}' wx:for='{{list}}' wx:key='{{index}}'  imgUrl='{{item.url}}' title='{{item.title}}' price='{{item.price}}' otherPrice='{{item.otherPrice}}'>
+  <view>
+    <view>
+      <view></view>
+      <view></view>
+    </view>
+    <view></view>
+    <view></view>
+    <view></view>
+  </view>
+</x-card>

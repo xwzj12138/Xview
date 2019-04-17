@@ -1,4 +1,4 @@
 <!--packages/goods-action/index.wxml-->
-<view class='x-class goods-action'>
+<view class='x-class goods-action' style='background:{{background}};'>
   <slot></slot>
 </view>

@@ -7,10 +7,26 @@ Page({
   data: {
     type:'',
     list: [
-      { url: 'https://t00img.yangkeduo.com/goods/images/2019-01-24/51c2bbfc5a1986396858cae748b7790e.jpeg', title: '【碎发整理神器】头发毛燥定型碎发膏 防静电毛发固定小孩可用', price: 5.5, otherPrice:15},
-      { url: 'https://t00img.yangkeduo.com/goods/images/2019-03-24/b34d10245ef01b84af9c182222010439.jpeg', title: '【夏季驱蚊必备】防蚊叮咬止痒清香艾草香膏艾灸皮肤痒轻度烫伤膏', price: 5.5, otherPrice: 15 },
-      { url: 'https://t00img.yangkeduo.com/goods/images/2019-04-06/8da5069f29ca0c8a9bdfe2d7155296d5.jpeg', title: '【告别疼痛 】艾叶膝盖膏药贴热敷贴护膝贴关节疼痛颈椎老寒腿骨', price: 5.5, otherPrice: 15 },
-      { url: 'https://t00img.yangkeduo.com/goods/images/2018-12-17/c8cf470b67272360091980c6897a7600.jpeg', title: '[去黑头祛痘收毛孔]深层清洁手工竹炭皂除螨/祛痘/去黑头100g', price: 5.5, otherPrice: 15 }
+      { url: 'http://poqx8vuub.bkt.clouddn.com/20190416/3eb0c47a814c8faef3d4b053a4638321.png',
+        title: '越南大青芒', 
+       price: 5.5, 
+       otherPrice:15
+      },
+      { url: 'http://poqx8vuub.bkt.clouddn.com/20190416/43a6d36a08700c6f5f0e497197dcad6e.png', 
+        title: '黄瓜', 
+      price: 5.5, 
+      otherPrice: 15 
+      },
+      { url: 'http://poqx8vuub.bkt.clouddn.com/20190414/ef89c5d4f66136f77a51fa0ef70af7e7.png',
+        title: '铁棍山药', 
+        price: 5.5, 
+        otherPrice: 15 
+      },
+      { url: 'https://t00img.yangkeduo.com/goods/images/2018-12-17/c8cf470b67272360091980c6897a7600.jpeg', 
+        title: '[去黑头祛痘收毛孔]深层清洁手工竹炭皂除螨/祛痘/去黑头100g', 
+        price: 5.5, 
+        otherPrice: 15 
+      }
       ]
   },
   /**
