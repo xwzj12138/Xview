@@ -1,0 +1,46 @@
+<x-steps direction='vertical'>
+  <x-step color='#19be6b' icon='roundcheckfill' title='2019-4-8'>
+    <view slot="content">
+      <view>1，修改商品卡片组件实现方式</view>
+    </view>
+  </x-step>
+  <x-step color='#19be6b' icon='roundcheckfill' title='2019-4-2'>
+    <view slot="content">
+      <view>1，添加商品卡片组件</view>
+    </view>
+  </x-step>
+  <x-step color='#19be6b' icon='roundcheckfill' title='2019-3-29'>
+    <view slot="content">
+      <view>1，修改抽屉组件过度动画效果</view>
+      <view>2，修改抽屉组件整体实现方式</view>
+    </view>
+  </x-step>
+  <x-step color='#19be6b' icon='roundcheckfill' title='2019-3-25'>
+    <view slot="content">
+      <view>1，radio 单选组件</view>
+      <view>2，checkbox 复选框组件</view>
+    </view>
+  </x-step>
+  <x-step color='#19be6b' icon='roundcheckfill' title='2019-3-10'>
+    <view slot="content">
+      <view>1，添加tabbar案例</view>
+    </view>
+  </x-step>
+  <x-step color='#19be6b' icon='roundcheckfill' title='2019-2-30' content='添加tabbar商品导航组件'></x-step>
+  <x-step color='#19be6b' icon='roundcheckfill' title='2019-2-23'>
+    <view slot="content">
+      <view>1，添加覆盖图片功能</view>
+      <view>2，修改返回结果结构</view>
+    </view>
+  </x-step>
+  <x-step color='#19be6b' icon='roundcheckfill' title='2019-1-20' content='添加抽屉组件'></x-step>
+  <x-step color='#19be6b' icon='roundcheckfill' title='2019-1-5' content='添加倒计时组件'></x-step>
+  <x-step color='#19be6b' icon='roundcheckfill' title='2018-12-28'>
+    <view slot="content">
+      <view>1，添加步骤条组件</view>
+      <view>2，nav组件自定义key</view>
+      <view>3，修改tabList参数结构</view>
+    </view>
+  </x-step>
+  <x-step color='#19be6b' icon='roundcheckfill' title='2018-12-20' content='立项'></x-step>
+</x-steps>

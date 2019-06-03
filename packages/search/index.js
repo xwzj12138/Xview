@@ -26,10 +26,6 @@ Component({
       type: String,
       value: 'search'
     },
-    backgroundColor: {
-      type: String,
-      value: '#fff'
-    },
     searchIconName: {
       type: String,
       value: ''
@@ -37,6 +33,10 @@ Component({
     searchColor:{
       type:String,
       value:'#666'
+    },
+    borderRadius:{
+      type:Number,
+      value:10
     }
   },
 

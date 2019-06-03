@@ -11,34 +11,34 @@
 </view>
 <view class='title'>布局组件</view>
 <x-cell-group>
-  <x-cell menuArrow title='grid 九宫格' url='/pages/grid/index'></x-cell>
-  <x-cell menuArrow title='cell 单元格' url='/pages/cell/index'></x-cell>
-  <x-cell menuArrow title='nav 标签栏' url='/pages/nav/index'></x-cell>
-  <x-cell menuArrow title='drawer 抽屉' url='/pages/drawer/index'></x-cell>
-  <x-cell menuArrow title='tabbar 商品导航' url='/pages/tabbar/index'></x-cell>
-  <x-cell menuArrow title='card 商品卡片' url='/pages/card/index'></x-cell>
+  <x-cell menuArrow title='grid 九宫格' url='/pages/module/grid/index'></x-cell>
+  <x-cell menuArrow title='cell 单元格' url='/pages/module/cell/index'></x-cell>
+  <x-cell menuArrow title='nav 标签栏' url='/pages/module/nav/index'></x-cell>
+  <x-cell menuArrow title='drawer 抽屉' url='/pages/module/drawer/index'></x-cell>
+  <x-cell menuArrow title='tabbar 商品导航' url='/pages/module/tabbar/index'></x-cell>
+  <x-cell menuArrow title='card 商品卡片' url='/pages/module/card/index'></x-cell>
 </x-cell-group>
 <view class='title'>基础组件</view>
 <x-cell-group>
-  <x-cell menuArrow title='button 按钮' url='/pages/button/index'></x-cell>
-  <x-cell menuArrow title='icon 图标' url='/pages/icon/index'></x-cell>
-  <x-cell menuArrow title='avatar 头像' url='/pages/avatar/index'></x-cell>
-  <x-cell menuArrow title='steps 步骤条' url='/pages/steps/index'></x-cell>
-  <x-cell menuArrow title='search 搜索' url='/pages/search/index'></x-cell>
-  <x-cell menuArrow title='notice-bar 通知栏' url='/pages/notice-bar/index'></x-cell>
-  <x-cell menuArrow title='progress 进度条' url='/pages/progress/index'></x-cell>
-  <x-cell menuArrow title='count-down 倒计时' url='/pages/count-down/index'></x-cell>
-  <x-cell menuArrow title='loading 加载提示' url='/pages/loading/index'></x-cell>
+  <x-cell menuArrow title='button 按钮' url='/pages/module/button/index'></x-cell>
+  <x-cell menuArrow title='icon 图标' url='/pages/module/icon/index'></x-cell>
+  <x-cell menuArrow title='avatar 头像' url='/pages/module/avatar/index'></x-cell>
+  <x-cell menuArrow title='steps 步骤条' url='/pages/module/steps/index'></x-cell>
+  <x-cell menuArrow title='search 搜索' url='/pages/module/search/index'></x-cell>
+  <x-cell menuArrow title='notice-bar 通知栏' url='/pages/module/notice-bar/index'></x-cell>
+  <x-cell menuArrow title='progress 进度条' url='/pages/module/progress/index'></x-cell>
+  <x-cell menuArrow title='count-down 倒计时' url='/pages/module/count-down/index'></x-cell>
+  <x-cell menuArrow title='loading 加载提示' url='/pages/module/loading/index'></x-cell>
 </x-cell-group>
 <view class='title'>表单组件</view>
 <x-cell-group>
-  <x-cell menuArrow title='input 输入框' url='/pages/input/index'></x-cell>
-  <x-cell menuArrow title='input-number 数字输入组件' url='/pages/input-number/index'></x-cell>
-  <x-cell menuArrow title='rate 评分组件' url='/pages/rate/index'></x-cell>
-  <x-cell menuArrow title='radio 单选框' url='/pages/radio/index'></x-cell>
-  <x-cell menuArrow title='checkbox 复选框' url='/pages/checkbox/index'></x-cell>
-  <x-cell menuArrow title='switch 开关' url='/pages/switch/index'></x-cell>
-  <x-cell menuArrow title='upload 上传图片' url='/pages/upload/index'></x-cell>
+  <x-cell menuArrow title='input 输入框' url='/pages/module/input/index'></x-cell>
+  <x-cell menuArrow title='input-number 数字输入组件' url='/pages/module/input-number/index'></x-cell>
+  <x-cell menuArrow title='rate 评分组件' url='/pages/module/rate/index'></x-cell>
+  <x-cell menuArrow title='radio 单选框' url='/pages/module/radio/index'></x-cell>
+  <x-cell menuArrow title='checkbox 复选框' url='/pages/module/checkbox/index'></x-cell>
+  <x-cell menuArrow title='switch 开关' url='/pages/module/switch/index'></x-cell>
+  <x-cell menuArrow title='upload 上传图片' url='/pages/module/upload/index'></x-cell>
 </x-cell-group>
 <x-drawer maskClosable='{{false}}' x-class='x_drawer' type='center' show='{{show_center}}'>
   <view class='login_view'>

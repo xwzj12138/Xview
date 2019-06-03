@@ -1,4 +1,0 @@
-/* pages/drawer/index.wxss */
-page{background:#f3f3f3;}
-.left-content{background: #fff;height:100%;width:250rpx;text-align:center;padding:20px;}
-.top_content{background: #fff;height:100%;width:100%;text-align:center;padding: 20px 0;}

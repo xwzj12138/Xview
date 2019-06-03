@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "x-cell": "/packages/cell/index",
+    "x-cell-group": "/packages/cell-group/index"
+  }
+}

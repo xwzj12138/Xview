@@ -1,8 +1,4 @@
 // packages/cell/index.js
-const warn = (msg, getValue) => {
-  console.warn(msg);
-  console.log('接受到的值为：', getValue);
-};
 Component({
   relations: {
     '../cell-group/index': {
@@ -38,6 +34,14 @@ Component({
       type: String,
       value: 'navigateTo'
     },
+    appId:{
+      type: String,
+      value: ''
+    },
+    extraData: {
+      type: Object,
+      value: {}
+    },
     url: {
       type: String,
       value: ''
@@ -57,11 +61,18 @@ Component({
   methods: {
     navigateTo() {
       let url = this.data.url;
-
+      this.triggerEvent('click');
       if (!url || url === 'true' || url === 'false') return;
 
-      if (['navigateTo', 'redirectTo', 'switchTab', 'reLaunch'].indexOf(this.data.linkType) === -1) {
-        warn('linkType 属性可选值为 navigateTo，redirectTo，switchTab，reLaunch', this.data.linkType);
+      if (['navigateTo', 'redirectTo', 'switchTab', 'reLaunch','navigateToMiniProgram'].indexOf(this.data.linkType) === -1) {
+        return;
+      }
+      if (this.data.linkType =='navigateToMiniProgram'){
+        wx.navigateToMiniProgram({
+          appId:this.data.appId,
+          path: this.data.url,
+          extraData: this.data.extraData
+        })
         return;
       }
       wx[this.data.linkType].call(wx, { url });

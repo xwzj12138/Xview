@@ -1,0 +1,18 @@
+<!--pages/search/index.wxml-->
+<view class='title'>基本用法</view>
+<x-search placeholder='搜索图片，文章，视频'></x-search>
+<view style='width:60%;'><x-search placeholder='搜索图片，文章，视频'></x-search></view>
+
+<view class='title'>设置搜索图标</view>
+<x-search placeholder='搜索图片，文章，视频' searchIconName='search'></x-search>
+
+<view class='title'>自定义头部</view>
+<x-search placeholder='搜索图片，文章，视频' searchIconName='search'>
+<image slot='searchHead' src='/static/logo.png'></image>
+</x-search>
+
+<view class='title'>自定义尾部</view>
+<x-search placeholder='搜索图片，文章，视频' borderRadius='64' searchIconName='search' bindonInput='onInput' bindonFocus='onFocus' bindonBlur='onBlur' bindonConfirm='onConfirm'>
+<image slot='searchHead' src='/static/logo.png'></image>
+<x-button long slot='searchAction' inline type="success" shape="circle" size='64'  bind:click="handleClick">搜索</x-button>
+</x-search>

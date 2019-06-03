@@ -1,31 +1,31 @@
 {
   "pages": [
     "pages/home/index",
-    "pages/icon/index",
-    "pages/button/index",
-    "pages/welcome/index",
-    "pages/avatar/index",
-    "pages/switch/index",
-    "pages/upload/index",
-    "pages/grid/index",
-    "pages/cell/index",
-    "pages/steps/index",
-    "pages/input/index",
-    "pages/input-number/index",
-    "pages/rate/index",
-    "pages/nav/index",
-    "pages/notice-bar/index",
-    "pages/loading/index",
-    "pages/count-down/index",
-    "pages/progress/index",
-    "pages/search/index",
-    "pages/drawer/index",
-    "pages/log/index",
-    "pages/tabbar/index",
-    "pages/radio/index",
-    "pages/checkbox/index",
-    "pages/popups/index",
-    "pages/card/index"
+    "pages/module/icon/index",
+    "pages/module/button/index",
+    "pages/module/avatar/index",
+    "pages/module/switch/index",
+    "pages/module/upload/index",
+    "pages/module/grid/index",
+    "pages/module/cell/index",
+    "pages/module/steps/index",
+    "pages/module/input/index",
+    "pages/module/input-number/index",
+    "pages/module/rate/index",
+    "pages/module/nav/index",
+    "pages/module/notice-bar/index",
+    "pages/module/loading/index",
+    "pages/module/count-down/index",
+    "pages/module/progress/index",
+    "pages/module/search/index",
+    "pages/module/drawer/index",
+    "pages/my/log/index",
+    "pages/module/tabbar/index",
+    "pages/module/radio/index",
+    "pages/module/checkbox/index",
+    "pages/module/popups/index",
+    "pages/module/card/index",
+    "pages/my/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -37,17 +37,21 @@
     "list": [
       {
         "pagePath": "pages/home/index",
-        "text": "首页",
+        "text": "组件",
         "iconPath": "/static/tabbar/basics.png",
         "selectedIconPath": "/static/tabbar/basics_cur.png"
       },
       {
-        "pagePath": "pages/log/index",
-        "text": "更新日志",
+        "pagePath": "pages/my/index/index",
+        "text": "关于我们",
         "iconPath": "/static/tabbar/about.png",
         "selectedIconPath": "/static/tabbar/about_cur.png"
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigateToMiniProgramAppIdList": [
+    "wx7271410f70eb2829"
+  ],
+  "sitemapLocation": "sitemap.json"
 }

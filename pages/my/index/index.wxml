@@ -1,0 +1,9 @@
+<x-cell>
+    <view slot='icon' class='avatar'><open-data type='userAvatarUrl'></open-data></view>
+    <view class='username'><open-data type='userNickName'></open-data></view>
+</x-cell>
+<x-cell-group menuCard>
+  <x-cell menuArrow title='更新日志' url='/pages/my/log/index'></x-cell>
+  <x-cell menuArrow title='项目案例' linkType='navigateToMiniProgram' appId='wx7271410f70eb2829' url='pages/pdd/home/index'></x-cell>
+  <x-cell menuArrow title='赞赏' bindclick='pay'></x-cell>
+</x-cell-group>

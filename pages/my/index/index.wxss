@@ -1,0 +1,2 @@
+.avatar{border-radius:50%;overflow:hidden;width:200rpx;}
+.username{margin-left:10px;font-size:14px;font-weight:600;}

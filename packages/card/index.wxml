@@ -1,10 +1,11 @@
 <view class="card x-class card-{{type}}">
   <view class='goods_image'>
-    <image src='{{imgUrl}}' mode='widthFix'></image>
+    <image src='{{imgUrl}}' lazy-load='{{true}}'></image>
   </view>
   <view class='goods_info'>
     <view class='goods_title'>{{title}}</view>
     <view class='description'>{{description}}</view>
+    <slot name='price_front'></slot>
     <view class='price-info'>
       <view wx:if='{{price}}'>
         <text class='price-text'>￥{{price}}</text>

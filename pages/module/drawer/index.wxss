@@ -1,0 +1,8 @@
+/* pages/drawer/index.wxss */
+page{background:#f3f3f3;}
+.left-content{background: #fff;height:100%;width:250rpx;text-align:center;padding:20px;}
+.top_content{background: #fff;height:100%;width:100%;text-align:center;padding: 20px 0;}
+.login_view{text-align: center;padding-top:6px;width:550rpx;}
+.login_view image{width:150rpx;}
+.login_view>view:nth-child(2){font-size:14px;margin:5px 0;color:#666;}
+.x_drawer{border-radius:24rpx !important;}
