@@ -17,3 +17,4 @@
   <x-switch slot='footer' value='{{isAlert1}}' bindchange='clickSwitch1'></x-switch>
 </x-cell>
 <x-loading isShow="{{true}}" isAlert='{{isAlert1}}' imgUrl='/static/weapp_qr_code.jpg'></x-loading>
+<ad unit-id="adunit-059905e4f221fbeb"></ad>

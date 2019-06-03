@@ -3,3 +3,4 @@
   <x-button inline bind:click="handleClick" data-index='1'>默认按钮</x-button>
 </view>
 <x-popups isShow='{{isShow}}'></x-popups>
+<ad unit-id="adunit-059905e4f221fbeb"></ad>
