@@ -46,5 +46,7 @@ Page({
    */
   onLoad: function (options) {
 
+  },
+  onShareAppMessage: function () {
   }
 })

@@ -13,5 +13,7 @@ Page({
   gridClick:function(e){
     console.log(e)
     console.log('第' + e.currentTarget.dataset.id+'宫格被点击了')
+  },
+  onShareAppMessage: function () {
   }
 })

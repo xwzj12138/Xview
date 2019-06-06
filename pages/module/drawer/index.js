@@ -34,4 +34,6 @@ Page({
     this.setData({ show_center: false })
     console.log(params)
   },
+  onShareAppMessage: function () {
+  }
 })

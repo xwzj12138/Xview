@@ -741,5 +741,7 @@ Page({
     this.setData({
       icon: list
     })
+  },
+  onShareAppMessage: function () {
   }
 })

@@ -20,5 +20,7 @@ Page({
         console.log(res)
       }
     })
+  },
+  onShareAppMessage: function () {
   }
 })

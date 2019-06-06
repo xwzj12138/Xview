@@ -16,5 +16,7 @@ Page({
     console.log('参数：')
     console.log(e.detail)
     this.setData({ switch1: e.detail.value })
+  },
+  onShareAppMessage: function () {
   }
 })

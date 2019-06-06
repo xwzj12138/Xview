@@ -30,5 +30,7 @@ Page({
     loginModel.authLogin(params,(res) => {
       this.setData({ show_center: false })
     })
+  },
+  onShareAppMessage: function () {
   }
 })

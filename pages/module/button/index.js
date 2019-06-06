@@ -9,5 +9,7 @@ Page({
   },
   handleClick:function(e){
     console.log('按钮被点击了')
+  },
+  onShareAppMessage: function () {
   }
 })

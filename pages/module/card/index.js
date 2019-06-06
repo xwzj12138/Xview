@@ -37,5 +37,7 @@ Page({
    */
   handleClick:function(e){
     this.setData({ type: e.currentTarget.dataset.type})
+  },
+  onShareAppMessage: function () {
   }
 })

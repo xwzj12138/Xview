@@ -27,5 +27,7 @@ Page({
       targetTime1: new Date().getTime() + 86430000,
       targetTime2: new Date().getTime() + 10000
     });
+  },
+  onShareAppMessage: function () {
   }
 })
