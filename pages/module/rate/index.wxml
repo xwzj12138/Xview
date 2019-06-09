@@ -37,4 +37,4 @@
 <view>
   <x-rate name='evaluate_fill' count="6" size='40' value="{{starIndex6}}" bind:change="onChange6"></x-rate>
 </view>
-<ad unit-id="adunit-059905e4f221fbeb"></ad>
+<!-- <ad unit-id="adunit-059905e4f221fbeb"></ad> -->

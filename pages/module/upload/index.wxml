@@ -11,4 +11,4 @@
 <view>
   <x-upload urlList='{{urlList2}}' binddelFile='delFile2'  bindaddFile='addFile3' limit='{{limit}}' uploadApi=''></x-upload>
 </view>
-<ad unit-id="adunit-059905e4f221fbeb"></ad>
+<!-- <ad unit-id="adunit-059905e4f221fbeb"></ad> -->

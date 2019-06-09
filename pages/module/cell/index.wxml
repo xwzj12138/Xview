@@ -34,4 +34,4 @@
     <x-input slot='footer' value='{{input1}}' placeholder='请输入'></x-input>
   </x-cell>
 </x-cell-group>
-<ad unit-id="adunit-059905e4f221fbeb"></ad>
+<!-- <ad unit-id="adunit-059905e4f221fbeb"></ad> -->

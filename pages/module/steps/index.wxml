@@ -37,4 +37,4 @@
       <view slot="content">描述信息<x-rate value='3'></x-rate></view>
     </x-step>
 </x-steps>
-<ad unit-id="adunit-059905e4f221fbeb"></ad>
+<!-- <ad unit-id="adunit-059905e4f221fbeb"></ad> -->

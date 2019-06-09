@@ -17,4 +17,4 @@
   <x-tabbar-flex-item x-class='bg3' title='加入购物车'></x-tabbar-flex-item>
   <x-tabbar-flex-item x-class='bg4' title='立即购买'></x-tabbar-flex-item>
 </x-tabbar>
-<ad unit-id="adunit-059905e4f221fbeb"></ad>
+<!-- <ad unit-id="adunit-059905e4f221fbeb"></ad> -->

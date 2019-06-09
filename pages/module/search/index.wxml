@@ -16,4 +16,4 @@
 <image slot='searchHead' src='/static/logo.png'></image>
 <x-button long slot='searchAction' inline type="success" shape="circle" size='64'  bind:click="handleClick">搜索</x-button>
 </x-search>
-<ad unit-id="adunit-059905e4f221fbeb"></ad>
+<!-- <ad unit-id="adunit-059905e4f221fbeb"></ad> -->

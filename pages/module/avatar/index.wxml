@@ -17,4 +17,4 @@
   <x-grid-item><x-avatar src='/static/logo.png'></x-avatar></x-grid-item>
   <x-grid-item><x-avatar src='/static/logo.png'></x-avatar></x-grid-item>
 </x-grid-group>
-<ad unit-id="adunit-059905e4f221fbeb"></ad>
+<!-- <ad unit-id="adunit-059905e4f221fbeb"></ad> -->

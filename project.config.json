@@ -13,8 +13,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.6.0",
-	"appid": "wxea2586a42af671d8",
-	"projectname": "xview",
+	"appid": "wx5e1899c7899ee1c3",
+	"projectname": "xview_weapp",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

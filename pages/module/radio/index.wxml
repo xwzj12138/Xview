@@ -12,4 +12,4 @@
 
 <view class='title'>设置禁止选中</view>
 <x-radio checkedIconName='roundcheckfill' options='{{options3}}'></x-radio>
-<ad unit-id="adunit-059905e4f221fbeb"></ad>
+<!-- <ad unit-id="adunit-059905e4f221fbeb"></ad> -->

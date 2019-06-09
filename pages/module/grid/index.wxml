@@ -34,4 +34,4 @@
   <x-grid-item isColumn url='/static/logo.png' title='派客' data-id='12' catchtap='gridClick'></x-grid-item>
   <x-grid-item isColumn url='/static/logo.png' title='凰豆' data-id='13' catchtap='gridClick'></x-grid-item>
 </x-grid-group>
-<ad unit-id="adunit-059905e4f221fbeb"></ad>
+<!-- <ad unit-id="adunit-059905e4f221fbeb"></ad> -->
