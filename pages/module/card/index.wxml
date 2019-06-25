@@ -5,4 +5,4 @@
 </view>
 <x-card type='{{type}}' wx:for='{{list}}' wx:key='{{index}}'  imgUrl='{{item.url}}' title='{{item.title}}' price='{{item.price}}' otherPrice='{{item.otherPrice}}'>
 </x-card>
-<ad unit-id="adunit-059905e4f221fbeb"></ad>
+<!-- <ad unit-id="adunit-059905e4f221fbeb"></ad> -->

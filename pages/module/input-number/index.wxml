@@ -4,4 +4,4 @@
 
 <view class='title'>设置步进值</view>
 <x-input-number max='100' min='0' value='{{value3}}' step='0.5' bindchange='change3'></x-input-number>
-<ad unit-id="adunit-059905e4f221fbeb"></ad>
+<!-- <ad unit-id="adunit-059905e4f221fbeb"></ad> -->

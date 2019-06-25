@@ -10,4 +10,4 @@
 
 <view class='title'>禁止输入</view>
 <x-input right value='{{value4}}' disabled title='收货人' value='禁止输入' bind:change='inputChange'></x-input>
-<ad unit-id="adunit-059905e4f221fbeb"></ad>
+<!-- <ad unit-id="adunit-059905e4f221fbeb"></ad> -->

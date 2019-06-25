@@ -38,4 +38,4 @@
 <view>
   <x-button bind:click="handleClick" shape="circle" disabled loading>大尺寸</x-button>
 </view>
-<ad unit-id="adunit-059905e4f221fbeb"></ad>
+<!-- <ad unit-id="adunit-059905e4f221fbeb"></ad> -->

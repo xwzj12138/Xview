@@ -13,4 +13,4 @@
 
 <view class='title'>设置移动速度，默认2000</view>
 <x-notice-bar speed='1000' icon='notification' closable>测试通知测试通知测试通知测试通知测试通知测试通知测试通知</x-notice-bar>
-<ad unit-id="adunit-059905e4f221fbeb"></ad>
+<!-- <ad unit-id="adunit-059905e4f221fbeb"></ad> -->

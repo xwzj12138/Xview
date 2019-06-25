@@ -15,7 +15,7 @@ export class login extends base{
       success:res=>{
         params['code'] = res.code
         this.request({
-          url: 'weapp/v1/login',
+          url: 'weapp/v2/login',
           type: 'POST',
           data: params,
           sCallBack: (result) => {
