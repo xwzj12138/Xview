@@ -24,7 +24,7 @@ Component({
       value: 46
     },
     iconColor: {
-      type: Number,
+      type: String,
       value: '#aaa'
     }
   },
