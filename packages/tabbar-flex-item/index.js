@@ -19,6 +19,10 @@ Component({
     iconSize:{
       type:Number,
       value:46
+    },
+    iconColor: {
+      type: Number,
+      value: '#aaa'
     }
   },
 

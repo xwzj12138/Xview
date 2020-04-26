@@ -1,6 +1,6 @@
 <!--pages/goods-action/index.wxml-->
 <x-tabbar x-class='tabbar'>
-  <x-tabbar-item title='客服' width='120' icon='service'></x-tabbar-item>
+  <x-tabbar-item title='客服' width='120' icon='service' iconColor='#f0f'></x-tabbar-item>
   <x-tabbar-item title='购物车' width='120' icon='cartfill'></x-tabbar-item>
   <x-tabbar-flex-item x-class='bg1' title='加入购物车'></x-tabbar-flex-item>
   <x-tabbar-flex-item x-class='bg2' title='立即购买'></x-tabbar-flex-item>

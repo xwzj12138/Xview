@@ -2,7 +2,7 @@
   <view class='x-class'>
     <view>
       <image wx:if='{{src}}' src='{{src}}'></image>
-      <x-icon wx:elif='{{icon}}' name='{{icon}}' size='{{iconSize}}'></x-icon>
+      <x-icon wx:elif='{{icon}}' name='{{icon}}' size='{{iconSize}}' color="{{iconColor}}"></x-icon>
     </view>
     <view>{{title}}</view>
     <slot></slot>
