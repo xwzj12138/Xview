@@ -1,14 +1,13 @@
 /* 将cell设为flex布局且内容居中显示 */
+@import '../common/index.wxss';
 .cell-item {
   position: relative;
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 100rpx;
-  background: #fff;
-  padding: 0 30rpx;
+  padding: 10px 30rpx;
   overflow:hidden;
   color: #333;
+  background: #fff;
 }
 /* 设置底部分隔线 */
 .cell-item::after{content:'';position:absolute;bottom:0;left:30rpx;right:30rpx;pointer-events:none;box-sizing:border-box;border-bottom:1px solid #e9eaec;}
@@ -36,9 +35,9 @@
   right: 30rpx;
   margin: auto;
 }
-.cell-icon{margin-right:5px}
+.cell-icon{margin-right:5px;}
 .cell-icon:empty{display:none}
-.cell-bd{flex:1}
+.cell-bd{flex:1;word-break:break-all;}
 .cell-text{line-height:24px;font-size:14px}
 .cell-desc{line-height:1.2;font-size:12px;color:#80848f}
-.cell-ft{position:relative;text-align:right;color:#495060}
+.cell-ft{position:relative;text-align:right;color:#495060;font-size: 14px;}

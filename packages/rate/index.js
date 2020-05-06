@@ -1,26 +1,30 @@
 Component({
     externalClasses: ['x-class'],
     properties : {
-        count : {
-            type : Number,
-            value : 5
-        },
-        value : {
-            type : Number,
-            value : 0
-        },
-        disabled : {
-            type : Boolean,
-            value : false
-        },
-        size : {
-            type : Number,
-            value : 36
-        },
-        name : {
-            type : String,
-          value: 'favorfill'
-        }
+      count : {
+          type : Number,
+          value : 5
+      },
+      value : {
+          type : Number,
+          value : 0
+      },
+      disabled : {
+          type : Boolean,
+          value : false
+      },
+      size : {
+          type : Number,
+          value : 36
+      },
+      icon_name : {
+          type : String,
+        value: 'favorfill'
+      },
+      name: {
+        type: String,
+        value: 'score'
+      }
     },
     data : {
         touchesStart : {
@@ -35,7 +39,8 @@ Component({
             }
             const index = e.currentTarget.dataset.index;
             this.triggerEvent('change',{
-                index : index + 1
+              value : index + 1,
+                name:this.data.name
             })
         },
         handleTouchMove(e){
@@ -55,7 +60,8 @@ Component({
             let setIndex = Math.ceil( space/data.size );
             setIndex = setIndex  > data.count ? data.count : setIndex ;
             this.triggerEvent('change',{
-                index : setIndex 
+                value : setIndex ,
+              name: this.data.name
             })
         }
     },

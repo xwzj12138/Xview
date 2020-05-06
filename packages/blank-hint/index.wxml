@@ -1,0 +1,4 @@
+<view class="blank_hint">
+  <image src="{{background_url}}" mode="widthFix"></image>
+  <view><x-button bind:click="navigateTo">{{button_name}}</x-button></view>
+</view>

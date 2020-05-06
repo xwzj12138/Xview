@@ -14,6 +14,10 @@ Component({
     key:{
       type:String,
       value:'name'
+    },
+    TabCur: {
+      type: Number,
+      value: 0
     }
   },
 
@@ -21,7 +25,6 @@ Component({
    * 组件的初始数据
    */
   data: {
-    TabCur: 0,
     scrollLeft: 0
   },
 

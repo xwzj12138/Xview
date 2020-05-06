@@ -1,5 +1,8 @@
 // packages/grid-item/index.js
+var buttonBehavior = require('../common/button_behaior.js');
 Component({
+  externalClasses: ['x-class'],
+  behaviors: [buttonBehavior],
   options: {multipleSlots: true},
   relations: {
     '../grid-group/index': {
@@ -13,7 +16,10 @@ Component({
     title:{
       type:String
     },
-    url:{
+    url: {
+      type: String
+    },
+    img_url:{
       type:String
     },
     isColumn:{

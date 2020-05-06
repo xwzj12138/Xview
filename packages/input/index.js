@@ -39,7 +39,8 @@ Component({
           value: false
       },
       maxlength: {
-          type: Number
+          type: Number,
+          value:-1
       },
       name:{
         type:String,
@@ -48,6 +49,10 @@ Component({
       value: {
         type: String,
         value: ''
+      },
+      height:{
+        type:String,
+        value:'61px'
       }
     },
 

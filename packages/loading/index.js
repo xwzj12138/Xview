@@ -35,7 +35,7 @@ Component({
     },
     imgUrl:{
       type:String,
-      value:'/static/logo.png'
+      value:''
     }
   },
 

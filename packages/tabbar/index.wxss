@@ -1,10 +1,8 @@
 /* packages/goods-action/index.wxss */
+@import '../common/index.wxss';
 .goods-action{
   position:fixed;bottom:0;left:0;right:0;
   border-top:1px solid #f3f3f3;
-  display: flex;
-  align-items: center;
-  box-sizing:border-box;
 }
 .goods-action button{padding:0;line-height:1;background:none;font-size:12px;width:100%;}
 .goods-action button::after{border:none;}

@@ -3,4 +3,4 @@
   <view class="drawer drawer-{{type}} {{show?type=='center'?'show-center':'show':''}} x-class">
     <slot></slot>
   </view>
-</view>
+</view> 

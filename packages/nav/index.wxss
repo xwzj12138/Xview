@@ -1,8 +1,11 @@
 /* packages/nav/index.wxss */
+@import '../common/index.wxss';
 .nav {
   white-space: nowrap;
   display: flex;
   justify-content:center;
+  text-align: center;
+  height: 100rpx;
 }
 .bg-white {
   background-color: #fff;

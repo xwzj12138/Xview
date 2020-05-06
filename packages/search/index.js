@@ -34,9 +34,9 @@ Component({
       type:String,
       value:'#666'
     },
-    borderRadius:{
-      type:Number,
-      value:10
+    borderRadius: {
+      type: Number,
+      value: 64
     }
   },
 

@@ -1,10 +1,12 @@
 <view class='actionItem' style="{{width?'width:'+width+'rpx':''}}">
-  <view class='x-class'>
-    <view>
-      <image wx:if='{{src}}' src='{{src}}'></image>
-      <x-icon wx:elif='{{icon}}' name='{{icon}}' size='{{iconSize}}' color="{{iconColor}}"></x-icon>
-    </view>
-    <view>{{title}}</view>
+  <view class='x-class x-flex x-flex-center'>
+    <button class='button' open-type='{{open_type}}'>
+      <view>
+        <image wx:if='{{src}}' src='{{src}}'></image>
+        <x-icon wx:elif='{{icon}}' name='{{icon}}' size='{{iconSize}}'></x-icon>
+      </view>
+      <view>{{title}}</view>
+    </button>
     <slot></slot>
   </view>
 </view>

@@ -1,11 +1,11 @@
-<view class="cell-item {{menuArrow?'arrow':''}} {{url?'active':''}} {{isLastCell?'cell-item-last':''}}" bindtap="navigateTo">
+<view class="x-class x-flex cell-item {{menuArrow?'arrow':''}} {{url?'active':''}} {{isLastCell?'cell-item-last':''}}" bindtap="navigateTo">
   <view class="cell-icon">
       <slot name="icon"></slot>
   </view>
   <view class="cell-bd">
-      <view wx:if="{{ title }}" class="cell-text">{{ title }}</view>
-      <view wx:if="{{ label }}" class="cell-desc">{{ label }}</view>
-      <slot></slot>
+    <slot></slot>
+    <view wx:if="{{ title }}" class="cell-text">{{ title }}</view>
+    <view wx:if="{{ label }}" class="cell-desc">{{ label }}</view>
   </view>
   <view class="cell-ft">
       <block wx:if="{{value}}">{{ value }}</block>

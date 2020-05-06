@@ -5,9 +5,9 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    src:{
-      type:String,
-      value:''
+    src: {
+      type: String,
+      value: ''
     },
     title: {
       type: String,
@@ -23,9 +23,8 @@ Component({
       type: Number,
       value: 46
     },
-    iconColor: {
-      type: String,
-      value: '#aaa'
+    open_type: {
+      type: String
     }
   },
 
@@ -33,7 +32,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    itemNum:0
+    itemNum: 0
   },
 
   /**

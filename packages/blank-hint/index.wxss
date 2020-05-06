@@ -1,0 +1,3 @@
+.blank_hint{position: relative;}
+.blank_hint image{width: 100%;}
+.blank_hint>view:last-child{position: absolute;top: 110%;width: 140px;left: 50%;margin-left: -70px;}

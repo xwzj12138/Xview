@@ -1,5 +1,4 @@
 .card{box-sizing:border-box;font-size:12px;color:#333;background:#fafafa;}
-.card .goods_image{height:750rpx;}
 .card-flex{display:flex;padding:5px 10px;}
 .card-flex .goods_image{width: 250rpx;height:250rpx;}
 .card-flex .goods_info{flex: 1;}

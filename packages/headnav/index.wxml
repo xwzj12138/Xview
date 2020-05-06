@@ -1,0 +1,5 @@
+<view class='headnav' style='height:{{CustomBar}}px;padding-top:{{StatusBar}}px;'>
+  <slot></slot>
+</view>
+<!-- 将头部和内容分隔 -->
+<view style='margin-top:{{CustomBar}}px'></view>

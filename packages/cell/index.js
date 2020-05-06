@@ -1,5 +1,10 @@
 // packages/cell/index.js
+const warn = (msg, getValue) => {
+  console.warn(msg);
+  console.log('接受到的值为：', getValue);
+};
 Component({
+  externalClasses: ['x-class'],
   relations: {
     '../cell-group/index': {
       type: 'parent'
@@ -34,17 +39,13 @@ Component({
       type: String,
       value: 'navigateTo'
     },
-    appId:{
-      type: String,
-      value: ''
-    },
-    extraData: {
-      type: Object,
-      value: {}
-    },
     url: {
       type: String,
       value: ''
+    },
+    isLastCell:{
+      type:Boolean,
+      value:true
     }
   },
 
@@ -52,7 +53,6 @@ Component({
    * 组件的初始数据
    */
   data: {
-    isLastCell: true
   },
 
   /**
@@ -61,18 +61,11 @@ Component({
   methods: {
     navigateTo() {
       let url = this.data.url;
-      this.triggerEvent('click');
+
       if (!url || url === 'true' || url === 'false') return;
 
-      if (['navigateTo', 'redirectTo', 'switchTab', 'reLaunch','navigateToMiniProgram'].indexOf(this.data.linkType) === -1) {
-        return;
-      }
-      if (this.data.linkType =='navigateToMiniProgram'){
-        wx.navigateToMiniProgram({
-          appId:this.data.appId,
-          path: this.data.url,
-          extraData: this.data.extraData
-        })
+      if (['navigateTo', 'redirectTo', 'switchTab', 'reLaunch'].indexOf(this.data.linkType) === -1) {
+        warn('linkType 属性可选值为 navigateTo，redirectTo，switchTab，reLaunch', this.data.linkType);
         return;
       }
       wx[this.data.linkType].call(wx, { url });
