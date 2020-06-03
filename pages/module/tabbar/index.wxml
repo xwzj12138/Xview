@@ -1,20 +1,16 @@
 <!--pages/goods-action/index.wxml-->
-<x-tabbar x-class='tabbar'>
+<!-- 设置不固定位置 -->
+<x-tabbar fixed_type=''>
   <x-tabbar-item title='客服' width='120' icon='service' iconColor='#f0f'></x-tabbar-item>
   <x-tabbar-item title='购物车' width='120' icon='cartfill'></x-tabbar-item>
-  <x-tabbar-flex-item x-class='bg1' title='加入购物车'></x-tabbar-flex-item>
-  <x-tabbar-flex-item x-class='bg2' title='立即购买'></x-tabbar-flex-item>
+  <x-tabbar-flex-item title='加入购物车' bg_color='bg-color10' color='color'></x-tabbar-flex-item>
+  <x-tabbar-flex-item title='立即购买' bg_color='bg-color11' color='color'></x-tabbar-flex-item>
 </x-tabbar>
 <!-- 分享类按钮 -->
-<x-tabbar x-class='tabbar1'>
-  <x-tabbar-item title='客服' width='120' icon='service'></x-tabbar-item>
-  <x-tabbar-item width='120'>
-    <button class='button' open-type='share'>
-      <view><x-icon name='share' size='46'></x-icon></view>
-      <view>分享</view>
-    </button>
-  </x-tabbar-item>
-  <x-tabbar-flex-item x-class='bg3' title='加入购物车'></x-tabbar-flex-item>
-  <x-tabbar-flex-item x-class='bg4' title='立即购买'></x-tabbar-flex-item>
+<x-tabbar>
+  <x-tabbar-item title='客服' icon='service' fileItem></x-tabbar-item>
+  <x-tabbar-item title='分享' open-type='share' icon='share' fileItem></x-tabbar-item>
+  <x-tabbar-flex-item bg_color='bg-color4' title='加入购物车'></x-tabbar-flex-item>
+  <x-tabbar-flex-item bg_color='bg-color1' title='立即购买'></x-tabbar-flex-item>
 </x-tabbar>
 <!-- <ad unit-id="adunit-059905e4f221fbeb"></ad> -->

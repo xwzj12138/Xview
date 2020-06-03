@@ -1,19 +1,19 @@
 <!--pages/avatar/index.wxml-->
 <view class='title'>圆形文字</view>
 <x-grid-group>
-  <x-grid-item><x-avatar>陈</x-avatar></x-grid-item>
-  <x-grid-item><x-avatar>星</x-avatar></x-grid-item>
+  <x-grid-item><x-avatar>野</x-avatar></x-grid-item>
+  <x-grid-item><x-avatar>爺</x-avatar></x-grid-item>
   <x-grid-item><x-avatar>星</x-avatar></x-grid-item>
 </x-grid-group>
 <view class='title'>方形文字及大小定制</view>
 <x-grid-group>
-  <x-grid-item><x-avatar shape='square' size='52'>陈</x-avatar></x-grid-item>
-  <x-grid-item><x-avatar shape='square' size='42'>星</x-avatar></x-grid-item>
-  <x-grid-item><x-avatar shape='square'>星</x-avatar></x-grid-item>
+  <x-grid-item><x-avatar shape='radius' size='52'>打</x-avatar></x-grid-item>
+  <x-grid-item><x-avatar shape='radius' size='42'>扎</x-avatar></x-grid-item>
+  <x-grid-item><x-avatar shape='radius'>星</x-avatar></x-grid-item>
 </x-grid-group>
 <view class='title'>头像</view>
 <x-grid-group>
-  <x-grid-item><x-avatar src='/static/logo.png' size='52'></x-avatar></x-grid-item>
+  <x-grid-item><x-avatar src='/static/logo.png'></x-avatar></x-grid-item>
   <x-grid-item><x-avatar src='/static/logo.png'></x-avatar></x-grid-item>
   <x-grid-item><x-avatar src='/static/logo.png'></x-avatar></x-grid-item>
 </x-grid-group>

@@ -3,33 +3,15 @@
 .nav {
   white-space: nowrap;
   display: flex;
-  justify-content:center;
-  text-align: center;
   height: 100rpx;
 }
-.bg-white {
-  background-color: #fff;
-  color: #666;
-}
-.nav .x-item {
+.nav .item {
   height: 90rpx;
   display: inline-block;
   line-height: 90rpx;
   margin: 0 10rpx;
   padding: 0 20rpx;
 }
-.nav .x-item.cur {
+.nav .item.cur {
   border-bottom: 4rpx solid;
-}
-.flex {
-  display: flex;
-}
-.text-center {
-  text-align: center;
-}
-.flex-sub {
-  flex: 1;
-}
-.text-green {
-  color: #39b54a;
 }

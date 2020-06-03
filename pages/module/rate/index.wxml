@@ -1,40 +1,37 @@
 <!--pages/rate/index.wxml-->
 <view class='title'>基本用法</view>
 <view>
-  <x-rate value="{{starIndex1}}" bind:change="onChange1"></x-rate>
+  <x-rate value="{{starIndex1}}" name='starIndex1' bind:change="onChange"></x-rate>
 </view>
 
 <view class='title'>设置星星数量</view>
 <view>
-  <x-rate count="3" value="{{starIndex2}}" bind:change="onChange2"></x-rate>
+  <x-rate count="3" value="{{starIndex2}}" name='starIndex2' bind:change="onChange"></x-rate>
 </view>
 
 <view class='title'>设置默认评分</view>
 <view>
-  <x-rate count="6" value="{{starIndex3}}" bind:change="onChange3"></x-rate>
+  <x-rate count="6" value="{{starIndex3}}" name='starIndex3' bind:change="onChange"></x-rate>
 </view>
 
 <view class='title'>禁止</view>
 <view>
-  <x-rate disabled count="6" value="{{starIndex4}}" bind:change="onChange4"></x-rate>
+  <x-rate disabled count="6" value="{{starIndex4}}" name='starIndex4' bind:change="onChange"></x-rate>
 </view>
 
 <view class='title'>设置大小</view>
 <view>
-  <x-rate count="6" size='40' value="{{starIndex5}}" bind:change="onChange5"></x-rate>
+  <x-rate count="6" size='40' value="{{starIndex5}}" name='starIndex5' bind:change="onChange"></x-rate>
 </view>
 
 <view class='title'>设置评分图标</view>
 <view>
-  <x-rate name='likefill' count="6" size='40' value="{{starIndex6}}" bind:change="onChange6"></x-rate>
+  <x-rate name='likefill' count="6" size='40' value="{{likefill}}" bind:change="onChange"></x-rate>
 </view>
 <view>
-  <x-rate name='emoji' count="6" size='40' value="{{starIndex6}}" bind:change="onChange6"></x-rate>
+  <x-rate name='emoji' count="6" size='40' value="{{emoji}}" bind:change="onChange"></x-rate>
 </view>
 <view>
-  <x-rate name='appreciatefill' count="6" size='40' value="{{starIndex6}}" bind:change="onChange6"></x-rate>
-</view>
-<view>
-  <x-rate name='evaluate_fill' count="6" size='40' value="{{starIndex6}}" bind:change="onChange6"></x-rate>
+  <x-rate name='appreciatefill' count="6" size='40' value="{{appreciatefill}}" bind:change="onChange"></x-rate>
 </view>
 <!-- <ad unit-id="adunit-059905e4f221fbeb"></ad> -->

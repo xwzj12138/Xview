@@ -1,10 +1,10 @@
-<button class="x-btn x-class grid-item {{lastColumn?'lastColumn':''}} {{isLast?'last':''}}" style='width:{{1/itemNum*100}}%;'
+<button class="btn x-class grid-item inline {{bg_color+' '+color}} {{lastColumn?'lastColumn':''}} {{isLast?'last':''}}" style='width:{{1/itemNum*100}}%;'
 bindtap="handleTap" open-type="{{ openType }}"
     app-parameter="{{ appParameter }}" hover-stop-propagation="{{ hoverStopPropagation }}" 
    session-from="{{ sessionFrom }}" send-message-title="{{ sendMessageTitle }}" 
     send-message-path="{{ sendMessagePath }}" send-message-img="{{ sendMessageImg }}" show-message-card="{{ showMessageCard }}"
     bindcontact="bindcontact" bindgetuserinfo="bindgetuserinfo" bindgetphonenumber="bindgetphonenumber" binderror="binderror">
-  <view class="{{isColumn?'x-flex x-flex-center':''}}">
+  <view class="{{isColumn?'flex flex-center':''}}">
     <view>
       <image wx:if='{{img_url}}' src='{{img_url}}'></image>
       <slot wx:else></slot>

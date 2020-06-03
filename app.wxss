@@ -1,7 +1,8 @@
 .title{padding:10px;color:#aaa;}
 ::-webkit-scrollbar {display: none;}
 page {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
+  background: #f1f1f1;
+  font-size: 28rpx;
+  color: #333;
   font-family: Helvetica Neue, Helvetica, sans-serif;
 }

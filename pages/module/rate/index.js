@@ -10,44 +10,14 @@ Page({
     starIndex3:2,
     starIndex4: 0,
     starIndex5: 0,
-    starIndex6: 2
+    likefill:0,
+    emoji:0,
+    appreciatefill: 2
   },
   // 评分组件change事件
-  onChange1(e) {
-    const index = e.detail.index;
-    this.setData({
-      starIndex1: index
-    })
-  },
-  onChange2(e) {
-    const index = e.detail.index;
-    this.setData({
-      starIndex2: index
-    })
-  },
-  onChange3(e) {
-    const index = e.detail.index;
-    this.setData({
-      starIndex3: index
-    })
-  },
-  onChange4(e) {
-    const index = e.detail.index;
-    this.setData({
-      starIndex4: index
-    })
-  },
-  onChange5(e) {
-    const index = e.detail.index;
-    this.setData({
-      starIndex5: index
-    })
-  },
-  onChange6(e) {
-    const index = e.detail.index;
-    this.setData({
-      starIndex6: index
-    })
+  onChange(e) {
+    this.data[e.detail.name] = e.detail.value;
+    this.setData(this.data)
   },
   /**
    * 生命周期函数--监听页面加载

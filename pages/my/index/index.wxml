@@ -4,6 +4,8 @@
 </x-cell>
 <x-cell-group menuCard>
   <x-cell menuArrow title='更新日志' url='/pages/my/log/index'></x-cell>
-  <x-cell menuArrow title='项目案例' linkType='navigateToMiniProgram' appId='wx7271410f70eb2829' url='pages/pdd/home/index'></x-cell>
+  <x-cell menuArrow title='多多导购案例' linkType='navigateToMiniProgram' appId='wx7271410f70eb2829' url='pages/pdd/home/index' value='目前由他人维护'></x-cell>
+  <!-- extraData跳转小程序的数据，可以不设置 -->
+  <x-cell menuArrow title='摩推案列' linkType='navigateToMiniProgram' appId='wx98b1ca692984b153' url='pages/pdd/home/index' extraData='{{extraData}}'></x-cell>
   <x-cell menuArrow title='赞赏' bindclick='pay'></x-cell>
 </x-cell-group>

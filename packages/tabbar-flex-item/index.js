@@ -1,14 +1,12 @@
 // packages/tabbar-file-item/index.js
+var buttonBehavior = require('../common/button_behaior.js');
 Component({
+  behaviors: [buttonBehavior],
   externalClasses: ['x-class'],
   /**
    * 组件的属性列表
    */
   properties: {
-    src: {
-      type: String,
-      value: ''
-    },
     title: {
       type: String,
       value: ''
@@ -20,8 +18,9 @@ Component({
       type: Number,
       value: 46
     },
-    open_type: {
-      type: String
+    fontSize:{
+      type:String,
+      value:'24rpx'
     }
   },
 

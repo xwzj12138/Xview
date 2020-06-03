@@ -1,16 +1,23 @@
-<view class="x-class x-flex cell-item {{menuArrow?'arrow':''}} {{url?'active':''}} {{isLastCell?'cell-item-last':''}}" bindtap="navigateTo">
-  <view class="cell-icon">
-      <slot name="icon"></slot>
-  </view>
-  <view class="cell-bd">
-    <slot></slot>
-    <view wx:if="{{ title }}" class="cell-text">{{ title }}</view>
-    <view wx:if="{{ label }}" class="cell-desc">{{ label }}</view>
-  </view>
-  <view class="cell-ft">
-      <block wx:if="{{value}}">{{ value }}</block>
-      <block wx:else>
-          <slot name="footer"></slot>
-      </block>
-  </view>
+<view class="cell-item relative bottom-line">
+  <button class="x-class btn flex flex-item-center {{ bg_color+' '+' '+color+' '+active }} {{menuArrow?'arrow':''}} {{isLastCell?'cell-item-last':''}}"
+      form-type="{{form_type}}" open-type="{{ openType }}"
+      app-parameter="{{ appParameter }}" hover-stop-propagation="{{ hoverStopPropagation }}" 
+      session-from="{{ sessionFrom }}" send-message-title="{{ sendMessageTitle }}" 
+      send-message-path="{{ sendMessagePath }}" send-message-img="{{ sendMessageImg }}" show-message-card="{{ showMessageCard }}"
+      bindcontact="bindcontact" bindgetuserinfo="bindgetuserinfo" bindgetphonenumber="bindgetphonenumber" binderror="binderror" plain="true">
+      <view class="cell-icon">
+        <slot name="icon"></slot>
+    </view>
+    <view class="cell-bd btn-hover" bindtap="handleTap">
+      <slot></slot>
+      <view wx:if="{{ title }}" class="cell-text">{{ title }}</view>
+      <view wx:if="{{ label }}" class="cell-desc">{{ label }}</view>
+    </view>
+    <view class="cell-ft">
+        <block wx:if="{{value}}">{{ value }}</block>
+        <block wx:else>
+            <slot name="footer"></slot>
+        </block>
+    </view>
+  </button>
 </view>

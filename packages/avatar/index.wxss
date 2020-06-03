@@ -1,5 +1,4 @@
+@import '../common/index.wxss';
 .x-avatar{display:inline-block;text-align:center;background:#ccc;color:#fff;white-space:nowrap;position:relative;overflow:hidden;vertical-align:middle;}
 .x-avatar-image{background:0 0}
-.x-avatar-circle{border-radius:50%;}
-.x-avatar-square{border-radius:4px}
 .x-avatar>image{width:100%;height:100%}

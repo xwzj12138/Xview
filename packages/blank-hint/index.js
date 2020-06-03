@@ -37,6 +37,8 @@ Component({
     navigateTo() {
       let url = this.data.button_url;
 
+      if (this.data.linkType == 'navigateBack') return wx.navigateBack({});
+      
       if (!url || url === 'true' || url === 'false') return;
 
       if (['navigateTo', 'redirectTo', 'switchTab', 'reLaunch'].indexOf(this.data.linkType) === -1) {

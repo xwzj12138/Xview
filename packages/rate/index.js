@@ -66,7 +66,7 @@ Component({
         }
     },
     ready(){
-       const className = '.x-rate';
+       const className = '.rate';
         var query = wx.createSelectorQuery().in(this)
         query.select( className ).boundingClientRect((res)=>{
             this.data.touchesStart.pageX = res.left || 0;

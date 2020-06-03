@@ -1,5 +1,7 @@
 // packages/goods-action-item/index.js
+var buttonBehavior = require('../common/button_behaior.js');
 Component({
+  behaviors: [buttonBehavior],
   externalClasses: ['x-class'],
   /**
    * 组件的属性列表
@@ -16,15 +18,13 @@ Component({
     icon: {
       type: String
     },
-    width: {
-      type: Number
-    },
     iconSize: {
       type: Number,
       value: 46
     },
-    open_type: {
-      type: String
+    fontSize: {
+      type: String,
+      value: 'font-size'
     }
   },
 

@@ -16,6 +16,7 @@ Page({
   onLoad: function (options) {
     //判断是否登录
     loginModel.isLogin(res=>{
+      console.log('1111')
       this.setData({ show_center: true})
     })
   },

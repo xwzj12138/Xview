@@ -2,40 +2,40 @@
 <view class='title'>一般用法</view> 
 <view>
   <x-button bind:click="handleClick">默认按钮</x-button>
-  <x-button bind:click="handleClick" type="error" long="true">联通两边按钮</x-button>
-  <x-button bind:click="handleClick" type="primary">Primary</x-button>
-  <x-button bind:click="handleClick" type="ghost">Ghost</x-button>
-  <x-button bind:click="handleClick" type="info">Info</x-button>
-  <x-button bind:click="handleClick" type="success">Success</x-button>
-  <x-button bind:click="handleClick" type="warning">Warning</x-button>
-  <x-button bind:click="handleClick" type="error">Error</x-button>
+  <x-button bind:click="handleClick" bg_color='bg-color1' color='color' margin>没有外边距</x-button>
+  <x-button bind:click="handleClick" bg_color='bg-color2' color='color' margin='margin1'>上下10rpx 左右22rpx</x-button>
+  <x-button bind:click="handleClick" bg_color='bg-color3' color='color'>bg:#f37b1d</x-button>
+  <x-button bind:click="handleClick" bg_color='bg-color4' color='color'>bg:#fbbd08</x-button>
+  <x-button bind:click="handleClick" bg_color='bg-color5' color='color'>bg:#8dc63f</x-button>
+  <x-button bind:click="handleClick" bg_color='bg-color6' color='color'>bg:#39b54a</x-button>
+  <x-button bind:click="handleClick" bg_color='bg-color7' color='color'>bg:#1cbbb4</x-button>
 </view>
 <view class='title'>行内按钮</view>
 <view>
   <x-button bind:click="handleClick" inline>默认按钮</x-button>
-  <x-button bind:click="handleClick" type="error" inline>联通两边按钮</x-button>
-  <x-button bind:click="handleClick" type="primary" inline>Primary</x-button>
-  <x-button bind:click="handleClick" type="ghost" inline>Ghost</x-button>
-  <x-button bind:click="handleClick" type="info" inline>Info</x-button>
-  <x-button bind:click="handleClick" type="success" inline>Success</x-button>
-  <x-button bind:click="handleClick" type="warning" inline>Warning</x-button>
-  <x-button bind:click="handleClick" type="error" inline>Error</x-button>
+  <x-button bind:click="handleClick" bg_color='bg-color8'  color='color' inline margin=''>没有外边距</x-button>
+  <x-button bind:click="handleClick" bg_color='bg-color9' inline margin='margin1'>上下10rpx 左右22rpx</x-button>
+  <x-button bind:click="handleClick" bg_color='bg-color10' inline>bg:#e03997</x-button>
+  <x-button bind:click="handleClick" bg_color='bg-color11' inline>bg:#a5673f</x-button>
+  <x-button bind:click="handleClick" bg_color='bg-color12' inline>bg:#8799a3</x-button>
+  <x-button bind:click="handleClick" bg_color='bg-color13' inline>bg:#aaa</x-button>
+  <x-button bind:click="handleClick" bg_color='bg-color14' color='color' inline>bg:#333</x-button>
 </view>
 
 <view class='title'>不同尺寸</view>
 <view>
-  <x-button bind:click="handleClick">默认96rpx高度</x-button>
-  <x-button bind:click="handleClick" size="64">设置64rpx高度</x-button>
-  <x-button bind:click="handleClick" size="120">设置120rpx高度</x-button>
+  <x-button bind:click="handleClick" bg_color='bg-color8'>默认96rpx高度</x-button>
+  <x-button bind:click="handleClick" shape="circle" bg_color='bg-color9' size="64">设置64rpx高度</x-button>
+  <x-button bind:click="handleClick" bg_color='bg-color10' size="120">设置120rpx高度</x-button>
 </view>
 
 <view class='title'>圆角</view>
 <view>
-  <x-button bind:click="handleClick" shape="circle">大尺寸</x-button>
+  <x-button bind:click="handleClick" shape="circle" bg_color='bg-color11'>大尺寸</x-button>
 </view>
 
 <view class='title'>禁止点击</view>
 <view>
-  <x-button bind:click="handleClick" shape="circle" disabled loading>大尺寸</x-button>
+  <x-button bind:click="handleClick" shape="circle" disabled='bg-color13 color15'>大尺寸</x-button>
 </view>
 <!-- <ad unit-id="adunit-059905e4f221fbeb"></ad> -->

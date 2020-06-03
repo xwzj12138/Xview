@@ -1,11 +1,4 @@
-<!-- <scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}" enable-flex='true'>
-  <view class='width_100 flex text-center' style="font-size:{{fontSize}}rpx">
-    <view class="x-item flex-sub {{index==TabCur?'text-green cur':''}}" wx:for="{{tabList}}" wx:key='nav_key' 
-    catchtap='tabSelect' data-index="{{index}}">{{item[key]}}</view>
-  </view>
-</scroll-view> -->
-
-<scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}" enable-flex='true'>
-  <view class="x-item flex-sub {{index==TabCur?'text-green cur':''}}" wx:for="{{tabList}}" wx:key='nav_key' 
+<scroll-view scroll-x class="x-class bg-color color15 text-center nav" scroll-with-animation scroll-left="{{scrollLeft}}" enable-flex='true'>
+  <view class="item file-item {{index==TabCur?'color6 cur':''}}" wx:for="{{tabList}}" wx:key='nav_key' 
     catchtap='tabSelect' data-index="{{index}}">{{item[key]}}</view>
 </scroll-view>

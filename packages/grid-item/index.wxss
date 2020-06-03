@@ -1,6 +1,7 @@
 @import '../common/index.wxss';
-.grid-item{display: inline-block;font-size: 12px;line-height: 1.4;border-right:1px solid #e9eaec;
-  border-bottom:1px solid #e9eaec;padding:15rpx 10rpx;vertical-align:middle;}
+.grid-item{font-size: 12px;line-height: 1.4;border-right:1px solid #e9eaec !important;
+  border-bottom:1px solid #e9eaec !important;padding:15rpx 10rpx;vertical-align:middle;
+}
 .grid-item image{width: 56rpx;height: 56rpx;vertical-align:middle;}
 /* 去除最后一行底部边框 */
 .lastColumn{border-bottom: none;}

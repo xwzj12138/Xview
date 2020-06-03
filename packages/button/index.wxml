@@ -1,9 +1,9 @@
 <button
     form-type="{{form_type}}"
-    class="x-class x-btn {{ long ? 'x-btn-long' : '' }} {{ 'x-btn-' + type }} {{ 'x-btn-' + shape }} {{ loading ? 'x-btn-loading' : '' }} {{ disabled ? 'x-btn-disabled' : ''}} {{ inline ? 'x-btn-inline' : '' }}"
+    class="x-class btn text-center {{ bg_color+' '+margin }} {{ color}} {{ shape }} {{ loading ? 'btn-loading' : '' }} {{ disabled}} {{ inline ? 'inline' : '' }}"
     hover-class="x-btn-hover" bindtap="handleTap" open-type="{{ openType }}"
-    app-parameter="{{ appParameter }}" hover-stop-propagation="{{ hoverStopPropagation }}" hover-start-time="{{ hoverStartTime }}" 
-    hover-stay-time="{{ hoverStayTime }}" session-from="{{ sessionFrom }}" send-message-title="{{ sendMessageTitle }}" 
+    app-parameter="{{ appParameter }}" hover-stop-propagation="{{ hoverStopPropagation }}" 
+    session-from="{{ sessionFrom }}" send-message-title="{{ sendMessageTitle }}" 
     send-message-path="{{ sendMessagePath }}" send-message-img="{{ sendMessageImg }}" show-message-card="{{ showMessageCard }}"
     bindcontact="bindcontact" bindgetuserinfo="bindgetuserinfo" bindgetphonenumber="bindgetphonenumber" binderror="binderror" plain="true"
     style='height:{{size}}rpx;line-height:{{size}}rpx;font-size:{{font_size}}px'>

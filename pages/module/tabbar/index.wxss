@@ -1,9 +1,6 @@
-/* 第一个tabbar额外样式 */
-.tabbar{font-size:24rpx;color:#9B9B9B;}
 /* 设置圆角 */
 .bg1{height:80% !important;background:#FFD04A;border-radius:100rpx 0 0 100rpx;font-size:28rpx;color:#000;}
 .bg2{height:80% !important;background:#FA6400;border-radius:0 100rpx 100rpx 0;color:#fff;font-size:28rpx;}
 /* 第二个tabbar额外样式 */
-.tabbar1{bottom:150rpx !important;}
 .bg3{background:#FFD04A;}
 .bg4{background:#FA6400;color:#fff;}

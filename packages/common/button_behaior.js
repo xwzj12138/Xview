@@ -1,6 +1,10 @@
 module.exports = Behavior({
   behaviors: [],
   properties: {
+    font_size: {
+      type: Number,
+      value: 15
+    },
     form_type: {
       type: String
     },
@@ -8,7 +12,15 @@ module.exports = Behavior({
       type: Number,
       value: 96,
     },
-    // 链接类型，可选值为 navigateTo，redirectTo，switchTab，reLaunch
+    bg_color: {
+      type: String,
+      value: 'bg-color'
+    },
+    color: {
+      type: String,
+      value: 'color14'
+    },
+    // 链接类型，可选值为 navigateTo，redirectTo，switchTab，reLaunch,navigateToMiniProgram
     linkType: {
       type: String,
       value: 'navigateTo'
@@ -16,6 +28,10 @@ module.exports = Behavior({
     url: {
       type: String,
       value: ''
+    },
+    margin: {
+      type: String,
+      value: 'margin'
     },
     openType: String,
     appParameter: String,
@@ -31,7 +47,15 @@ module.exports = Behavior({
     sendMessageTitle: String,
     sendMessagePath: String,
     sendMessageImg: String,
-    showMessageCard: Boolean
+    showMessageCard: Boolean,
+    appId:{
+      type:String,
+      value:''
+    },
+    extraData: {
+      type: Object,
+      value: {}
+    }
   },
   methods: {
     handleTap() {
@@ -40,6 +64,14 @@ module.exports = Behavior({
       if (this.data.url && this.data.url !== 'true' && this.data.url !== 'false' ){
         if (['navigateTo', 'redirectTo', 'switchTab', 'reLaunch'].indexOf(this.data.linkType) !== -1) {
           return wx[this.data.linkType].call(wx, { url:this.data.url });;
+        }else{
+          return wx.navigateToMiniProgram({
+            appId: this.data.appId,
+            path:this.data.url,
+            extraData: this.data.extraData,
+            success: () => { this.triggerEvent('click',{status:1});},
+            fail: () => { this.triggerEvent('click', { status: 0 });}
+          });
         }
       }
 

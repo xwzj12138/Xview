@@ -6,7 +6,10 @@ Page({
    */
   data: {
     navList1: [{ "nameTitle": "tab1" }, { "nameTitle": "tab2" }, { "nameTitle": "tab3" }, { "nameTitle": "tab4" }],
-    navList2: [{ "name": "tab1" }, { "name": "tab2" }, { "name": "tab3" }, { "name": "tab4" }, { "name": "tab5" }, { "name": "tab6" }, { "name": "tab6" }]
+    navList2: [{ "name": "推荐" }, { "name": "手机" }, { "name": "衣服" }, { "name": "美妆" },
+      { "name": "鞋包" }, { "name": "水果" }, { "name": "百货" }, { "name": "食品" }, { "name": "内衣" },
+      { "name": "运动" }, { "name": "家电" }, { "name": "车品" }, { "name": "家具" }
+     ]
   },
   /**
    * 导航栏点击事件

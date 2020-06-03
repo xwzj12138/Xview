@@ -1,37 +1,39 @@
 <view class='title'>常见用法</view>
 <x-grid-group itemNum='5'>
-  <x-grid-item title='待付款' data-id='1' catchtap='gridClick'><x-icon name='pay'></x-icon></x-grid-item>
-  <x-grid-item title='待分享' data-id='2' catchtap='gridClick'><x-icon name='share'></x-icon></x-grid-item>
-  <x-grid-item title='待发货' data-id='3' catchtap='gridClick'><x-icon name='time'></x-icon></x-grid-item>
-  <x-grid-item title='待收货' data-id='4' catchtap='gridClick'><x-icon name='deliver'></x-icon></x-grid-item>
-  <x-grid-item title='待评分' data-id='5' catchtap='gridClick'><x-icon name='favor'></x-icon></x-grid-item>
+<!-- url：跳转的页面，linkType：跳转类型，默认navigateTo -->
+  <x-grid-item title='首页' url='/pages/home/index' linkType='switchTab'><x-icon name='pay'></x-icon></x-grid-item>
+  <!-- 跳转页面并传参 -->
+  <x-grid-item title='待分享' url='/pages/module/icon/index?id=11231' ><x-icon name='share'></x-icon></x-grid-item>
+  <x-grid-item title='待发货' bind:click='gridClick'><x-icon name='time'></x-icon></x-grid-item>
+  <x-grid-item title='待收货' bindclick='gridClick'><x-icon name='deliver'></x-icon></x-grid-item>
+  <x-grid-item title='待评分' bindclick='gridClick'><x-icon name='favor'></x-icon></x-grid-item>
 </x-grid-group>
 <view class='title'></view>
 <x-grid-group>
-  <x-grid-item title='待付款' data-id='1' catchtap='gridClick'><x-icon name='pay'></x-icon></x-grid-item>
-  <x-grid-item title='待分享' data-id='2' catchtap='gridClick'><x-icon name='share'></x-icon></x-grid-item>
-  <x-grid-item title='待发货' data-id='3' catchtap='gridClick'><x-icon name='time'></x-icon></x-grid-item>
-  <x-grid-item title='待收货' data-id='4' catchtap='gridClick'><x-icon name='deliver'></x-icon></x-grid-item>
-  <x-grid-item title='全部' data-id='6' catchtap='gridClick'><x-icon name='time'></x-icon></x-grid-item>
+  <x-grid-item title='待付款' bindclick='gridClick'><x-icon size="56" name='pay'></x-icon></x-grid-item>
+  <x-grid-item title='待分享' bindclick='gridClick'><x-icon size="56" name='share'></x-icon></x-grid-item>
+  <x-grid-item title='待发货' bindclick='gridClick'><x-icon size="56" name='time'></x-icon></x-grid-item>
+  <x-grid-item title='待收货' bindclick='gridClick'><x-icon size="56" name='deliver'></x-icon></x-grid-item>
+  <x-grid-item title='全部' bindclick='gridClick'><x-icon size="56" name='time'></x-icon></x-grid-item>
 </x-grid-group>
 <view class='title'>纯文本</view>
 <x-grid-group itemNum='5'>
-  <x-grid-item title='言情' data-id='6' catchtap='gridClick'></x-grid-item>
-  <x-grid-item title='悬疑' data-id='7' catchtap='gridClick'></x-grid-item>
-  <x-grid-item title='都市' data-id='8' catchtap='gridClick'></x-grid-item>
-  <x-grid-item title='玄幻' data-id='9' catchtap='gridClick'></x-grid-item>
-  <x-grid-item title='武侠' data-id='10' catchtap='gridClick'></x-grid-item>
+  <x-grid-item title='言情' bg_color='bg-color4' bindclick='gridClick'></x-grid-item>
+  <x-grid-item title='悬疑' bg_color='bg-color5' bindclick='gridClick'></x-grid-item>
+  <x-grid-item title='都市' bg_color='bg-color6' bindclick='gridClick'></x-grid-item>
+  <x-grid-item title='玄幻' bg_color='bg-color7' bindclick='gridClick'></x-grid-item>
+  <x-grid-item title='武侠' bg_color='bg-color8' color='color' bindclick='gridClick'></x-grid-item>
 </x-grid-group>
 <view class='title'>纯图片</view>
 <x-grid-group>
-  <x-grid-item url='/static/logo.png' data-id='11' catchtap='gridClick'></x-grid-item>
-  <x-grid-item url='/static/logo.png' data-id='12' catchtap='gridClick'></x-grid-item>
-  <x-grid-item url='/static/logo.png' data-id='13' catchtap='gridClick'></x-grid-item>
+  <x-grid-item img_url='/static/logo.png' catchtap='gridClick'></x-grid-item>
+  <x-grid-item img_url='/static/logo.png' catchtap='gridClick'></x-grid-item>
+  <x-grid-item img_url='/static/logo.png' catchtap='gridClick'></x-grid-item>
 </x-grid-group>
 <view class='title'>左图右文</view>
 <x-grid-group>
-  <x-grid-item isColumn url='/static/logo.png' title='凰族' data-id='11' catchtap='gridClick'></x-grid-item>
-  <x-grid-item isColumn url='/static/logo.png' title='派客' data-id='12' catchtap='gridClick'></x-grid-item>
-  <x-grid-item isColumn url='/static/logo.png' title='凰豆' data-id='13' catchtap='gridClick'></x-grid-item>
+  <x-grid-item isColumn img_url='/static/logo.png' title='摩推' catchtap='gridClick'></x-grid-item>
+  <x-grid-item isColumn img_url='/static/logo.png' title='派客' catchtap='gridClick'></x-grid-item>
+  <x-grid-item isColumn img_url='/static/logo.png' title='凰豆' catchtap='gridClick'></x-grid-item>
 </x-grid-group>
 <!-- <ad unit-id="adunit-059905e4f221fbeb"></ad> -->

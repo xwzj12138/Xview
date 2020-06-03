@@ -1,4 +1,4 @@
 <!--packages/goods-action/index.wxml-->
-<view class='x-class goods-action x-flex x-flex-item-center' style='background:{{background}};'>
+<view class='x-class flex {{fixed_type}} {{bg_color}}' >
   <slot></slot>
 </view>

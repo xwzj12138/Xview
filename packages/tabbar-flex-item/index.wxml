@@ -1,12 +1,14 @@
-<view class='actionItem'>
-  <view class='x-class'>
-    <button class='button' open-type='{{open_type}}'>
-      <view>
-        <image wx:if='{{src}}' src='{{src}}'></image>
-        <x-icon wx:elif='{{icon}}' name='{{icon}}' size='{{iconSize}}'></x-icon>
-      </view>
-      <view>{{title}}</view>
-    </button>
-  </view>
-  <slot></slot>
+<view class="x-class height_100 flex flex-item-center flex-center-center {{bg_color}}">
+  <button class="btn {{color}}"
+  bindtap="handleTap" open-type="{{ openType }}"
+      app-parameter="{{ appParameter }}" hover-stop-propagation="{{ hoverStopPropagation }}" 
+    session-from="{{ sessionFrom }}" send-message-title="{{ sendMessageTitle }}" 
+      send-message-path="{{ sendMessagePath }}" send-message-img="{{ sendMessageImg }}" show-message-card="{{ showMessageCard }}"
+      bindcontact="bindcontact" bindgetuserinfo="bindgetuserinfo" bindgetphonenumber="bindgetphonenumber" binderror="binderror" style="font-size:{{fontSize}}">
+    <view>
+      <image wx:if='{{src}}' src='{{src}}'></image>
+      <x-icon wx:elif='{{icon}}' name='{{icon}}' size='{{iconSize}}'></x-icon>
+    </view>
+    <view>{{title}}</view>
+  </button>
 </view>

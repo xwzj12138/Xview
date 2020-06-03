@@ -5,9 +5,13 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    background: {
+    bg_color: {
       type: String,
-      value: '#fff'
+      value: 'bg-color'
+    },
+    fixed_type:{
+      type:String,
+      value:'bottom_fixed'
     }
   }
 })

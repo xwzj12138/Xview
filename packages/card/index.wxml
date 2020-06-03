@@ -8,9 +8,9 @@
     <view class='description'>{{description}}</view>
     <slot name='price_front'></slot>
     <view class='price-info'>
-      <view wx:if='{{price}}'>
-        <text class='price-text'>￥{{price}}</text>
-        <text class='otherPrice'>￥{{otherPrice}}</text>
+      <view>
+        <text class='price-text' wx:if='{{price>0}}'>￥{{price}}</text>
+        <text class='otherPrice' wx:if='{{otherPrice>0}}'>￥{{otherPrice}}</text>
       </view>
       <view wx:if='{{number}}'><text>X</text><text>{{number}}</text></view>
       <slot name='price_right'></slot>

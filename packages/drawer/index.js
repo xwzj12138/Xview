@@ -5,7 +5,7 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    // 抽屉的方向，可选值：left right top bottom
+    // 抽屉的方向，可选值：left right top bottom center
     type:{
       type:String,
       value:'top'
