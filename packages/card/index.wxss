@@ -8,7 +8,7 @@
 .goods_info{word-break: break-all;padding:0 3px;}
 .goods_title{font-weight:700;overflow:hidden;display:box;display:-webkit-box;text-overflow:ellipsis;line-clamp: 2;-webkit-line-clamp:2;-webkit-box-orient: vertical;box-orient:vertical;}
 .description{color:#7d7e80;padding:3px 0;}
-.goods_image image{width:100%;height:100%;}
+.goods_image image{width:100%;}
 .price-info{display: flex;align-items: center;}
 .price-info>view:first-child{flex:1;}
 .price-text{color:#f44;font-weight:700;margin-right:5px;font-size:16px;}

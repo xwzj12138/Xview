@@ -1,4 +1,10 @@
 <x-steps direction='vertical'>
+<x-step color='#19be6b' icon='roundcheckfill' title='2020-10-8'>
+    <view slot="content">
+      <view>1，新增公共css库，减小整体包大小</view>
+      <view>2，新增公共button相关js文件</view>
+    </view>
+  </x-step>
   <x-step color='#19be6b' icon='roundcheckfill' title='2019-4-8'>
     <view slot="content">
       <view>1，修改商品卡片组件实现方式</view>

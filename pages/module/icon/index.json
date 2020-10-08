@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "icon组件",
   "usingComponents": {
     "x-search": "/packages/search/index",
     "x-icon": "/packages/icon/index"

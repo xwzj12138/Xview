@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "nav导航组件",
   "usingComponents": {
     "x-nav": "/packages/nav/index"
   }

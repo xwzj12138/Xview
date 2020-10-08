@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "九宫格",
   "usingComponents": {
     "x-icon": "/packages/icon/index",
     "x-grid-group": "/packages/grid-group/index",

@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "倒计时组件",
   "usingComponents": {
     "x-count-down": "/packages/count-down/index"
   }

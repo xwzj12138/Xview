@@ -11,6 +11,10 @@ Component({
     imgUrl: {
       type: String
     },
+    imgModel: {
+      type: String,
+      value:'widthFix'
+    },
     title: {
       type: String
     },

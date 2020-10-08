@@ -13,53 +13,43 @@ Page({
   /**
    * 图片删除时间
    */
-  delFile1: function (e) {
-    let array = this.data
-    array.urlList1.splice(e.detail.index, 1)
-    this.setData(array)
+  upload: function (e) {
+    if(e.detail.click_type=='del'){
+      let array = this.data
+      array.urlList1.splice(e.detail.index, 1)
+      return this.setData(array)
+    }
+    this.setData({url: e.detail.uploadResult.tempFilePaths});
   },
-  delFile2:function(e){
-    let array = this.data
-    array.urlList2.splice(e.detail.index, 1)
-    this.setData(array)
-  },
-  /**
-   * 上传图片
-   */
-  addFile1:function(e){
-    this.setData({
-      url: e.detail.uploadResult.tempFilePaths
-    })
-  },
-  addFile2: function (e) {
+  upload1:function(e){
+    if(e.detail.click_type=='del'){
+      let array = this.data
+      array.urlList1.splice(e.detail.index, 1)
+      return this.setData(array)
+    }
     let urllist = this.data.urlList1
     // 判断是否覆盖图片，否则就是添加上传图片
-    if (e.detail.selectIndex >= 0) {
-      urllist[e.detail.selectIndex] = e.detail.uploadResult.tempFilePaths[0]
+    if (e.detail.index >= 0) {
+      urllist[e.detail.index] = e.detail.uploadResult.tempFilePaths[0]
     } else {
       urllist = urllist.concat(e.detail.uploadResult.tempFilePaths)
     }
-    this.setData({
-      urlList1: urllist
-    })
+    this.setData({urlList1: urllist});
   },
-  addFile3: function (e) {
+  upload2: function (e) {
+    if(e.detail.click_type=='del'){
+      let array = this.data
+      array.urlList2.splice(e.detail.index, 1)
+      return this.setData(array)
+    }
     let urllist = this.data.urlList2
     // 判断是否覆盖图片，否则就是添加上传图片
-    if (e.detail.selectIndex>=0){
-      urllist[e.detail.selectIndex] = e.detail.uploadResult.tempFilePaths[0]
+    if (e.detail.index>=0){
+      urllist[e.detail.index] = e.detail.uploadResult.tempFilePaths[0]
     }else{
       urllist = urllist.concat(e.detail.uploadResult.tempFilePaths)
     }
-    this.setData({
-      urlList2: urllist
-    })
-  },
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+    this.setData({urlList2: urllist});
   },
   onShareAppMessage: function () {
   }

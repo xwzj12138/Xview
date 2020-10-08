@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "头像组件",
   "usingComponents": {
     "x-avatar": "/packages/avatar/index",
     "x-grid-group": "/packages/grid-group/index",

@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "开关组件",
   "usingComponents": {
     "x-switch": "/packages/switch/index",
     "x-icon": "/packages/icon/index",

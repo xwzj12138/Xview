@@ -9,3 +9,5 @@
   <x-cell menuArrow title='摩推案列' linkType='navigateToMiniProgram' appId='wx98b1ca692984b153' url='pages/pdd/home/index' extraData='{{extraData}}'></x-cell>
   <x-cell menuArrow title='赞赏' bindclick='pay'></x-cell>
 </x-cell-group>
+
+<ad unit-id="adunit-c5741cce5bfc6010" ad-type="grid" grid-opacity="0.8" grid-count="5" ad-theme="white"></ad>

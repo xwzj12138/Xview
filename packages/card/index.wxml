@@ -1,6 +1,6 @@
 <view class="card x-class card-{{type}}">
   <view class='goods_image'>
-    <image wx:if='{{imgUrl}}' src='{{imgUrl}}' lazy-load='{{true}}'></image>
+    <image wx:if='{{imgUrl}}' src='{{imgUrl}}' lazy-load='{{true}}' mode='{{imgModel}}'></image>
     <slot wx:else name='image'></slot>
   </view>
   <view class='goods_info'>

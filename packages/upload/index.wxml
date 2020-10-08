@@ -1,7 +1,7 @@
 <!--packages/upload/index.wxml-->
 <view>
   <view class='x-class upload-group' wx:for='{{urlList}}' wx:key='upload_images' data-index='{{index}}' catchtap='addFile'>
-    <view><image src='{{item}}'></image></view>
+    <view><image src='{{item}}' class="image"></image></view>
     <view wx:if='{{limit>1}}' class='delIcon' data-index='{{index}}' catchtap='delFile'><x-icon name='roundclosefill' size='40' color='#e54d42'></x-icon></view>
   </view>
   <view class='x-class upload-group' wx:if='{{urlList.length==0 || urlList.length<limit}}' catchtap='addFile'>

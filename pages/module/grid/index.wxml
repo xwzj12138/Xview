@@ -36,4 +36,4 @@
   <x-grid-item isColumn img_url='/static/logo.png' title='派客' catchtap='gridClick'></x-grid-item>
   <x-grid-item isColumn img_url='/static/logo.png' title='凰豆' catchtap='gridClick'></x-grid-item>
 </x-grid-group>
-<!-- <ad unit-id="adunit-059905e4f221fbeb"></ad> -->
+<ad unit-id="adunit-a8e92ba7baf7adf2"></ad>

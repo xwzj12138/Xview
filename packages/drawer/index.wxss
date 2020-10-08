@@ -5,6 +5,6 @@
 .drawer-left{top:0;left: 0;bottom: 0;transform: translateX(-120%);}
 .drawer-right{top:0;right: 0;bottom: 0;transform: translateX(120%);}
 .drawer-bottom{right:0;left: 0;bottom: 0;transform: translateY(120%);}
-.drawer-center{top:45%;left:50%;transform:translate(-50% ,-50%);background:#fff;border-radius:3px;overflow:hidden;}
+.drawer-center{top:0;left:50%;transform:translate(-50%,-100%);background:#fff;border-radius:3px;overflow:hidden;}
+.drawer-center_show{top:45%;transform:translate(-50%,-50%);}
 .show{transform: none;}
-.show-center{display:block;}

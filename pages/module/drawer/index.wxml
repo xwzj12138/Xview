@@ -1,9 +1,9 @@
 <!--pages/drawer/index.wxml-->
-<x-button type='primary' bind:click='showDrawer' data-show='{{true}}' data-type='show_left'>左弹出并且不允许点击遮罩层隐藏</x-button>
-<x-button type='primary' bind:click='showDrawer' data-show='{{true}}' data-type='show_right'>右弹出</x-button>
-<x-button type='primary' bind:click='showDrawer' data-show='{{true}}' data-type='show_top'>上弹出并且不显示遮罩层</x-button>
-<x-button type='primary' bind:click='showDrawer' data-show='{{true}}' data-type='show_bottom'>下弹出</x-button>
-<x-button type='primary' bind:click='showDrawer' data-show='{{true}}' data-type='show_center'>中间弹出</x-button>
+<x-button bg_color='bg-color14' color='color' bind:click='showDrawer' data-show='{{true}}' data-type='show_left'>左弹出并且不允许点击遮罩层隐藏</x-button>
+<x-button bg_color='bg-color7' bind:click='showDrawer' data-show='{{true}}' data-type='show_right'>右弹出</x-button>
+<x-button bg_color='bg-color6' bind:click='showDrawer' data-show='{{true}}' data-type='show_top'>上弹出并且不显示遮罩层</x-button>
+<x-button bg_color='bg-color3' bind:click='showDrawer' data-show='{{true}}' data-type='show_bottom'>下弹出</x-button>
+<x-button bg_color='bg-color2' color='color' bind:click='showDrawer' data-show='{{true}}' data-type='show_center'>中间弹出</x-button>
 
 <x-drawer type='left' maskClosable='{{false}}' show='{{show_left}}'>
   <view class='left-content'>
@@ -48,4 +48,4 @@
     </view>
   </view>
 </x-drawer>
-<!-- <ad unit-id="adunit-059905e4f221fbeb"></ad> -->
+<ad unit-id="adunit-747337ebbfbe5f91"></ad>

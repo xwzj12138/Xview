@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "按钮组件",
   "usingComponents": {
     "x-button": "/packages/button/index"
   }

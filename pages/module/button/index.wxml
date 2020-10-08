@@ -21,7 +21,7 @@
   <x-button bind:click="handleClick" bg_color='bg-color13' inline>bg:#aaa</x-button>
   <x-button bind:click="handleClick" bg_color='bg-color14' color='color' inline>bg:#333</x-button>
 </view>
-
+<ad unit-id="adunit-8c6b9d98725d5dc0" ad-type="video" ad-theme="white"></ad>
 <view class='title'>不同尺寸</view>
 <view>
   <x-button bind:click="handleClick" bg_color='bg-color8'>默认96rpx高度</x-button>
@@ -38,4 +38,3 @@
 <view>
   <x-button bind:click="handleClick" shape="circle" disabled='bg-color13 color15'>大尺寸</x-button>
 </view>
-<!-- <ad unit-id="adunit-059905e4f221fbeb"></ad> -->

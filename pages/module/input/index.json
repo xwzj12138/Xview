@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "输入组件",
   "usingComponents": {
     "x-input": "/packages/input/index"
   }

@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "图片上传组件",
   "usingComponents": {
     "x-upload": "/packages/upload/index"
   }

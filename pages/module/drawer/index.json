@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "抽屉弹窗",
   "usingComponents": {
     "x-drawer":"/packages/drawer/index",
     "x-button": "/packages/button/index"

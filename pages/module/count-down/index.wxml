@@ -24,4 +24,4 @@
 修改倒计时样式：
 <x-count-down target='{{targetTime1}}' countdown-class="countdown-class"></x-count-down>
 </view>
-<!-- <ad unit-id="adunit-059905e4f221fbeb"></ad> -->
+<ad unit-id="adunit-aa55a8cf6a79a388"></ad>

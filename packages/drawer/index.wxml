@@ -1,6 +1,6 @@
-<view wx:if='{{show}}'>
+<view>
   <view class="{{show?'mask':''}} {{maskShow?'maskShow':''}}" catchtap='closeDrawer'></view>
-  <view class="drawer drawer-{{type}} {{type=='center'?'show-center':'show'}} x-class">
+  <view class="drawer drawer-{{type}} {{show?type=='center'?'drawer-center_show':'show':''}} x-class">
     <slot></slot>
   </view>
 </view> 
